@@ -18,9 +18,7 @@ const Technicals = () => {
                 className="flex flex-col w-full bg-[url('/images/Footer/bg.png')] bg-top pt-8 bg-cover"
             >
                 {/* All Links */}
-                <motion.div initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, ease: "easeOut" }}
+                <div
                     className="flex flex-row justify-between px-64 py-32 border-b-2 border-gray-500">
                     <motion.div initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -126,7 +124,7 @@ const Technicals = () => {
                             transition={{ duration: 0.5, ease: "easeOut" }}
                             className="text-3xl text-gray-400"><SocialIcon url="www.email.com" bgColor="transparent" fgColor="rgb(156 163 175)" as="motion.div" style={{ height: 30, width: 30 }} />fluxus@iiti.ac.in</motion.div>
                     </motion.div>
-                </motion.div>
+                </div>
                 {/* Copyright */}
                 <div
                     className="w-full text-center text-2xl backdrop-blur-xl py-8">Made with 🍌 by Fluxus- IIT Indore. © All rights reserved with IIT Indore.
