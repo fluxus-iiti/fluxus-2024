@@ -32,12 +32,12 @@ body {
 
 .app-container {
   position: relative; /* Change to absolute positioning */
-  top: 0;
-  right: 0;
+  top: 20rem;
+  left: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-end; /* Align to the right */
+  align-items: center; /* Align to the right */
   height: 100vh;
 }
 
@@ -50,6 +50,8 @@ body {
   top: 0;
   margin-top: 20%; /* Add vertical space between above-card-image and left-image */
 }
+
+
 
 .above-card-image {
   max-width: 100%; /* Make sure it doesn't exceed the container width */
@@ -79,9 +81,16 @@ body {
   padding: 10px;
 }
 
+.card-pyramid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Adjust the spacing between the above-card-image and the card pyramid */
+}
 
-
-
+.card-row {
+  display: flex;
+}
 
 @keyframes App-logo-spin {
   from {

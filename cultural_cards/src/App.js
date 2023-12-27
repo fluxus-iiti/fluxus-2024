@@ -5,6 +5,7 @@ import Card from './component/Card';
 import aboveCardImage from './comet image.png'; // Replace with the actual path to your above card image
 import leftImage from './planet image.png'; // Replace with the actual path to your left image
 import Comet from './component/Comet';
+import cardImage from './component/card.png'; // Import the image
 
 function App() {
   return (
@@ -19,16 +20,16 @@ function App() {
       <div className="app-container">
         <div className="card-pyramid">
           <div className="card-row">
-            <Card />
-            <Card />
-            <Card />
+            <Card title = 'Dance' image = {cardImage} link ="#"/>
+            <Card title = 'Dance' image = {cardImage} link ="#"/>
+            <Card title = 'Dance' image = {cardImage} link ="#"/>
           </div>
           <div className="card-row">
-            <Card />
-            <Card />
+          <Card title = 'Dance' image = {cardImage} link ="#"/>
+          <Card title = 'Dance' image = {cardImage} link ="#"/>
           </div>
           <div className="card-row">
-            <Card />
+          <Card title = 'Dance' image = {cardImage} link ="#"/>
           </div>
         </div>
       </div>

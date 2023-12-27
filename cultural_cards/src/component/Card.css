@@ -9,10 +9,11 @@ body {
 
 .hexagon {
   position: relative;
-  width: 10rem; /* Adjust the size as needed */
-  height: 10rem;
+  width: 12rem; /* Adjust the size as needed */
+  height: 12rem;
   background-color: rgba(52, 152, 219, 0); /* Fully transparent background */
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  overflow:hidden;
 }
 
 .hexagon img {
@@ -20,6 +21,7 @@ body {
   height: 100%;
   object-fit: cover;
   position: relative;
+  object-fit: cover;
 }
 
 .card-content {
@@ -50,4 +52,8 @@ body {
   border: 2px solid #fff; /* Add white border */
   border-radius: 0; /* Set border-radius to 0 for sharp corners */
   font-size: 8px; /* Reduce font size */
+}
+
+.card {
+  margin-right: 10px; /* Add spacing between cards in the same row */
 }
