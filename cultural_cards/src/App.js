@@ -1,20 +1,37 @@
-// App.js
-
+/* App.js */
 import React from 'react';
 import './App.css';
 import Card from './component/Card';
-import aboveCardImage from './comet image.png'; // Replace with the actual path to your image
+import aboveCardImage from './comet image.png'; // Replace with the actual path to your above card image
+import leftImage from './planet image.png'; // Replace with the actual path to your left image
+import Comet from './component/Comet';
 
 function App() {
   return (
     <>
-    <div className="app-container">
+      <div className="background-image" />
       <div className="above-card-image">
         <img src={aboveCardImage} alt="Above Card Image" />
         <div className="culturas-text">CULTURALS</div>
       </div>
-    </div>
-      <Card />
+      <img src={leftImage} alt="Left Image" className="left-image" />
+      <div className="background-image" />
+      <div className="app-container">
+        <div className="card-pyramid">
+          <div className="card-row">
+            <Card />
+            <Card />
+            <Card />
+          </div>
+          <div className="card-row">
+            <Card />
+            <Card />
+          </div>
+          <div className="card-row">
+            <Card />
+          </div>
+        </div>
+      </div>
     </>
   );
 }

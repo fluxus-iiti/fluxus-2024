@@ -1,11 +1,4 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,27 +6,22 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('website background.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }
-/* App.css */
 
 body {
   margin: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   background-image: url('website background.png'); /* Replace 'website background.png' with the path to your background image */
   background-size: cover; /* Adjust the background size as needed */
@@ -43,7 +31,7 @@ body {
 }
 
 .app-container {
-  position: absolute; /* Change to absolute positioning */
+  position: relative; /* Change to absolute positioning */
   top: 0;
   right: 0;
   display: flex;
@@ -53,31 +41,48 @@ body {
   height: 100vh;
 }
 
+.left-image {
+  width: 30%; /* Adjust the width as needed */
+  max-height: 1500px; /* Set a maximum height for the image */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 20%; /* Add vertical space between above-card-image and left-image */
+}
+
 .above-card-image {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  position: relative;
+  max-width: 100%; /* Make sure it doesn't exceed the container width */
+  height: auto; /* Allow the height to adjust proportionally */
+  position: absolute;
+  right: 0; /* Align to the right edge */
+  top: 0;
 }
 
 .above-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100%; /* Occupy 100% of the container width */
+  height: auto; /* Allow the height to adjust proportionally */
+  /* object-fit: cover; */
   transform: scaleX(-1); /* Flip horizontally */
-  left: 5%; /* Move 5% to the right */
+  /* Remove the transform property to prevent flipping horizontally */
 }
+
 
 .culturas-text {
   position: absolute;
   top: 50%;
-  right: 0; /* Align to the right edge */
+  right: 10%; /* Align to the right edge */
   transform: translate(0, -50%);
   color: #fff;
-  font-size: 24px;
+  font-size: 40px;
   font-weight: bold;
   padding: 10px;
 }
+
+
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

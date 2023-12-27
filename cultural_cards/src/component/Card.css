@@ -9,8 +9,8 @@ body {
 
 .hexagon {
   position: relative;
-  width: 20rem; /* Adjust the size as needed */
-  height: 20rem;
+  width: 10rem; /* Adjust the size as needed */
+  height: 10rem;
   background-color: rgba(52, 152, 219, 0); /* Fully transparent background */
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
@@ -20,26 +20,25 @@ body {
   height: 100%;
   object-fit: cover;
   position: relative;
-  /* top: -5%; Move 5% above */
-  /* left: -5%; Move 5% to the left */
 }
 
 .card-content {
   position: absolute;
-  bottom: 15%; /* Move 40% above the bottom */
+  bottom: 10%; /* Move 40% above the bottom */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Adjust for centering */
-  width: 90%; /* Make the rectangle wider */
-  max-width: 1000px; /* Limit the maximum width */
+  width: 80%; /* Make the rectangle wider */
+  max-width: 600px; /* Limit the maximum width */
   text-align: center;
-  padding: 15px; /* Increase padding for a larger box */
+  padding: 10px; /* Increase padding for a larger box */
   background-color: rgba(52, 152, 219, 0); /* Fully transparent background */
 }
 
 
 .card-title {
   color: #fff; /* Adjust text color */
-  margin-bottom: 5px; /* Adjust margin */
+  margin-bottom: 1px; /*Adjust margin */
+  font-size: 18px; /* Reduce font size */
 }
 
 .learn-more-link {
@@ -47,7 +46,8 @@ body {
   text-decoration: none;
   font-weight: bold;
   display: inline-block; /* Ensure the link takes the width of its content */
-  padding: 8px 15px; /* Add padding around the link content */
+  padding: 3px 6px; /* Reduce padding around the link content */
   border: 2px solid #fff; /* Add white border */
   border-radius: 0; /* Set border-radius to 0 for sharp corners */
+  font-size: 8px; /* Reduce font size */
 }
