@@ -13,11 +13,11 @@ const Technicals = () => {
 
     return (
         <>
-            <motion.div initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
+            {/* Main Div */}
+            <div
                 className="flex flex-col w-full bg-[url('/images/Footer/bg.png')] bg-top pt-8 bg-cover"
             >
+                {/* All Links */}
                 <motion.div initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
@@ -127,11 +127,11 @@ const Technicals = () => {
                             className="text-3xl text-gray-400"><SocialIcon url="www.email.com" bgColor="transparent" fgColor="rgb(156 163 175)" as="motion.div" style={{ height: 30, width: 30 }} />fluxus@iiti.ac.in</motion.div>
                     </motion.div>
                 </motion.div>
-                <motion.div initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, ease: "easeOut" }}
-                    className="w-full text-center text-2xl backdrop-blur-xl py-8">Made with 🍌 by Fluxus- IIT Indore. © All rights reserved with IIT Indore.</motion.div>
-            </motion.div>
+                {/* Copyright */}
+                <div
+                    className="w-full text-center text-2xl backdrop-blur-xl py-8">Made with 🍌 by Fluxus- IIT Indore. © All rights reserved with IIT Indore.
+                </div>
+            </div>
         </>
     );
 };
