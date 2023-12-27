@@ -7,11 +7,15 @@ import aboveCardImage from './comet image.png'; // Replace with the actual path 
 
 function App() {
   return (
+    <>
     <div className="app-container">
-      <img src={aboveCardImage} alt="Above Card Image" className="above-card-image" />
-      <Card />
-      <div className="culturas-text">CULTURALS</div>
+      <div className="above-card-image">
+        <img src={aboveCardImage} alt="Above Card Image" />
+        <div className="culturas-text">CULTURALS</div>
+      </div>
     </div>
+      <Card />
+    </>
   );
 }
 
