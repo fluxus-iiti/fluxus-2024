@@ -30,36 +30,29 @@ body {
   position: relative; /* Add relative positioning to the body */
 }
 
-.app-container {
-  position: relative; /* Change to absolute positioning */
-  /* top: 20rem; */
-  left: 5rem;
-  margin-top : 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; /* Align to the right */
-  height: 100vh;
-  /* overflow : hidden; */
-  /* flex:1; */
+.above {
+ width: 100vw;
 }
 
 .left-image {
   width: 30%; /* Adjust the width as needed */
+  max-width: 100%;
   max-height: 1500px; /* Set a maximum height for the image */
   object-fit: cover; /* Maintain aspect ratio and cover the container */
   position: absolute;
   left: 0;
   top: 0;
+  z-index: 2;
   margin-top: 20%; /* Add vertical space between above-card-image and left-image */
 }
 
 .above-card-image {
-  max-width: 100%; /* Make sure it doesn't exceed the container width */
+  width: 50vw; /* Make sure it doesn't exceed the container width */
   height: auto; /* Allow the height to adjust proportionally */
   position: absolute;
   right: 0; /* Align to the right edge */
   top: 0;
+  z-index: 1;
 }
 
 .above-card-image img {
@@ -70,10 +63,7 @@ body {
   /* Remove the transform property to prevent flipping horizontally */
 }
 
-.left-and-cards-container {
-  display: flex;
-  align-items: center; /* Align vertically in the center */
-}
+
 
 .culturas-text {
   position: absolute;
@@ -81,9 +71,9 @@ body {
   right: 10%; /* Align to the right edge */
   transform: translate(0, -50%);
   color: #fff;
-  font-size: 40px;
+  font-size: 4vw;
   font-weight: bold;
-  padding: 10px;
+  padding: 2vw;
 }
 
 .card-pyramid {
@@ -91,7 +81,10 @@ body {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  margin-top: 20px; /* Adjust the spacing between the above-card-image and the card pyramid */
+  top: 0;
+  margin-top: 20%;
+  left:40vw;
+   /* Adjust the spacing between the above-card-image and the card pyramid */
 }
 
 .card-row {

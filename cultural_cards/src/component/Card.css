@@ -26,7 +26,7 @@ body {
 
 .card-content {
   position: absolute;
-  bottom: 10%; /* Move 40% above the bottom */
+  bottom: 0%; /* Move 40% above the bottom */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Adjust for centering */
   width: 80%; /* Make the rectangle wider */
@@ -39,8 +39,8 @@ body {
 
 .card-title {
   color: #fff; /* Adjust text color */
-  margin-bottom: 0.1vw; /*Adjust margin */
-  font-size: 2vw; /* Reduce font size */
+  margin-bottom: 0; /*Adjust margin */
+  font-size: 24px; /* Reduce font size */
 }
 
 .learn-more-link {
@@ -48,12 +48,34 @@ body {
   text-decoration: none;
   font-weight: bold;
   display: inline-block; /* Ensure the link takes the width of its content */
-  padding: 0.1vw 0.2vw; /* Reduce padding around the link content */
-  border: 0.1vw solid #fff; /* Add white border */
+  padding: 1px 2px; /* Reduce padding around the link content */
+  border: 1px solid #fff; /* Add white border */
   border-radius: 0; /* Set border-radius to 0 for sharp corners */
-  font-size: 1vw; /* Reduce font size */
+  font-size: 10px; /* Reduce font size */
 }
 
 .card {
   margin-right: 2vw; /* Add spacing between cards in the same row */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .learn-more-link {
+    font-size: 6px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 518px) {
+  .card-title {
+    font-size: 10px; /* Adjust font size for smaller screens */
+  }
+
+  .learn-more-link {
+    font-size: 5px; /* Adjust font size for smaller screens */
+  }
 }
