@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
+.festName{
+  color: #fff;
+  /* text-align: center; */
+  font-family: Black Han Sans;
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 106.947%; /* 213.894px */
+  letter-spacing: 74px;
+}
+
+.festTheme {
+  color: #fff;
+  /* text-align: center; */
+  font-family: Black Han Sans;
+  font-size: 99px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 106.947%; /* 105.878px */
+  letter-spacing: 17.82px;
+}
+
+.unselectable{
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    
+}
