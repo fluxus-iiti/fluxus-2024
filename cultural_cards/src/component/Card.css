@@ -9,8 +9,8 @@ body {
 
 .hexagon {
   position: relative;
-  width: 12rem; /* Adjust the size as needed */
-  height: 12rem;
+  width: 12vw; /* Adjust the size as needed */
+  height: 12vw;
   background-color: rgba(52, 152, 219, 0); /* Fully transparent background */
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   overflow:hidden;
@@ -21,7 +21,7 @@ body {
   height: 100%;
   object-fit: cover;
   position: relative;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .card-content {
@@ -39,8 +39,8 @@ body {
 
 .card-title {
   color: #fff; /* Adjust text color */
-  margin-bottom: 1px; /*Adjust margin */
-  font-size: 18px; /* Reduce font size */
+  margin-bottom: 0.1vw; /*Adjust margin */
+  font-size: 2vw; /* Reduce font size */
 }
 
 .learn-more-link {
@@ -48,12 +48,12 @@ body {
   text-decoration: none;
   font-weight: bold;
   display: inline-block; /* Ensure the link takes the width of its content */
-  padding: 3px 6px; /* Reduce padding around the link content */
-  border: 2px solid #fff; /* Add white border */
+  padding: 0.1vw 0.2vw; /* Reduce padding around the link content */
+  border: 0.1vw solid #fff; /* Add white border */
   border-radius: 0; /* Set border-radius to 0 for sharp corners */
-  font-size: 8px; /* Reduce font size */
+  font-size: 1vw; /* Reduce font size */
 }
 
 .card {
-  margin-right: 10px; /* Add spacing between cards in the same row */
+  margin-right: 2vw; /* Add spacing between cards in the same row */
 }

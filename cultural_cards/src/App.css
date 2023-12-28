@@ -32,13 +32,16 @@ body {
 
 .app-container {
   position: relative; /* Change to absolute positioning */
-  top: 20rem;
+  /* top: 20rem; */
   left: 5rem;
+  margin-top : 20%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center; /* Align to the right */
   height: 100vh;
+  /* overflow : hidden; */
+  /* flex:1; */
 }
 
 .left-image {
@@ -50,8 +53,6 @@ body {
   top: 0;
   margin-top: 20%; /* Add vertical space between above-card-image and left-image */
 }
-
-
 
 .above-card-image {
   max-width: 100%; /* Make sure it doesn't exceed the container width */
@@ -69,6 +70,10 @@ body {
   /* Remove the transform property to prevent flipping horizontally */
 }
 
+.left-and-cards-container {
+  display: flex;
+  align-items: center; /* Align vertically in the center */
+}
 
 .culturas-text {
   position: absolute;
@@ -85,10 +90,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
   margin-top: 20px; /* Adjust the spacing between the above-card-image and the card pyramid */
 }
 
 .card-row {
+  /* position: absolute; */
   display: flex;
 }
 

@@ -15,21 +15,22 @@ function App() {
         <img src={aboveCardImage} alt="Above Card Image" />
         <div className="culturas-text">CULTURALS</div>
       </div>
-      <img src={leftImage} alt="Left Image" className="left-image" />
-      <div className="background-image" />
-      <div className="app-container">
-        <div className="card-pyramid">
-          <div className="card-row">
-            <Card title = 'Dance' image = {cardImage} link ="#"/>
-            <Card title = 'Dance' image = {cardImage} link ="#"/>
-            <Card title = 'Dance' image = {cardImage} link ="#"/>
-          </div>
-          <div className="card-row">
-          <Card title = 'Dance' image = {cardImage} link ="#"/>
-          <Card title = 'Dance' image = {cardImage} link ="#"/>
-          </div>
-          <div className="card-row">
-          <Card title = 'Dance' image = {cardImage} link ="#"/>
+      <div className="left-and-cards-container">
+        <img src={leftImage} alt="Left Image" className="left-image" />
+        <div className="app-container">
+          <div className="card-pyramid">
+            <div className="card-row">
+              <Card title="Dance" image={cardImage} link="#" />
+              <Card title="Dance" image={cardImage} link="#" />
+              <Card title="Dance" image={cardImage} link="#" />
+            </div>
+            <div className="card-row">
+              <Card title="Dance" image={cardImage} link="#" />
+              <Card title="Dance" image={cardImage} link="#" />
+            </div>
+            <div className="card-row">
+              <Card title="Dance" image={cardImage} link="#" />
+            </div>
           </div>
         </div>
       </div>
