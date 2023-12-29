@@ -114,6 +114,7 @@ const About = () => {
   display:flex;
   justify-content-right;
   font-size:20px;
+  padding-top:20px;
 }
 
 @media screen and (max-width: 856px) {
