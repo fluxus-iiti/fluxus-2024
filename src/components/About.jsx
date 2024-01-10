@@ -2,19 +2,21 @@
 // pages/index.js
 import React from "react";
 import Image from "next/image";
-import imag from "../../public/images/About/imag2.jpg";
+import HeadingImage from "../../public/images/Technicals Heading.png";
+import about from "../../public/images/About/about.png";
 const About = () => {
   return (
     <>
-      <div className="mainc" style={{marginTop:40}}>
+      <div className="mainc">
         <div className="ccontainer">
-          <Image src={imag} className="bg" />
-          <img
+          {/* <Image src={imag} className="bg" /> */}
+          <Image src={HeadingImage} className="bg" alt={""} />
+          {/* <img
             src="https://officialpsds.com/imageview/7l/0l/7l0lm0_large.png?1521316541"
             className="bg2"
-          ></img>
+          ></img> */}
           <div className="img">
-            <img src="https://officialpsds.com/imageview/7l/0l/7l0lm0_large.png?1521316541"></img>
+            <Image src={about} className="imag" />
           </div>
           <div className="text">
             <div className="headingc">
@@ -45,13 +47,14 @@ const About = () => {
 
         <style>{`
       body{
-        background-color:black;
-        color:white;
+        
         width:100%;
         height:100%;
       }
       .mainc{
-        display:block;
+        background-color:black;
+        color:white;
+        min-height:450px;
       }
         .ccontainer {
           display: flex;
@@ -59,14 +62,17 @@ const About = () => {
           height: 100%;
           text-align: left;
           width:100%;
+          margin-left:0;
           height:100%;
         }
         .img{
-          width:40%;
+          width:30%;
           border-radius:100px;
           margin-top:95px;
-          height:10px;
           padding-left:20px;
+          max-height:300px;
+          max-width:442px;
+          // margin-right:5vw;
         }
         img{
           width:90%;
@@ -77,28 +83,29 @@ const About = () => {
           flex-direction: column;
           justify-content: right;
           // align-items: right;
-          width:60%;
+          width:70%;
           position:relative;
           padding:0px 10px 20px 0;
         }
         .bg{
-          z-index:-1;
+          z-index:0;
           position:absolute;
           display:inline;
-          height:100px;
-          width:100vw;
-          // margin-top:14px;
+          height:200px;
+          // width:100vw;
+          // margin-top:0;
           // margin:35px 0 0 0;
           margin-left:0px;
+          transform: scaleX(-1) scaleY(1.5);
         }
         .bg2{
-          z-index:-1;
+          z-index:0;
           display:none;
         }
         
           .headingc{
             width:100%;
-            height:100px;
+            height:200px;
           }
 .heading {
   // font-size: 24px;
@@ -106,7 +113,9 @@ const About = () => {
   text-align:right;
   width:100%;
   padding-right:0px;
-  padding:4px 4vw 40px 0px;
+  padding-top:40px;
+  z-index:2;
+  // padding:4px 4vw 40px 0px;
   font-weight:bold;
   font-size:60px;
 }
@@ -115,6 +124,24 @@ const About = () => {
   justify-content-right;
   font-size:20px;
   padding-top:20px;
+}
+
+@media screen and (min-width: 1400px) {
+  .img{
+    width:20%;
+          border-radius:100px;
+          margin-top:95px;
+          padding-left:20px;
+          max-width:442px;
+          max-height:10px;
+          margin-right:1%;
+  }
+  .imag{
+    // max-height:200px;
+  }
+  .text{
+    width:80%;
+  }
 }
 
 @media screen and (max-width: 856px) {
@@ -133,7 +160,7 @@ const About = () => {
   .para{
     display:inline-block;
     width:100vw;
-    padding:10px;
+    padding:40px;
   }
   .headingc{
     display:inline-block;
@@ -141,7 +168,7 @@ const About = () => {
     padding:0;
   }
   .heading{
-    padding-top:8px;
+    padding-top:50px;
     
   }
   .img{
@@ -162,19 +189,19 @@ const About = () => {
   .heading{
     font-size:40px;
     text-align:right;
-    padding-top:16px;
+    padding-top:64px;
   }
   @media screen and (max-width: 484px) {
     .heading{
       font-size:30px;
       text-align:right;
-      padding-top:25px;
+      padding-top:74px;
     }
     @media screen and (max-width: 340px) {
       .heading{
-        font-size:20px;
+        font-size:25px;
         text-align:right;
-        padding-top:35px;
+        padding-top:80px;
       }
   }
   
