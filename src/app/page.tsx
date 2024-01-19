@@ -2,13 +2,16 @@ import About from '@/components/About'
 import Hero from '@/components/Hero'
 import Technicals from '@/components/Technicals'
 import Footer from '@/components/Footer'
+import AnimatedTest from '@/webpages/AnimatedTest'
 export default function Home() {
   return (
-    <div>
-      <Hero/>
-      <About/>
-      <Technicals/>
-      <Footer/>
-    </div>
+    <AnimatedTest/>
+    // <div>
+    //   <Hero/>
+    //   <About/>
+    //   <Technicals/>
+    //   <Footer/>
+    // </div>
+    
   )
 }

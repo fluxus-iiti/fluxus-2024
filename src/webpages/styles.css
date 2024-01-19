@@ -1,0 +1,11 @@
+.scrollDiv {
+  border: 1px solid red;
+}
+
+.scrollText {
+    font-size: 20rem;
+}
+
+.ofh {
+    overflow: hidden;
+}
