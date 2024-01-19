@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
 
 @layer utilities {
   .debug {
@@ -26,12 +26,14 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
+  background: linear-gradient(
+      to bottom,
       transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-  font-family: 'Jockey One', sans-serif !important;
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-family: "Jockey One", sans-serif !important;
 }
-
 
 html {
   box-sizing: border-box;
@@ -43,7 +45,6 @@ html {
     font-size: 8px;
   }
 }
-
 
 a {
   text-decoration: none;
@@ -201,5 +202,28 @@ a {
 
 #card {
   background: rgb(255, 255, 255);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.03) 60%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.03) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+/* styles.css */
+.image-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+}
+
+.content {
+  /* background-image: url("/public/images/back.png") !important; */
+  /* height: 100vh; */
+  background-size: cover;
+  background-repeat: repeat;
 }
