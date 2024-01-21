@@ -74,72 +74,8 @@ const AboutSection = () => {
 };
 
 const AnimatedTest = () => {
-  const { scrollYProgress } = useScroll();
-  const delaytwo = useTransform(
-    scrollYProgress,
-    [0.4, 0.5, 1],
-    ["55vh", "55vh", "70vh"]
-  );
-
   return (
     <div>
-      {/* <div className="topNav flex justify-between items-center p-4 m-4">
-        <motion.div
-          className="navButton div mx-auto text-2xl font-bold p justify-items-start"
-          initial={{ y: 0, opacity: 0 }}
-          animate={{ y: 20, opacity: 1 }}
-          transition={{ delay: 2 }}
-        >
-          <p>Nav Button</p>
-        </motion.div>
-        <motion.div
-          className="logo mx-auto text-2xl font-bold"
-          initial={{ y: 0, opacity: 0 }}
-          animate={{ y: 20, opacity: 1 }}
-          transition={{ delay: 1.8 }}
-        >
-          <p>Logo</p>
-        </motion.div>
-        <div className="mx-auto"></div>{" "}
-      </div> */}
-
-      {/* <motion.div>
-        <div className="scrollDiv w-full fixed bottom-0 flex">
-          {["T", "H", "E", "M", "E", " ", "T", "E", "S", "T"].map(
-            (letter, index) => {
-              const delay = useTransform(
-                scrollYProgress,
-                [0, 0.4, 0.5, 0.6, 1],
-                [
-                  `${100 + 4 * index}vh`,
-                  "55vh",
-                  "55vh",
-                  `${55 + (10 - index)}vh`,
-                  "70vh",
-                ]
-              );
-              if (index === 5) {
-                return (
-                  <motion.div key={index} style={{ y: delay }}>
-                    <div className="scrollText text-white">&nbsp;</div>
-                  </motion.div>
-                );
-              }
-              return (
-                <motion.div key={index} style={{ y: delay }}>
-                  <div className="scrollText text-white">{letter}</div>
-                </motion.div>
-              );
-            }
-          )}
-        </div>
-        <motion.div style={{ y: delaytwo }}>
-          <hr className="w-full h-1 bg-white" />
-          Hello
-          <hr className="w-full h-1 bg-white" />
-        </motion.div>
-      </motion.div>
-      <div className="contentDiv h-screen"></div>*/}
       <div className="contentDiv h-screen"></div>
       <ThemeText />
       <AboutSection />
