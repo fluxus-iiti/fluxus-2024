@@ -122,7 +122,7 @@ const ModalItem = () => {
           X
         </button>
         <h1 className="text-white text-6xl text-center m-12"> Technicals </h1>
-        <hr/>
+        <hr />
         <>
           <div className="flex flex-wrap m-auto justify-around">
             {_items?.map((item) => (

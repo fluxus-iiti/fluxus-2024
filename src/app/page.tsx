@@ -6,16 +6,17 @@ import Cards from '@/components/Cards'
 import Wow from '@/components/Wow'
 import { url } from 'inspector'
 import { motion } from 'framer-motion'
-
+import AnimatedTest from '@/webpages/AnimatedTest'
 export default function Home() {
   return (
     <>
-      <Hero/>
+      {/* <Hero/>
       <About/>
       <Technicals/>
       <Cards/>
       <Wow/>
-      <Footer/>
+      <Footer/> */}
+      <AnimatedTest/>
     </>
   )
 }
