@@ -113,7 +113,7 @@ const ModalItem = () => {
 
       <div
         id="modal"
-        className="fixed h-4/5 w-1/2 m-auto z-[100] top-[50%] left-[50%] bg-gray-900 rounded-xl translate-x-[-50%] translate-y-[-50%] overflow-auto"
+        className="fixed h-4/5 w-1/2 m-auto z-[100] top-[50%] left-[50%] bg-gray-900 rounded-xl translate-x-[-50%] translate-y-[-50%] overflow-auto hidden"
       >
         <button
           className="text-white rounded-xl w-10 h-10 text-3xl mt-6 float-right mr-12"

@@ -11,13 +11,13 @@ import { motion } from 'framer-motion'
 export default function Home() {
   return (
     <>
-      {/* <Hero/>
+      <Hero/>
       <About/>
       <Technicals/>
       <Cards/>
       <Wow/>
-      <Footer/> */}
-      <AnimatedTest/>
+      <Footer/>
+      {/* <AnimatedTest/> */}
     </>
   )
 }
