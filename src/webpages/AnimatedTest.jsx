@@ -21,7 +21,7 @@ const ThemeText = () => {
             const delay = useTransform(
               scrollYProgress,
               [0, 1],
-              [`${80 + 5 * index}vh`, "-10vh"]
+              [`${20 + 3 * index}vh`, "-10vh"]
             );
             if (index === 5) {
               return (
