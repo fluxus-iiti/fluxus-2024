@@ -1,5 +1,5 @@
 import React from 'react'
-import main_logo from '../../../public/images/Hero/hero_logo.png'
+import main_logo from '../../../../public/images/Hero/hero_logo.png'
 import Image from 'next/image'
 export default function MainLogo() {
   return (

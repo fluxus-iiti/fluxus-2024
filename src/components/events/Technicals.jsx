@@ -9,7 +9,7 @@ import React, { useEffect, useState } from "react";
 //     DialogFooter,
 //   } from "@material-tailwind/react";
 
-import HeadingImage from "../../public/images/Technicals Heading.png";
+import HeadingImage from "../../../public/images/Technicals Heading.png";
 const slideWidth = 30;
 
 const _items = [
@@ -17,35 +17,35 @@ const _items = [
     player: {
       id: 0,
       title: "Hackathon",
-      image: require("../../public/images/image1.png"),
+      image: require("../../../public/images/image1.png"),
     },
   },
   {
     player: {
       id: 1,
       title: "Blockathon",
-      image: require("../../public/images/pngwing 12.png"),
+      image: require("../../../public/images/pngwing 12.png"),
     },
   },
   {
     player: {
       id: 2,
       title: "Blockathon",
-      image: require("../../public/images/pngwing 12.png"),
+      image: require("../../../public/images/pngwing 12.png"),
     },
   },
   {
     player: {
       id: 3,
       title: "Hackathon",
-      image: require("../../public/images/image1.png"),
+      image: require("../../../public/images/image1.png"),
     },
   },
   {
     player: {
       id: 4,
       title: "Blockathon",
-      image: require("../../public/images/pngwing 14.png"),
+      image: require("../../../public/images/pngwing 14.png"),
     },
   },
 ];

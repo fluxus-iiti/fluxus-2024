@@ -1,5 +1,5 @@
 import Image from "next/image";
-import main_text from '../../../public/images/Hero/hero_text.png'
+// import main_text from '../../../public/images/Hero/hero_text.png'
 export default function MainText() {
   return (
     <div className="w-full">

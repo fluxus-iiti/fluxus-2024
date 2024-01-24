@@ -1,5 +1,5 @@
 import Image from "next/image";
-import left_smoke_dust from '../../../public/images/Hero/left_smoke_dust.png'
+import left_smoke_dust from "../../../../public/images/Hero/left_smoke_dust.png"
 
 export default function LeftSmokeDust() {
   return (

@@ -1,7 +1,7 @@
-"use client";
+// "use client";
 import React from "react";
-import "../styles/card.css";
-import HeadingImage from "../../public/images/Technicals Heading.png";
+import "../../styles/card.css";
+import HeadingImage from "../../../public/images/Technicals Heading.png";
 import Image from "next/image";
 const slideWidth = 30;
 

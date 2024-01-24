@@ -1,11 +1,11 @@
 'use client'
 // before you edit this page plz look onto a point that the responsiveness of this page is dynamically changing based on the window size so if u try doing any parallax effects , do make sure that it doesnt get effected due to window size changes
 
-import LeftSmokeDust from '@/components/Hero/LeftSmokeDust'
-import MainLogo from '@/components/Hero/MainLogo'
-import MainText from '@/components/Hero/MainText'
-import RightSmokeDust from '@/components/Hero/RightSmokeDust'
-import SaturnPlanet from '@/components/Hero/SaturnPlanet'
+import LeftSmokeDust from '@/components/main/hero/LeftSmokeDust'
+import MainLogo from '@/components/main/hero/MainLogo'
+import MainText from '@/components/main/hero/MainText'
+import RightSmokeDust from '@/components/main/hero/RightSmokeDust'
+import SaturnPlanet from '@/components/main/hero/SaturnPlanet'
 import { useWindowSize } from '@react-hook/window-size'
 import { useEffect, useLayoutEffect } from 'react'
 

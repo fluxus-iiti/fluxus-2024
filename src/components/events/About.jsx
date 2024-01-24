@@ -2,8 +2,8 @@
 // pages/index.js
 import React from "react";
 import Image from "next/image";
-import HeadingImage from "../../public/images/Technicals Heading.png";
-import about from "../../public/images/About/about.png";
+import HeadingImage from "../../../public/images/Technicals Heading.png";
+import about from "../../../public/images/About/about.png";
 const About = () => {
   return (
     <>

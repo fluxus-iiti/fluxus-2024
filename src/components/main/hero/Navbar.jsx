@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { HiBars3 } from "react-icons/hi2";
-import logo from '../../public/images/Navbar/image1.png'
+import logo from '../../../../public/images/Navbar/image1.png'
 export default function Navbar() {
   return (
     <div className=" px-2 py-2 relative">
