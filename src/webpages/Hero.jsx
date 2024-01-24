@@ -1,27 +1,28 @@
 'use client'
 // before you edit this page plz look onto a point that the responsiveness of this page is dynamically changing based on the window size so if u try doing any parallax effects , do make sure that it doesnt get effected due to window size changes
 
-import LeftSmokeDust from '@/components/Hero/LeftSmokeDust'
-import MainLogo from '@/components/Hero/MainLogo'
-import MainText from '@/components/Hero/MainText'
-import RightSmokeDust from '@/components/Hero/RightSmokeDust'
-import SaturnPlanet from '@/components/Hero/SaturnPlanet'
+import LeftSmokeDust from '@/components/LeftSmokeDust'
+import MainLogo from '@/components/MainLogo'
+import MainText from '@/components/MainText'
+import RightSmokeDust from '@/components/RightSmokeDust'
+import SaturnPlanet from '@/components/SaturnPlanet'
 import { useWindowSize } from '@react-hook/window-size'
 import { useEffect, useLayoutEffect } from 'react'
 
-export default function Home() {
+export default function Hero() {
 	const [width] = useWindowSize()
 
 	useEffect(() => {
 		const contentElement = document.getElementById('content');
 		const mainTextElement = document.getElementById('main_text')
 		if (contentElement) {
-			contentElement.style.gridTemplateRows = `${width / 5}px auto`
+			contentElement.style.display = "grid"
+		  contentElement.style.gridTemplateRows = `${width / 5}px auto`
 		}
 		if (mainTextElement) {
-			mainTextElement.style.marginTop = `${width / 10}px`
+		  mainTextElement.style.marginTop = `${width / 10}px`
 		}
-	}, [width]);
+	  }, [width]);
 
 	return (
 		<main>
@@ -30,7 +31,7 @@ export default function Home() {
 					<SaturnPlanet />
 				</div>
 				<div id="content" className={`relative  w-full h-full top-0 grid `}>
-					<div className='grid  grid-cols-3 absolute'>
+					<div className='!grid  !grid-cols-3 absolute'>
 						<div className='z-[-3] translate-y-[55px]'>
 							<LeftSmokeDust />
 						</div>
@@ -52,11 +53,11 @@ export default function Home() {
 						<MainText />
 					</div>
 				</div>
-				<div>
-					<div className='flex justify-center items-center mt-3 sm:mt-6 lg::mt-10'>
+				<div className=''>
+					<div className='flex justify-center items-center mt-3 sm:mt-6 lg::mt-12'>
 						<hr id="hr" />
 					</div>
-					<div className='text-white text-center my-1'>Dive into the realm of technology</div>
+					<div className='text-white text-center my-2'>Dive into the realm of technology</div>
 					<div className='flex justify-center items-center mb-10'>
 						<hr id="hr" />
 					</div>

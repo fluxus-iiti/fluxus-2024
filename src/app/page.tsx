@@ -1,23 +1,10 @@
-import About from '@/components/About'
-import Hero from '@/components/Hero'
-import Technicals from '@/components/Technicals'
-import Footer from '@/components/Footer'
-import Cards from '@/components/Cards'
-import Wow from '@/components/Wow'
-import AnimatedTest from '@/webpages/AnimatedTest'
 import { url } from 'inspector'
 import { motion } from 'framer-motion'
-
+import Hero from "@/webpages/Hero"
 export default function Home() {
   return (
     <>
-      {/* <Hero/>
-      <About/>
-      <Technicals/>
-      <Cards/>
-      <Wow/>
-      <Footer/> */}
-      <AnimatedTest/>
+      <Hero />
     </>
   )
 }
