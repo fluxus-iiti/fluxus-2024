@@ -9,7 +9,7 @@ import Hero from '@/webpages/Hero'
 import Navbar from '@/components/main/hero/Navbar'
 import { url } from 'inspector'
 import { motion } from 'framer-motion'
-
+import Timeline from '@/webpages/Timeline'
 export default function Home() {
   return (
     <>
@@ -19,9 +19,7 @@ export default function Home() {
       <Cards/>
       <Wow/>
       <Footer/> */}
-      {/* <AnimatedTest/> */}
-      <Navbar/>
-      <Hero/>
+      <Timeline />
     </>
   )
 }
