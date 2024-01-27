@@ -1,8 +1,15 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import {
+  motion,
+  useScroll,
+  useSpring,
+  useTransform,
+  useVelocity,
+} from "framer-motion";
 import "./styles.css";
+import Video from "../components/Video";
 
 const ThemeText = () => {
   const ref = useRef(null);
@@ -54,10 +61,17 @@ const AboutSection = () => {
     target: ref,
     offset: ["end end", "start start"],
   });
-  const divX = useTransform(scrollYProgress, [0, 0.3, 0.9], ["-40vw", "0vw", "-20vw"]);
+  const divX = useTransform(
+    scrollYProgress,
+    [0, 0.3, 0.9],
+    ["-40vw", "0vw", "-20vw"]
+  );
   const divY = useTransform(scrollYProgress, [0.3, 0.9], ["0vh", "-20vh"]);
-
-  const div2X = useTransform(scrollYProgress, [0, 0.3, 0.9], ["60vw", "0vw", "-40vw"]);
+  const div2X = useTransform(
+    scrollYProgress,
+    [0, 0.3, 0.9],
+    ["60vw", "0vw", "-40vw"]
+  );
   const div2Y = useTransform(scrollYProgress, [0, 0.3], ["10vh", "0vh"]);
   const div2Opacity = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
   const div2Scale = useTransform(scrollYProgress, [0, 0.3], [2, 1]);
@@ -94,13 +108,27 @@ const AboutSection2 = () => {
     target: ref,
     offset: ["end end", "start start"],
   });
-  const divX = useTransform(scrollYProgress, [0, 0.3, 0.7], ["-40vw", "0vw", "-20vw"]);
+  const divX = useTransform(
+    scrollYProgress,
+    [0, 0.3, 0.7],
+    ["-40vw", "0vw", "-20vw"]
+  );
   const divY = useTransform(scrollYProgress, [0.3, 0.7], ["0vh", "-20vh"]);
-
-  const div2X = useTransform(scrollYProgress, [0, 0.3, 0.7, 1.0], ["60vw", "0vw", "-40vw", "-60vw"]);
-  const div2Y = useTransform(scrollYProgress, [0, 0.3, 0.7, 1.0], ["10vh", "0vh", "0vh", "0vh"]);
+  const scrollVelocity = useVelocity(scrollYProgress);
+  console.log("Hello", scrollVelocity);
+  const div2X = useTransform(
+    scrollYProgress,
+    [0, 0.3, 0.7, 1.0],
+    ["60vw", "0vw", "-40vw", "-60vw"]
+  );
+  const div2Y = useTransform(
+    scrollYProgress,
+    [0, 0.3, 0.7, 1.0],
+    ["10vh", "0vh", "0vh", "0vh"]
+  );
   const div2Opacity = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
   const div2Scale = useTransform(scrollYProgress, [0, 0.3], [2, 1]);
+
   return (
     <div
       className="scrollDiv w-full flex"
@@ -119,7 +147,9 @@ const AboutSection2 = () => {
           y: div2Y,
         }}
       >
-        <div style={{ border: "1px solid red", height: "10vh" }}>Hello</div>
+        <div>
+          <Video />
+        </div>
       </motion.div>
     </div>
   );
@@ -127,7 +157,7 @@ const AboutSection2 = () => {
 
 const AnimatedTest = () => {
   return (
-    <div style={{'overflow': 'hidden'}}>
+    <div style={{ overflow: "hidden" }}>
       <div className="contentDiv h-screen"></div>
       <ThemeText />
       <AboutSection />
