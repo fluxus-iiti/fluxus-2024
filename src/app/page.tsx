@@ -1,9 +1,12 @@
-import About from '@/components/About'
-import Hero from '@/components/Hero'
-import Technicals from '@/components/Technicals'
-import Footer from '@/components/Footer'
-import Cards from '@/components/Cards'
-import Wow from '@/components/Wow'
+import About from '@/components/events/About'
+// import Hero from '@/components/events/Hero'
+import Technicals from '@/components/events/Technicals'
+import Footer from '@/components/events/Footer'
+import Cards from '@/components/events/Cards'
+import Wow from '@/components/events/Wow'
+import AnimatedTest from '@/webpages/AnimatedTest'
+import Hero from '@/webpages/Hero'
+import Navbar from '@/components/main/hero/Navbar'
 import { url } from 'inspector'
 import { motion } from 'framer-motion'
 import AnimatedTest from '@/webpages/AnimatedTest'
@@ -16,7 +19,9 @@ export default function Home() {
       <Cards/>
       <Wow/>
       <Footer/> */}
-      <AnimatedTest/>
+      {/* <AnimatedTest/> */}
+      <Navbar/>
+      <Hero/>
     </>
   )
 }

@@ -9,7 +9,7 @@ import React, { useEffect, useState } from "react";
 //     DialogFooter,
 //   } from "@material-tailwind/react";
 
-import HeadingImage from "../../public/images/Technicals Heading.png";
+import HeadingImage from "../../../public/images/Technicals Heading.png";
 const slideWidth = 30;
 
 const _items = [
@@ -17,35 +17,35 @@ const _items = [
     player: {
       id: 0,
       title: "Hackathon",
-      image: require("../../public/images/image1.png"),
+      image: require("../../../public/images/image1.png"),
     },
   },
   {
     player: {
       id: 1,
       title: "Blockathon",
-      image: require("../../public/images/pngwing 12.png"),
+      image: require("../../../public/images/pngwing 12.png"),
     },
   },
   {
     player: {
       id: 2,
       title: "Blockathon",
-      image: require("../../public/images/pngwing 12.png"),
+      image: require("../../../public/images/pngwing 12.png"),
     },
   },
   {
     player: {
       id: 3,
       title: "Hackathon",
-      image: require("../../public/images/image1.png"),
+      image: require("../../../public/images/image1.png"),
     },
   },
   {
     player: {
       id: 4,
       title: "Blockathon",
-      image: require("../../public/images/pngwing 14.png"),
+      image: require("../../../public/images/pngwing 14.png"),
     },
   },
 ];
@@ -113,7 +113,7 @@ const ModalItem = () => {
 
       <div
         id="modal"
-        className="fixed h-4/5 w-1/2 m-auto z-[100] top-[50%] left-[50%] bg-gray-900 rounded-xl translate-x-[-50%] translate-y-[-50%] overflow-auto"
+        className="fixed h-4/5 w-1/2 m-auto z-[100] top-[50%] left-[50%] bg-gray-900 rounded-xl translate-x-[-50%] translate-y-[-50%] overflow-auto hidden"
       >
         <button
           className="text-white rounded-xl w-10 h-10 text-3xl mt-6 float-right mr-12"

@@ -1,6 +1,6 @@
-"use client";
+// "use client";
 import React from "react";
-import HeadingImage from "../../public/images/Technicals Heading.png";
+import HeadingImage from "../../../public/images/Technicals Heading.png";
 import Image from "next/image";
 
 const Card = ({ backgroundImage, name }) => {
