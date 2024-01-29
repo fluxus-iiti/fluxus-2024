@@ -1,5 +1,5 @@
-// import About from '@/components/About'
-// import Hero from '@/components/Hero'
+import About from '@/components/About'
+import Hero from '@/components/Hero'
 import Technicals from '@/components/Technicals'
 import Footer from '@/components/Footer'
 import Cards from '@/components/Cards'
@@ -8,22 +8,22 @@ import { url } from 'inspector'
 import { motion } from 'framer-motion'
 
 // Importing main website components
-import About from '@/components/Main/About/About'
+import MainAbout from '@/components/Main/About/About'
 import IntroSection from '@/components/Main/IntroSection/IntroSection'
 
 export default function Home() {
   return (
     <>
-      {/* <Hero/>
+      <Hero/>
       <About/>
       <Technicals/>
       <Cards/>
       <Wow/>
-      <Footer/> */}
+      <Footer/>
 
       {/* Main Website Components */}
-      <About/>
-      <IntroSection/>
+      {/* <MainAbout/>
+      <IntroSection/> */}
     </>
   )
 }
