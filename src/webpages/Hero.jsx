@@ -12,80 +12,19 @@ import { useRef } from "react";
 import {
   motion,
   useScroll,
-  useSpring,
   useTransform,
-  useVelocity,
-  AnimatePresence
+  useTime,
+  useAnimation,
 } from "framer-motion";
 import "./styles.css";
 
-const ThemeText = () => {
+export default function Home() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["end end", "start start"],
   });
-  return (
-    <div className="scrollDiv w-full flex flex-col" ref={ref}>
-		<AnimatePresence>
-      <div className="w-full text-center flex word-wrap align-items-center justify-center ofh">
-        {["T", "H", "E", " ", "C", "E", "L", "E", "S", "T", "I", "A", "L"].map(
-          (letter, index) => {
-            const delay = useTransform(
-              scrollYProgress,
-              [0, 1],
-              [`${50 + 1 * index}vh`, "-100vh"]
-            );
-            if (index === 3) {
-              return (
-                <motion.div key={index} style={{ y: delay }} transition={{ ease: "ease-in-out", duration: 0.1 }}>
-                  <div className="scrollText text-white">&nbsp;</div>
-                </motion.div>
-              );
-            }
-            return (
-              <motion.div key={index} style={{ y: delay }} transition={{ ease: "ease-in-out", duration: 0.1 }} >
-                <div className="scrollText text-white">{letter}</div>
-              </motion.div>
-            );
-          }
-        )}
-      </div>
-	  </AnimatePresence>
-	  <div className="w-full text-center flex word-wrap align-items-center justify-center ofh">
-        {["E","U","P","H","O","R","I","A"].map(
-          (letter, index) => {
-            const delay = useTransform(
-              scrollYProgress,
-              [0, 1],
-              [`${50 + 1 * index}vh`, "-100vh"]
-            );
-            if (index === 8) {
-              return (
-                <motion.div key={index} style={{ y: delay }}>
-                  <div className="scrollText text-white">&nbsp;</div>
-                </motion.div>
-              );
-            }
-            return (
-              <motion.div key={index} style={{ y: delay }}>
-                <div className="scrollText text-white">{letter}</div>
-              </motion.div>
-            );
-          }
-        )}
-      </div>
-      <div
-        className="m-2 w-full text-center align-middle"
-        style={{ border: "1px solid red", height: "10%" }}
-      >
-        Dive into the world of Technology
-      </div>
-    </div>
-  );
-};
 
-export default function Home() {
   const [width] = useWindowSize();
 
   useEffect(() => {
@@ -100,55 +39,127 @@ export default function Home() {
   }, [width]);
 
   return (
-    <main>
-      <div className="max-w-full max-h-full relative ">
-        <div className="absolute w-full h-full z-[-2]">
-          <SaturnPlanet />
-        </div>
-        <div id="content" className={`relative  w-full h-full top-0 grid `}>
-          <div className="grid  grid-cols-3 absolute">
-            <div className="z-[-3] translate-y-[55px]">
-              <LeftSmokeDust />
-            </div>
-            <div className=""></div>
-            <div className="z-[-3] -translate-y-[10px]">
-              <RightSmokeDust />
-            </div>
+    <motion.div drag="y">
+      <main className="overflow-hidden">
+        <div className="max-w-full max-h-full relative ">
+          <div className="absolute w-full h-full z-[-2]">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{
+                duration: 2.5,
+                type: "spring",
+                damping: 50,
+                mass: 0.5,
+                stiffness: 50,
+              }}
+              variants={{
+                visible: { y: "0vh", opacity: 1 },
+                hidden: { y: "50vh", opacity: 0 },
+              }}
+            >
+              <SaturnPlanet />
+            </motion.div>
           </div>
-          <div></div>
-          <div className="grid justify-center items-center grid-cols-[0.4fr_1fr_0.4fr]">
-            <div></div>
-            <div className=" ">
-              <MainLogo />
+          <div id="content" className={`relative  w-full h-full top-0 grid `}>
+            <div className="grid  grid-cols-3 absolute">
+              <div className="z-[-3] translate-y-[55px]">
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 2.5,
+                    type: "spring",
+                    damping: 60,
+                    mass: 0.5,
+                    stiffness: 50,
+                  }}
+                  variants={{
+                    visible: { y: "0vh", opacity: 1, x: "0vw" },
+                    hidden: { y: "-10vh", opacity: 0, x: "-10vw" },
+                  }}
+                >
+                  <LeftSmokeDust />
+                </motion.div>
+              </div>
+              <div className=""></div>
+              <div className="z-[-3] -translate-y-[10px]">
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 2.5,
+                    type: "spring",
+                    damping: 60,
+                    mass: 0.5,
+                    stiffness: 50,
+                  }}
+                  variants={{
+                    visible: { y: "0vh", opacity: 1, x: "0vw" },
+                    hidden: { y: "-10vh", opacity: 0, x: "10vw" },
+                  }}
+                >
+                  <RightSmokeDust />
+                </motion.div>
+              </div>
             </div>
             <div></div>
-          </div>
+            <div className="grid justify-center items-center grid-cols-[0.3fr_1fr_0.3fr]">
+              <div></div>
+              <div className=" ">
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 2.5,
+                    type: "spring",
+                    damping: 50,
+                    mass: 0.5,
+                    stiffness: 50,
+                  }}
+                  variants={{
+                    visible: { y: "0vh", opacity: 1 },
+                    hidden: { y: "-70vh", opacity: 0 },
+                  }}
+                >
+                  <MainLogo />
+                </motion.div>
+              </div>
+              <div></div>
+            </div>
 
-          {/* <div id="main_text" className='   flex justify-center'>
-						<MainText />
-					</div> */}
-          <ThemeText />
+            <div id="main_text" className="flex justify-center">
+              <MainText />
+            </div>
+            {/* <ThemeText /> */}
+          </div>
+          <div>
+            <div className="flex justify-center items-center">
+              <hr id="hr" />
+            </div>
+            <div className="text-white text-center my-1 text-[2rem]">
+              Dive into the realm of technology
+            </div>
+            <div className="flex justify-center items-center">
+              <hr id="hr" />
+            </div>
+          </div>
         </div>
-        {/* <div>
-					<div className='flex justify-center items-center mt-3 sm:mt-6 lg::mt-10'>
-						<hr id="hr" />
-					</div>
-					<div className='text-white text-center my-1'>Dive into the realm of technology</div>
-					<div className='flex justify-center items-center mb-10'>
-						<hr id="hr" />
-					</div>
-				</div> */}
-      </div>
-      <style jsx>
-        {`
-          #hr {
-            height: 2px;
-            background-color: white;
-            width: 95%;
-            border-style: none;
-          }
-        `}
-      </style>
-    </main>
+        <style jsx>
+          {`
+            #hr {
+              height: 2px;
+              background-color: white;
+              width: 95%;
+              border-style: none;
+            }
+          `}
+        </style>
+      </main>
+    </motion.div>
   );
 }
