@@ -54,6 +54,11 @@ const divsVariants: Variants = {
 };
 
 // import AnimatedTest from '@/webpages/AnimatedTest'
+
+// Importing main website components
+import MainAbout from '@/components/Main/About/About'
+import IntroSection from '@/components/Main/IntroSection/IntroSection'
+
 export default function Home() {
   const [containerSize, setContainerSize] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null!);
@@ -119,3 +124,4 @@ export default function Home() {
     </>
   )
 }
+
