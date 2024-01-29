@@ -11,6 +11,11 @@ import { url } from 'inspector'
 import { motion } from 'framer-motion'
 import Header from '@/webpages/Header'
 // import AnimatedTest from '@/webpages/AnimatedTest'
+
+// Importing main website components
+import MainAbout from '@/components/Main/About/About'
+import IntroSection from '@/components/Main/IntroSection/IntroSection'
+
 export default function Home() {
   return (
     <>
@@ -24,6 +29,12 @@ export default function Home() {
       {/* <Navbar/>
       <Hero/> */}
       <Header/>
+
+      
+      {/* Main Website Components */}
+      {/* <MainAbout/>
+      <IntroSection/> */}
     </>
   )
 }
+

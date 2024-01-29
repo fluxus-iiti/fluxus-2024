@@ -3,6 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
 
 @layer utilities {
   .debug {
@@ -226,4 +228,14 @@ a {
   /* height: 100vh; */
   background-size: cover;
   background-repeat: repeat;
+}
+
+
+/* Font CSS */
+.font-mate{
+  font-family: 'Mate', serif;
+}
+
+.font-metrophobic{
+  font-family: 'Metrophobic', sans-serif;
 }
