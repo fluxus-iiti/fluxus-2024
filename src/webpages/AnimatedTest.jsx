@@ -14,7 +14,6 @@ const ThemeText = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["end end", "start start"],
   });
   return (
     <div className="scrollDiv w-full flex flex-col" ref={ref}>

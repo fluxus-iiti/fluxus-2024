@@ -1,5 +1,5 @@
 import react, { useRef } from "react";
-import { motion, useScroll, useSpring } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 export default function MainText() {
   const ref = useRef(null);
@@ -7,21 +7,44 @@ export default function MainText() {
     target: ref,
     offset: ["end end", "start start"],
   });
-  
+
   return (
-    <motion.div
-      className="w-full pt-48 intro overflow-hidden"
-      ref={ref}
-      transition={{ type: "inertia", duration: 0.5, ease: "easeInOut" }}
-    >
-      <div className="text-white text-center lg:text-[20rem]  border-0 w-full lg:!my-[-140px] !py-0 text-[35px] sm:text-[70px] sm:my-[-0px] font-serif">
-        {"A CELESTIAL".split().map((letter, index) => {
-          return <motion.span key={index}>{letter}</motion.span>;
+    <motion.div className="w-full pt-48 intro overflow-hidden">
+      <motion.div
+        ref={ref}
+        className="text-white text-center lg:text-[20rem]  border-0 w-full lg:!my-[-140px] !py-0 text-[35px] sm:text-[70px] sm:my-[-0px] font-serif"
+      >
+        {"A CELESTIAL".split("").map((letter, index) => {
+          const delay = useTransform(
+            scrollYProgress,
+            [0, 0.05],
+            [`${20 + 3 * index}vh`, "0vh"]
+          );
+          if (index === 1) {
+            return (
+              <motion.div
+                key={index}
+                style={{ y: delay, display: "inline-block" }}
+                // initial={{ y: "0vh" }}
+              >
+                &nbsp;
+              </motion.div>
+            );
+          }
+          return (
+            <motion.div
+              key={index}
+              style={{ y: delay, display: "inline-block" }}
+              // initial={{ y: "0vh" }}
+            >
+              {letter}
+            </motion.div>
+          );
         })}
-      </div>
+      </motion.div>
       <div className="text-white text-center lg:text-[24rem]  border-0 w-full lg:!my-[-100px] my-[-20px] text-[50px] !py-0 sm:text-[100px] sm:my-[-40px]">
         <div>
-          {"EUPHORIA".split().map((letter, index) => {
+          {"EUPHORIA".split("").map((letter, index) => {
             return <motion.span key={index}>{letter}</motion.span>;
           })}
         </div>
@@ -29,9 +52,6 @@ export default function MainText() {
     </motion.div>
   );
 }
-
-
-
 
 // const ThemeText = () => {
 //   const ref = useRef(null);
