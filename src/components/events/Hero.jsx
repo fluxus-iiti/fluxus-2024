@@ -1,7 +1,7 @@
 // "use client";
 import React from "react";
 import Image from "next/image";
-import styles from "../../styles/Hero.module.css";
+import styles from "../../styles/hero.module.css";
 import HeroBackground from "../../../public/images/hero-section/starSpace.png";
 import Planet from "../../../public/images/hero-section/planet.png";
 import Moon from "../../../public/images/hero-section/moon.png";
