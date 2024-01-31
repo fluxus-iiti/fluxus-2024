@@ -2,30 +2,26 @@ import react, { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 export default function MainText() {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["end end", "start start"],
+  const { scrollYProgress } = useScroll();
+  const springScroll = useSpring(scrollYProgress, {
+    stiffness: 300,
+    damping: 40,
   });
 
   return (
     <motion.div className="w-full pt-48 intro overflow-hidden">
-      <motion.div
-        ref={ref}
-        className="text-white text-center lg:text-[20rem]  border-0 w-full lg:!my-[-140px] !py-0 text-[35px] sm:text-[70px] sm:my-[-0px] font-serif"
-      >
+      <motion.div className="text-white text-center lg:text-[20rem]  border-0 w-full lg:!my-[-140px] !py-0 text-[35px] sm:text-[70px] sm:my-[-0px] font-serif">
         {"A CELESTIAL".split("").map((letter, index) => {
           const delay = useTransform(
-            scrollYProgress,
-            [0, 0.05],
-            [`${20 + 3 * index}vh`, "0vh"]
+            springScroll,
+            [0, 0.06 - 0.001 * (11 - index), 0.08, 0.2],
+            [`${20 + 10 * index}vh`, "0vh", "0vh", `${200 - 10 * index}vh`]
           );
           if (index === 1) {
             return (
               <motion.div
                 key={index}
                 style={{ y: delay, display: "inline-block" }}
-                // initial={{ y: "0vh" }}
               >
                 &nbsp;
               </motion.div>
@@ -35,17 +31,29 @@ export default function MainText() {
             <motion.div
               key={index}
               style={{ y: delay, display: "inline-block" }}
-              // initial={{ y: "0vh" }}
             >
               {letter}
             </motion.div>
           );
         })}
       </motion.div>
-      <div className="text-white text-center lg:text-[24rem]  border-0 w-full lg:!my-[-100px] my-[-20px] text-[50px] !py-0 sm:text-[100px] sm:my-[-40px]">
+      <div className="text-white text-center lg:text-[24rem]  border-0 w-full lg:!my-[-100px] my-[-20px] text-[50px] !py-0 sm:text-[100px] sm:my-[-40px]  overflow-hidden">
         <div>
           {"EUPHORIA".split("").map((letter, index) => {
-            return <motion.span key={index}>{letter}</motion.span>;
+            const delay = useTransform(
+              springScroll,
+              [0, 0.06 - 0.001 * (8 - index), 0.08, 0.2],
+              [`${20 + 10 * index}vh`, "0vh", "0vh", `${200 - 10 * index}vh`]
+            );
+            return (
+              <motion.div
+                key={index}
+                style={{ y: delay, display: "inline-block" }}
+                // initial={{ y: "0vh" }}
+              >
+                {letter}
+              </motion.div>
+            );
           })}
         </div>
       </div>
