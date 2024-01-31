@@ -187,7 +187,7 @@ const sleep = (ms = 0) => {
 const createItem = (position, idx) => {
   const item = {
     styles: {
-      transform: `translateX(${position * slideWidth}rem)`,
+      transform: `translateX(${(position * slideWidth)-100}rem)`,
     },
     player: _items[idx].player,
   };

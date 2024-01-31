@@ -1,25 +1,29 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import VideoSection from "./VideoSection";
 import TextSection from "./TextSection";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion, spring, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const About = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1.33", "1 0"],
+    offset: ["0 1", "1.33 1"],
   });
   const springScroll = useSpring(scrollYProgress, {
     stiffness: 50,
     damping: 40,
   });
-  const textX = useTransform(scrollYProgress, [0, 0.2], ["-100vw", "0vw"]);
+  const textX = useTransform(springScroll, [0, 1], ["-100vw", "0vw"]);
+
+  useEffect(() => {
+    console.log(scrollYProgress);
+  }, [scrollYProgress]);
 
   return (
-    <div className="flex md:space-x-10 flex-col md:flex-row md:ml-40 items-center" ref={ref}>
-      <motion.div style={{ x: textX }}>
+    <div className="flex md:space-x-10 flex-col md:flex-row md:ml-40 items-center">
+      <motion.div style={{ x: textX }} ref={ref}>
         <TextSection />
       </motion.div>
       <VideoSection />
