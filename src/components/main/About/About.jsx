@@ -14,16 +14,16 @@ import {
 import { useEffect } from "react";
 
 const About = () => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-    if (!inView) {
-      controls.start("hidden");
-    }
-  }, [controls, inView]);
+  // const controls = useAnimation();
+  // const [ref, inView] = useInView();
+  // useEffect(() => {
+  //   if (inView) {
+  //     controls.start("visible");
+  //   }
+  //   if (!inView) {
+  //     controls.start("hidden");
+  //   }
+  // }, [controls, inView]);
   const { scrollYProgress } = useScroll({
     offset: ["end end", "start start"],
   });

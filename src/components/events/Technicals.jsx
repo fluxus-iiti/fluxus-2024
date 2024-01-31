@@ -168,9 +168,19 @@ const CarouselSlideItem = ({ pos, idx, activeIdx }) => {
           <h4>{item.player.title}</h4>
         </div>
 
-        <div className="text-center w-full  translate-y-[50px] opacity-0 group-hover:opacity-100 transition-all fade-in-out delay-100 !text-2xl cursor-pointer">
+        {/* <div className="text-center w-full  translate-y-[50px] opacity-0 group-hover:opacity-100 transition-all fade-in-out delay-100 !text-2xl cursor-pointer">
           <h4>Know More</h4>
-        </div>
+        </div> */}
+        <button className="text-center translate-x-[60px] translate-y-[50px] opacity-0 group-hover:opacity-100 transition-all fade-in-out delay-100 !text-2xl cursor-pointer border-[1px] py-2 rounded-xl w-[150px]">
+          <h4>Coming Soon! </h4>
+        </button>
+        {/* <button
+          className="block text-white focus:outline-none focus:ring-black-300 font-large rounded-lg text-large px-10 py-5 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800 m-auto"
+          type="button"
+          // onClick={modalOpenerHandler}
+        >
+          Coming Soon...
+        </button> */}
       </div>
     </li>
   );
@@ -183,7 +193,6 @@ const Technicals = () => {
   const [isTicking, setIsTicking] = React.useState(false);
   const [activeIdx, setActiveIdx] = React.useState(0);
   const bigLength = items.length;
-
   const prevClick = (jump = 1) => {
     if (!isTicking) {
       setIsTicking(true);
