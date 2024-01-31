@@ -11,6 +11,7 @@ import Hero from "@/webpages/Hero";
 import Navbar from "@/components/main/hero/Navbar";
 import { url } from "inspector";
 import Header from "@/webpages/Header";
+import Events from "@/components/events/Events";
 
 import {
   motion,
@@ -132,9 +133,10 @@ export default function Home() {
 
   return (
     <>
+      <Events/>
       {/* <Hero/> */}
       {/* <About/> */}
-      <Technicals/>
+      {/* <Technicals/> */}
       {/* <Cards/>
       <Wow/>
       <Footer/> */}

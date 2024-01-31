@@ -2,7 +2,9 @@
 
 .festName{
   color: #fff;
-  /* text-align: center; */
+  text-align: center;
+  width: 100%;
+  text-align: center;
   font-family: Black Han Sans;
   font-size: 200px;
   font-style: normal;
