@@ -64,9 +64,17 @@ a {
   left: 50%;
   transform: translateX(-50%);
 }
+.carousel__slide-item2 {
+  display: inline-block;
+  height: 32rem;
+  margin: 0;
+  padding: 1rem;
+  transition: all 0.3s;
+  width: 30rem;
+}
 
 .carousel__inner {
-  height: 40rem;
+  height: 42rem;
   border: 0px white solid;
   position: relative;
   width: calc(90rem);

@@ -174,11 +174,13 @@ const _items = [
       title: "Building Blochs",
       image: require("../../../public/images/pngwing 14.png"),
     },
-  }
+  },
 ];
 
+const itemsModal = _items.slice();
+
 const length = _items.length;
-// _items.push(..._items);
+_items.push(..._items);
 
 const sleep = (ms = 0) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -187,7 +189,7 @@ const sleep = (ms = 0) => {
 const createItem = (position, idx) => {
   const item = {
     styles: {
-      transform: `translateX(${(position * slideWidth)-100}rem)`,
+      transform: `translateX(${position * slideWidth - 540}rem)`,
     },
     player: _items[idx].player,
   };
@@ -195,13 +197,13 @@ const createItem = (position, idx) => {
   switch (position) {
     case length - 1:
     case length + 1:
-      item.styles = { ...item.styles, filter: "grayscale(0)" };
+      item.styles = { ...item.styles, filter: "grayscale(1)" };
       item.styles.transform += " translateY(-30px)";
       break;
     case length:
       break;
     default:
-      item.styles = { ...item.styles, opacity: 0 };
+      item.styles = { ...item.styles, opacity: 1 };
       break;
   }
 
@@ -212,14 +214,17 @@ const ModalItem = () => {
   const [open, setOpen] = useState(0);
   const modalOpenerHandler = () => {
     setOpen(1);
+    console.log(open);
   };
 
   const modalCloserHandler = () => {
     setOpen(0);
+    console.log(open);
   };
 
   useEffect(() => {
     const modal = document.getElementById("modal");
+    console.log(open);
     open == 0
       ? (modal.style.display = "none")
       : (modal.style.display = "block");
@@ -228,11 +233,11 @@ const ModalItem = () => {
   return (
     <div className="">
       <button
-        className="block text-white bg-gray-700 hover:bg-gray-800 focus:outline-none focus:ring-gray-300 font-large rounded-lg text-large px-10 py-5 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800 mx-auto"
+        className="block text-white bg-gray-700 hover:bg-gray-800 focus:outline-none focus:ring-gray-300 font-large rounded-lg text-large px-10 py-5 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800 m-auto"
         type="button"
         onClick={modalOpenerHandler}
       >
-        View All
+        Know More
       </button>
 
       <div
@@ -249,21 +254,28 @@ const ModalItem = () => {
         <hr />
         <>
           <div className="flex flex-wrap m-auto justify-around">
-            {_items?.map((item, e) => (
-              <div id="card" className={`rounded-b-[40px] m-6`} key={e}>
-                <Image
-                  src={item.player.image}
-                  alt={item.player.title}
-                  className="lg:!w-[200px] lg:!h-[200px] !w-[150px] !h-[150px] brightness-50  mx-auto group-hover:brightness-100 transition-all fade-in-out !drop-shadow-2xl !shadow-white"
-                />
-                <div className="text-center text-black text-5xl font-bold translate-y-10">
-                  <h4>{item.player.title}</h4>
-                </div>
+            {itemsModal?.map((item) => (
+              <>
+                <li
+                  className={`carousel__slide-item2 group hover:!h-[38rem] transition-all fade-in-out`}
+                  style={item.styles}
+                >
+                  <div id="card" className={`h-full   rounded-b-[40px] `}>
+                    <Image
+                      src={item.player.image}
+                      alt={item.player.title}
+                      className="lg:!w-[200px] lg:!h-[200px] !w-[150px] !h-[150px] brightness-50  mx-auto group-hover:brightness-100 transition-all fade-in-out !drop-shadow-2xl !shadow-white"
+                    />
+                    <div className="text-center text-5xl font-bold translate-y-10">
+                      <h4>{item.player.title}</h4>
+                    </div>
 
-                <div className="text-center m-10 text-black cursor-pointer">
-                  <h4 className="text-black p-5">Know More</h4>
-                </div>
-              </div>
+                    <button className="text-center translate-x-[60px] translate-y-[50px] opacity-0 group-hover:opacity-100 transition-all fade-in-out delay-100 !text-2xl cursor-pointer border-[1px] py-2 rounded-xl w-[150px]">
+                      <h4>Coming Soon! </h4>
+                    </button>
+                  </div>
+                </li>
+              </>
             ))}
           </div>
         </>
@@ -277,10 +289,10 @@ const CarouselSlideItem = ({ pos, idx, activeIdx }) => {
   console.log(item);
   return (
     <li
-      className={`carousel__slide-item group hover:!h-[36rem] transition-all fade-in-out`}
+      className={`carousel__slide-item  group hover:!h-[38rem] transition-all fade-in-out`}
       style={item.styles}
     >
-      <div id="card" className={`h-full  rounded-b-[40px] `}>
+      <div id="card" className={`h-full   rounded-b-[40px] `}>
         <Image
           src={item.player.image}
           alt={item.player.title}
@@ -290,19 +302,9 @@ const CarouselSlideItem = ({ pos, idx, activeIdx }) => {
           <h4>{item.player.title}</h4>
         </div>
 
-        {/* <div className="text-center w-full  translate-y-[50px] opacity-0 group-hover:opacity-100 transition-all fade-in-out delay-100 !text-2xl cursor-pointer">
-          <h4>Know More</h4>
-        </div> */}
         <button className="text-center translate-x-[60px] translate-y-[50px] opacity-0 group-hover:opacity-100 transition-all fade-in-out delay-100 !text-2xl cursor-pointer border-[1px] py-2 rounded-xl w-[150px]">
           <h4>Coming Soon! </h4>
         </button>
-        {/* <button
-          className="block text-white focus:outline-none focus:ring-black-300 font-large rounded-lg text-large px-10 py-5 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800 m-auto"
-          type="button"
-          // onClick={modalOpenerHandler}
-        >
-          Coming Soon...
-        </button> */}
       </div>
     </li>
   );
@@ -311,10 +313,10 @@ const CarouselSlideItem = ({ pos, idx, activeIdx }) => {
 const keys = Array.from(Array(_items.length).keys());
 const Technicals = () => {
   const [items, setItems] = React.useState(keys);
-  console.log(items);
   const [isTicking, setIsTicking] = React.useState(false);
   const [activeIdx, setActiveIdx] = React.useState(0);
   const bigLength = items.length;
+
   const prevClick = (jump = 1) => {
     if (!isTicking) {
       setIsTicking(true);
@@ -398,67 +400,51 @@ const Technicals = () => {
         </a>
         .
       </div>
-
       <div className="md:translate-y-[-150px]">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          transition={{
-            type: "spring",
-            mass: 0.5,
-            damping: 60,
-            stiffness: 40,
-          }}
-          variants={{
-            visible: { y: "0vh" },
-            hidden: { y: "10vh" },
-          }}
-        >
-          {/* <div> */}
-          <div id="html" className="carousel__wrap ">
-            <div className="carousel__inner">
-              <button
-                className="carousel__btn carousel__btn--prev !hidden lg:!flex"
-                onClick={() => prevClick()}
-              >
-                <i className="carousel__btn-arrow carousel__btn-arrow--left" />
-              </button>
-              <div className="carousel__container">
-                <ul className="carousel__slide-list ">
-                  {items.map((pos, i) => (
-                    <div className="">
-                      <CarouselSlideItem
-                        key={i}
-                        idx={i}
-                        pos={pos}
-                        activeIdx={activeIdx}
-                      />
-                    </div>
-                  ))}
-                </ul>
-              </div>
-              <button
-                className="carousel__btn carousel__btn--next !hidden lg:!flex"
-                onClick={() => nextClick()}
-              >
-                <i className="carousel__btn-arrow carousel__btn-arrow--right" />
-              </button>
-              <div className="carousel__dots lg:hidden">
-                {items.slice(0, length).map((pos, i) => (
-                  <button
-                    key={i}
-                    onClick={() => handleDotClick(i)}
-                    className={i === activeIdx ? "dot active" : "dot"}
-                  />
+        {/* <div> */}
+        <div id="html" className="carousel__wrap ">
+          <div className="carousel__inner">
+            <button
+              className="carousel__btn carousel__btn--prev !hidden lg:!flex"
+              onClick={() => prevClick()}
+            >
+              <i className="carousel__btn-arrow carousel__btn-arrow--left" />
+            </button>
+            <div className="carousel__container">
+              <ul className="carousel__slide-list ">
+                {items.map((pos, i) => (
+                  <div className="">
+                    <CarouselSlideItem
+                      key={i}
+                      idx={i}
+                      pos={pos}
+                      activeIdx={activeIdx}
+                    />
+                  </div>
                 ))}
-              </div>
+              </ul>
             </div>
-
-            <style jsx>{``}</style>
+            <button
+              className="carousel__btn carousel__btn--next !hidden lg:!flex"
+              onClick={() => nextClick()}
+            >
+              <i className="carousel__btn-arrow carousel__btn-arrow--right" />
+            </button>
+            <div className="carousel__dots lg:hidden">
+              {items.slice(0, length).map((pos, i) => (
+                <button
+                  key={i}
+                  onClick={() => handleDotClick(i)}
+                  className={i === activeIdx ? "dot active" : "dot"}
+                />
+              ))}
+            </div>
           </div>
-        </motion.div>
+
+          <style jsx>{``}</style>
+        </div>
       </div>
-      <div className="mb-10 lg:mt-[-16vh] mt-24">
+      <div className="mb-10 lg:mt-[-16vh] mt-48 md:mt-0">
         <ModalItem />
       </div>
     </>
