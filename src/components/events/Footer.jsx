@@ -42,7 +42,7 @@ const Technicals = () => {
               transition={{ duration: 0.5, ease: "easeOut" }}
               className="w-full mt-8 text-3xl text-gray-400"
             >
-              "Central India's Biggest and Most Anticipated Event"
+              &quot;Central India&apos;s Biggest and Most Anticipated Event&quot;
             </motion.div>
             {/* <motion.div                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}

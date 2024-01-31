@@ -46,7 +46,7 @@ const Cards = () => {
         </div>
         <div className="culturals">
           <>
-            <img
+            <Image
               src="/images/planet image.png"
               alt="Left Image"
               className="left-image relative z-0"

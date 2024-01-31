@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Navbar() {
   return (
-    <div className=" px-2 py-2 relative">
+    <div className=" px-2 py-2 relative overflow-hidden">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -21,8 +21,8 @@ export default function Navbar() {
           hidden: { y: "0vh", opacity: 0 },
         }}
       >
-        <div className="absolute top-0 left-0 w-full h-full my-auto flex  ">
-          <HiBars3 className="w-14 h-14 my-auto mx-10 text-white mt-10" />
+        <div className="absolute top-5 left-5 w-full h-full my-auto flex font-weight-700 text-white text-2xl">
+          <a href="/technicals">Technicals</a>
         </div>
       </motion.div>
       <div className="w-full flex justify-center items-center">
@@ -47,6 +47,21 @@ export default function Navbar() {
           />
         </motion.div>
       </div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{
+          duration: 2.5,
+          type: "spring",
+          delay: 1,
+        }}
+        variants={{
+          visible: { y: "1vh", opacity: 1 },
+          hidden: { y: "0vh", opacity: 0 },
+        }}
+      >
+      </motion.div>
     </div>
   );
 }

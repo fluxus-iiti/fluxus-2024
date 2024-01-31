@@ -16,7 +16,6 @@ import {
   useTime,
   useAnimation,
 } from "framer-motion";
-import "./styles.css";
 
 export default function Home() {
   const ref = useRef(null);

@@ -413,7 +413,7 @@ const Technicals = () => {
             <div className="carousel__container">
               <ul className="carousel__slide-list ">
                 {items.map((pos, i) => (
-                  <div className="">
+                  <div className="" key={i}>
                     <CarouselSlideItem
                       key={i}
                       idx={i}

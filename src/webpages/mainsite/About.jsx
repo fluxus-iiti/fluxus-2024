@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
-import VideoSection from "./VideoSection";
-import TextSection from "./TextSection";
+import VideoSection from "../../components/main/About/VideoSection";
+import TextSection from "../../components/main/About/TextSection";
 import { motion, spring, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 

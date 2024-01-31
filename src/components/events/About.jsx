@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 // pages/index.js
 import React from "react";
 import Image from "next/image";
@@ -74,7 +74,7 @@ const About = () => {
                   hidden: { opacity: 0, x: "-30vh" },
                 }}
               >
-                <Image src={about} className="imag" />
+                <Image src={about} className="imag" alt="" />
               </motion.div>
             </div>
             <div className="flex text xl:w-2/3 w-full mx-[0vw]">
@@ -99,9 +99,9 @@ const About = () => {
                   students have proved their mettle in various arenas across the
                   country. Given this long list of achievements, it is evident
                   that we are hungry to prove ourselves even further and achieve
-                  even greater heights. Fluxus, IIT Indore's annual
+                  even greater heights. Fluxus, IIT Indore&apos;s annual
                   techno-cultural fest, proudly wears the crown of“Central
-                  India's Biggest and Most Anticipated Event”.Fluxus flaunts
+                  India&apos;s Biggest and Most Anticipated Event”.Fluxus flaunts
                   guest appearances from Bollywood artists and stand-up
                   comedians like Farhan Akhtar, Sunidhi Chauhan, Shirley Setia,
                   Amit Trivedi, Salim - Sulaiman and Zakir Khan while providing
@@ -109,7 +109,7 @@ const About = () => {
                   Train. We are now back with the Tenth Edition of Fluxus, which
                   will be Bigger, Brighter and Better than ever! With
                   preparations in full swing, there is little doubt that this
-                  year's Fluxus will be its most unforgettable edition yet.
+                  year&apos;s Fluxus will be its most unforgettable edition yet.
                 </p>
               </motion.div>
             </div>

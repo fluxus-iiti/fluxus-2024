@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
-import IntroImage from "./IntroImage";
-import IntroText from "./IntroText";
+import IntroImage from "../../components/main/IntroSection/IntroImage";
+import IntroText from "../../components/main/IntroSection/IntroText";
 import {
   motion,
   useScroll,
