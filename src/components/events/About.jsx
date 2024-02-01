@@ -16,7 +16,7 @@ const About = () => {
         }}
       >
         <div className="main">
-          <motion.div
+          {/* <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -30,7 +30,7 @@ const About = () => {
               visible: { x: "0vw" },
               hidden: { x: "99vw" },
             }}
-          >
+          > */}
             <div id="heading" className="relative overflow-x-hidden">
               <Image
                 src={HeadingImage}
@@ -38,7 +38,7 @@ const About = () => {
                 !h-[20%] transform -scale-x-100 float-right"
                 alt={""}
               />
-              <motion.div
+              {/* <motion.div
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -52,13 +52,13 @@ const About = () => {
                   visible: { opacity: 1 },
                   hidden: { opacity: 0 },
                 }}
-              >
+              > */}
                 <h1 className="text-white w-full sm:text-[25px] lg:!text-[50px] font-extrabold flex absolute md:left-2/3 sm:left-1/2 top-1/2 -translate-y-1/2 text-[18px] left-[50%]">
                   About Fluxus
                 </h1>
-              </motion.div>
+              {/* </motion.div> */}
             </div>
-          </motion.div>
+          {/* </motion.div> */}
           <div className="flex justify-center items-center flex-row mx-20">
             <div className="flex w-1/3 hidden lg:block ml-5 self-center">
               <motion.div

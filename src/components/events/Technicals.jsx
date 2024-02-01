@@ -346,7 +346,7 @@ const Technicals = () => {
 
   return (
     <>
-      <motion.div
+      {/* <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -360,7 +360,7 @@ const Technicals = () => {
           visible: { x: "0vw" },
           hidden: { x: "-99vw" },
         }}
-      >
+      > */}
         <div id="heading" className="relative overflow-x-hidden">
           <Image
             src={HeadingImage}
@@ -368,7 +368,7 @@ const Technicals = () => {
                 !h-[20%]"
             alt={""}
           />
-          <motion.div
+          {/* <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -382,13 +382,13 @@ const Technicals = () => {
               visible: { opacity: 1 },
               hidden: { opacity: 0 },
             }}
-          >
+          > */}
             <h1 className="text-white absolute ml-10 w-full h-full text-[25px] lg:!text-[50px] font-extrabold text-start flex items-center top-0">
               Technicals
             </h1>
-          </motion.div>
+          {/* </motion.div> */}
         </div>
-      </motion.div>
+      {/* </motion.div> */}
       <div className="mx-auto justify-center text-center text-white text-2xl w-3/4 md:top-[-50px] relative">
         You can check out all the events on our Unstop Page by clicking on the{" "}
         <a href="https://unstop.com/college-fests/fluxus-iit-indore-indian-institute-of-technology-iit-indore-197772">
