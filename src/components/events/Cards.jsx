@@ -47,7 +47,7 @@ const Cards = () => {
         <div className="culturals">
           <>
             <Image
-              src="/images/planet image.png"
+              src="/images/purpleplanet.png"
               alt="Left Image"
               className="left-image relative z-0"
             />

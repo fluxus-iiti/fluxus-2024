@@ -10,7 +10,7 @@ import React, { useEffect, useState } from "react";
 //   } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 
-import HeadingImage from "../../../public/images/Technicals Heading.png";
+import HeadingImage from "../../../public/images/meteor.png";
 const slideWidth = 30;
 
 const _items = [
@@ -18,161 +18,161 @@ const _items = [
     player: {
       id: 0,
       title: "Manthan",
-      image: require("../../../public/images/image1.png"),
+      image: require("../../../public/images/planet1.png"),
     },
   },
   {
     player: {
       id: 1,
       title: "Pick n Place",
-      image: require("../../../public/images/pngwing 12.png"),
+      image: require("../../../public/images/planet2.png"),
     },
   },
   {
     player: {
       id: 2,
       title: "Nitrothrust",
-      image: require("../../../public/images/pngwing 12.png"),
+      image: require("../../../public/images/planet2.png"),
     },
   },
   {
     player: {
       id: 3,
       title: "Aero Artistry",
-      image: require("../../../public/images/image1.png"),
+      image: require("../../../public/images/planet1.png"),
     },
   },
   {
     player: {
       id: 4,
       title: "RoboSoccer",
-      image: require("../../../public/images/pngwing 14.png"),
+      image: require("../../../public/images/planet3.png"),
     },
   },
   {
     player: {
       id: 5,
       title: "Obstacourse",
-      image: require("../../../public/images/pngwing 14.png"),
+      image: require("../../../public/images/planet3.png"),
     },
   },
   {
     player: {
       id: 6,
       title: "Margdarshak",
-      image: require("../../../public/images/pngwing 12.png"),
+      image: require("../../../public/images/planet2.png"),
     },
   },
   {
     player: {
       id: 7,
       title: "Robowrestling",
-      image: require("../../../public/images/image1.png"),
+      image: require("../../../public/images/planet1.png"),
     },
   },
   {
     player: {
       id: 8,
       title: "RoboShooter",
-      image: require("../../../public/images/image1.png"),
+      image: require("../../../public/images/planet1.png"),
     },
   },
   {
     player: {
       id: 9,
       title: "Gesture Control Car",
-      image: require("../../../public/images/pngwing 12.png"),
+      image: require("../../../public/images/planet2.png"),
     },
   },
   {
     player: {
       id: 10,
       title: "Trading Vault",
-      image: require("../../../public/images/pngwing 14.png"),
+      image: require("../../../public/images/planet3.png"),
     },
   },
   {
     player: {
       id: 11,
       title: "ReDesign",
-      image: require("../../../public/images/image1.png"),
+      image: require("../../../public/images/planet1.png"),
     },
   },
   {
     player: {
       id: 12,
       title: "Euristica",
-      image: require("../../../public/images/pngwing 12.png"),
+      image: require("../../../public/images/planet2.png"),
     },
   },
   {
     player: {
       id: 13,
       title: "Enosium",
-      image: require("../../../public/images/image1.png"),
+      image: require("../../../public/images/planet1.png"),
     },
   },
   {
     player: {
       id: 14,
       title: "CFA Conclave - Consulting",
-      image: require("../../../public/images/pngwing 14.png"),
+      image: require("../../../public/images/planet3.png"),
     },
   },
   {
     player: {
       id: 15,
       title: "CFA Conclave - Finance",
-      image: require("../../../public/images/image1.png"),
+      image: require("../../../public/images/planet1.png"),
     },
   },
   {
     player: {
       id: 16,
       title: "CFA Conclave - Analytics",
-      image: require("../../../public/images/pngwing 12.png"),
+      image: require("../../../public/images/planet2.png"),
     },
   },
   {
     player: {
       id: 17,
       title: "Concastle",
-      image: require("../../../public/images/image1.png"),
+      image: require("../../../public/images/planet1.png"),
     },
   },
   {
     player: {
       id: 18,
       title: "Overtinker",
-      image: require("../../../public/images/pngwing 14.png"),
+      image: require("../../../public/images/planet3.png"),
     },
   },
   {
     player: {
       id: 19,
       title: "Trace it Out",
-      image: require("../../../public/images/image1.png"),
+      image: require("../../../public/images/planet1.png"),
     },
   },
   {
     player: {
       id: 20,
       title: "MetaBizz",
-      image: require("../../../public/images/pngwing 12.png"),
+      image: require("../../../public/images/planet2.png"),
     },
   },
   {
     player: {
       id: 21,
       title: "Nakshatra",
-      image: require("../../../public/images/image1.png"),
+      image: require("../../../public/images/planet1.png"),
     },
   },
   {
     player: {
       id: 22,
       title: "Building Blochs",
-      image: require("../../../public/images/pngwing 14.png"),
+      image: require("../../../public/images/planet3.png"),
     },
   },
 ];
@@ -214,17 +214,14 @@ const ModalItem = () => {
   const [open, setOpen] = useState(0);
   const modalOpenerHandler = () => {
     setOpen(1);
-    console.log(open);
   };
 
   const modalCloserHandler = () => {
     setOpen(0);
-    console.log(open);
   };
 
   useEffect(() => {
     const modal = document.getElementById("modal");
-    console.log(open);
     open == 0
       ? (modal.style.display = "none")
       : (modal.style.display = "block");
@@ -286,7 +283,6 @@ const ModalItem = () => {
 
 const CarouselSlideItem = ({ pos, idx, activeIdx }) => {
   const item = createItem(pos, idx, activeIdx);
-  console.log(item);
   return (
     <li
       className={`carousel__slide-item  group hover:!h-[38rem] transition-all fade-in-out`}
