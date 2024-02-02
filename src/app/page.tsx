@@ -123,8 +123,8 @@ export default function Main() {
       {/* <motion.div>
         <motion.div ref={containerRef} style={{ y: spring }} className="App"> */}
           <Header />
-          {/* <About />
-          <IntroSection /> */}
+          <About />
+          <IntroSection />
         {/* </motion.div>
       </motion.div> */}
     </>

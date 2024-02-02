@@ -122,7 +122,7 @@ export default function Home() {
                   }}
                   variants={{
                     visible: { y: "0vh", opacity: 1 },
-                    hidden: { y: "-70vh", opacity: 0 },
+                    hidden: { y: "-60vh", opacity: 0 },
                   }}
                 >
                   <MainLogo />
