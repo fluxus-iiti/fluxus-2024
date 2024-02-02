@@ -100,7 +100,7 @@ const Hero = () => {
               }}
             >
               <span id="fest-theme" className={styles.festTheme}>
-                Cosmic Euphoria
+                A Celestial Euphoria
               </span>
             </motion.span>
           </div>
