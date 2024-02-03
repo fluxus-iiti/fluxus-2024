@@ -27,21 +27,21 @@ const About = () => {
 
   return (
     <div className="flex md:space-x-12 flex-col md:flex-row md:ml-40 items-center overflow-hidden">
-      <motion.div style={{ x: textX, opacity: springScroll }} ref={ref} className="flex flex-1">
-        <div className="text-6xl md:text-7xl lg:text-[40px] md:pr-10 my-16 md:my-0">
-          Embark on a cosmic journey as Fluxus IIT Indore presents <br/> &apos;A Celestial
-          Euphoria&apos; a theme that transcends boundaries and merges technology
-          with culture. Explore the interstellar blend of innovation and
-          creativity at our annual techno-cultural fest.
-        </div>
-      </motion.div>
-      <motion.div
-        style={{ x: imgX, scale: imgScale, opacity: imgOpacity }}
+      {/* <motion.div style={{ x: textX, opacity: springScroll }} ref={ref} className="flex flex-1"> */}
+      <div className="text-6xl md:text-7xl lg:text-[30px] md:pr-10 my-16 md:my-0 p-5 m-5">
+        Embark on a cosmic journey as Fluxus IIT Indore presents <br /> &apos;A
+        Celestial Euphoria&apos; a theme that transcends boundaries and merges
+        technology with culture. Explore the interstellar blend of innovation
+        and creativity at our annual techno-cultural fest.
+      </div>
+      {/* </motion.div>
+      <motion.div */}
+      {/* style={{ x: imgX, scale: imgScale, opacity: imgOpacity }}
         ref={ref}
         className="flex justify-center flex-1"
-      >
-        <Image src={AboutImg} alt="About Video Here"/>
-      </motion.div>
+      > */}
+      <Image src={AboutImg} alt="About Video Here" />
+      {/* </motion.div> */}
     </div>
   );
 };

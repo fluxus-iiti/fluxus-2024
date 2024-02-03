@@ -15,6 +15,7 @@ const Technicals = () => {
       {/* Main Div */}
       <div className="flex flex-col w-full bg-[url('/images/Footer/bg.png')] bg-top pt-8 bg-cover">
         {/* All Links */}
+        {/* <hr style={{color: 'grey', backgroundColor: 'grey', borderTop: '1px solid grey'}}/> */}
         <div className="flex flex-row justify-between px-64 py-32 border-b-2 border-gray-500">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -42,7 +43,8 @@ const Technicals = () => {
               transition={{ duration: 0.5, ease: "easeOut" }}
               className="w-full mt-8 text-3xl text-gray-400"
             >
-              &quot;Central India&apos;s Biggest and Most Anticipated Event&quot;
+              &quot;Central India&apos;s Biggest and Most Anticipated
+              Event&quot;
             </motion.div>
             {/* <motion.div                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -138,7 +140,7 @@ const Technicals = () => {
               email
             </motion.div>
           </motion.div>
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
@@ -192,7 +194,7 @@ const Technicals = () => {
             >
               Wow
             </motion.div>
-          </motion.div>
+          </motion.div> */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}

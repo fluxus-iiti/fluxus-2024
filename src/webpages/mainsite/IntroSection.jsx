@@ -31,21 +31,26 @@ const IntroSection = () => {
   const imgOpacity = useTransform(springScroll, [1, 0.5], [0.5, 1]);
 
   return (
-    <div className="flex md:space-x-10 flex-col md:flex-row items-center mb-[10vh] overflow-hidden mt-[-20vh]">
-      <motion.div
+    <div className="flex md:space-x-10 flex-col md:flex-row items-center overflow-hidden">
+      {/* <motion.div
         ref={ref}
         style={{ scale: imgScale, opacity: imgOpacity, x: imgX }}
         className="flex flex-1"
-      >
+      > */}
+      <div className="flex flex-1">
         <IntroImage />
-      </motion.div>
+      </div>
+      {/* </motion.div>
       <motion.div
         ref={ref}
         style={{opacity: imgOpacity, x: textX }}
         className="flex flex-1"
-      >
-        <IntroText />
-      </motion.div>
+      > */}
+      <div className="flex">
+      <IntroText />
+      </div>
+
+      {/* </motion.div> */}
     </div>
   );
 };

@@ -38,7 +38,7 @@ export default function Home() {
   }, [width]);
 
   return (
-    <motion.div drag="y">
+    <motion.div>
       <main className="overflow-hidden">
         <div className="max-w-full max-h-full relative ">
           <div className="absolute w-full h-full z-[-2]">

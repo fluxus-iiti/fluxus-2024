@@ -3,7 +3,7 @@ import React from "react";
 import Header from "@/webpages/mainsite/Header";
 import About from "@/webpages/mainsite/About";
 import IntroSection from "@/webpages/mainsite/IntroSection";
-
+import Footer from "@/components/events/Footer";
 import {
   motion,
   useScroll,
@@ -123,8 +123,9 @@ export default function Main() {
       {/* <motion.div>
         <motion.div ref={containerRef} style={{ y: spring }} className="App"> */}
           <Header />
-          <About />
-          <IntroSection />
+          {/* <About />
+          <IntroSection /> */}
+          <Footer/>
         {/* </motion.div>
       </motion.div> */}
     </>
