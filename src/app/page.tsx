@@ -6,6 +6,7 @@ import IntroSection from "@/webpages/mainsite/IntroSection";
 import Footer from "@/components/events/Footer";
 import Day1 from "@/webpages/mainsite/Day1";
 import Day2 from "@/webpages/mainsite/Day2";
+import Day3 from "@/webpages/mainsite/Day3";
 import {
   motion,
   useScroll,
@@ -129,6 +130,7 @@ export default function Main() {
           <IntroSection />
           <Day1/> 
           <Day2/>
+          <Day3/>
           <Footer/>
           
           {/* <About />

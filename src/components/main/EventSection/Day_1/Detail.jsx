@@ -5,18 +5,20 @@ import star from "../../../../../public/images/Day1/pngwing16.png";
 export default function Detail() {
   return (
     <>
-      <div className="styledCard h-fit w-2/3 shadow-md border border-white relative text-center">
+      <div className="styledCard h-fit w-2/3 shadow-md relative text-center">
         <div className="innerCard">
           <Image
             src={constellation}
-            className="mb-4 mx-auto w-2/3 h-1/2"
+            className="mb-4 mx-auto w-full h-full"
             alt="constellation"
           />
-          <h2 className="text-xl mb-20 text-white">TWO PRONITES</h2>
-          <h2 className="text-xl mb-20 text-white">REMARABLE SPEAKERS</h2>
-          <h2 className="text-xl mb-20 text-white">AMAZING MUSIC</h2>
-          <h2 className="text-xl mb-20 text-white">A LIFETIME EXPERIENCE</h2>
-          <Image src={star} className=" mx-auto w-2/3 h-1/2" alt="star" />
+          <div className="mt-10">
+            <h2 className="text-4xl mb-20 text-white">TWO PRONITES</h2>
+            <h2 className="text-4xl mb-20 text-white">REMARABLE SPEAKERS</h2>
+            <h2 className="text-4xl mb-20 text-white">AMAZING MUSIC</h2>
+            <h2 className="text-4xl mb-20 text-white">A LIFETIME EXPERIENCE</h2>
+          </div>
+          <Image src={star} className="mx-auto w-full h-full" alt="star" />
         </div>
       </div>
     </>

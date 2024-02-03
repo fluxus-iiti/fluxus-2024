@@ -10,7 +10,7 @@ function heading() {
     <>
       <div className="p-24">
         <div className="border-0 md:mb-6">
-          <div className="lg:grid grid-cols-[500px_auto] relative">
+          <div className="relative">
             <div></div>
             <div className="flex items-center justify-center rounded-lg">
               <video
@@ -18,7 +18,7 @@ function heading() {
                 loop
                 muted
                 src={"/videos/1.mp4"}
-                className="h-[50vh] object-fill rounded-lg"
+                className="h-[100vh] w-[100vw] object-fill rounded-lg"
               />
             </div>
 
@@ -26,11 +26,9 @@ function heading() {
               <div className="flex flex-col text-start justify-center lg:pl-[180px] h-full items-center lg:items-start border-0 ">
                 <h1 className="m-0 pl-0 font-bold sm:text-8xl my-2 text-3xl">
                   <div className="relative z-10">
-                    <hr className="px-12 mx-2 lg:border-t-[16px] border-t-8" />
-                    <div className="text-[9rem] font-bold font-serif border-y-4 text-center m-2 p-12 w-[40vw]">
-                      Day 2
+                    <div className="text-[12rem] font-bold font-serif text-center m-2 p-12 w-[40vw]">
+                      Day 3
                     </div>
-                    <hr className="px-12 mx-2 lg:border-t-[16px] border-t-8" />
                   </div>
                 </h1>
               </div>
@@ -49,12 +47,20 @@ function heading() {
   );
 }
 
-export default function Day2() {
+export default function Day3() {
   const Images = [i1, i2, i3];
   return (
     <>
       <div className="my-20">
         {heading()}
+
+        <div className="relative z-10">
+          <hr className="px-12 mx-2 lg:border-t-[16px] border-t-8 w-[80vw]" />
+          <div className="text-[9rem] font-bold font-serif border-y-4 text-center m-2 p-12 w-[80vw]">
+            FLUXUS
+          </div>
+          <hr className="px-12 mx-2 lg:border-t-[16px] border-t-8 w-[80vw]" />
+        </div>
         <div className="flex flex-col lg:flex-row justify-center mx-auto p-6 w-full h-max">
           <div className="flex-initial">
             <div className="flex flex-wrap justify-center md:flex-nowrap md:justify-start">

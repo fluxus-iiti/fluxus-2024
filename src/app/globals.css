@@ -3,8 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Mate&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Metrophobic&display=swap");
 
 @layer utilities {
   .debug {
@@ -240,57 +240,17 @@ a {
   background-repeat: repeat;
 }
 
-
 /* Font CSS */
-.font-mate{
-  font-family: 'Mate', serif;
+.font-mate {
+  font-family: "Mate", serif;
 }
 
-.font-metrophobic{
-  font-family: 'Metrophobic', sans-serif;
+.font-metrophobic {
+  font-family: "Metrophobic", sans-serif;
 }
 
-
-.styledCard{
-  position: relative;
+.styledCard {
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
-.styledCard:before,
-.styledCard:after,
-.innerCard:before,
-.innerCard:after {
-  content: "";
-  display: block;
-  width: 2rem;
-  height: 2rem;
-  background-color: #050917;
-  position: absolute;
-}
-.styledCard:before {
-  top: 0;
-  left: 0;
-  border-bottom-right-radius: 100%;
-}
-.styledCard:after {
-  bottom: 0;
-  right: 0;
-  border-top-left-radius: 100%;
-}
-
-.innerCard{
-  position: relative;
-  padding: 0.3rem;
-  font-size: 1.1rem;
-  line-height: 1.35;
-  color: #050917;
-}
-.innerCard:before {
-  top: 0;
-  right: 0;
-  border-bottom-left-radius: 100%;
-}
-.innerCard:after {
-  bottom: 0;
-  left: 0;
-  border-top-right-radius: 100%;
-}

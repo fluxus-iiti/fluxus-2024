@@ -12,17 +12,19 @@ export default function Day1() {
       <div className="my-20">
         <div className="flex flex-col lg:flex-row justify-center mx-auto p-6 w-full h-max">
           <div className="flex-initial">
-            <div className="border-t border-white my-4 mt-7 lg:w-96 sm:w-auto md:w-auto"></div>
+            <div className="md:border-t border-white my-4 mt-7 w-auto"></div>
             <div className="lg:flex flex-row items-center">
-              <p className=" lg:absolute text-center text-white transform lg:rotate-90 lg:text-[5rem] lg:left-[450px] xl:text-[80px] text-[5rem]">
+              <p className=" lg:absolute text-center text-white transform lg:rotate-90 lg:text-[5rem] lg:left-[450px] xl:text-[80px] text-[5rem] font-bold">
                 Day 1
               </p>
               <Carousel images={Images} />
             </div>
-            <div className="border-t border-white my-4 mt-7 lg:w-96 sm:w-auto md:w-auto"></div>
-            <Carousel images={Images} />
-            <div className="border-t border-white my-4 mt-7 lg:w-96 sm:w-auto md:w-auto "></div>
-            <Carousel images={Images} />
+            <div className="hidden lg:block">
+              <div className="border-t border-white my-4 mt-7 w-auto"></div>
+              <Carousel images={Images} />
+              <div className="border-t border-white my-4 mt-7 w-auto "></div>
+              <Carousel images={Images} />
+            </div>
             <div className="border-t border-white md: my-8 "></div>
           </div>
           <div className="flex-initial flex justify-center">
@@ -36,6 +38,7 @@ export default function Day1() {
             </p>
           </div>
         </div>
+        <hr className="border-t-2 border-white w-[90vw] mx-auto mt-10" />
       </div>
     </>
   );
