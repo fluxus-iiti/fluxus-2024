@@ -8,27 +8,33 @@ import "react-social-icons/linkedin";
 import "react-social-icons/email";
 import { IoHome } from "react-icons/io5";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import logo from '../../../public/images/Footer/logo.png'
 
 const Technicals = () => {
   return (
     <>
       {/* Main Div */}
-      <div className="flex flex-col w-full bg-[url('/images/Footer/bg.png')] bg-top pt-8 bg-cover">
+      <div className="flex  flex-col w-full bg-[url('/images/Footer/bg.png')] bg-top pt-8 bg-cover">
         {/* All Links */}
         {/* <hr style={{color: 'grey', backgroundColor: 'grey', borderTop: '1px solid grey'}}/> */}
-        <div className="flex flex-row justify-between px-64 py-32 border-b-2 border-gray-500">
+        <div className="md:flex md:flex-row flex flex-col justify-center items-center md:justify-between px-32 text-center md:px-64 py-32 border-b-2 border-gray-500">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="w-[35%] flex flex-col items-center"
+            className="md:w-[35%] flex flex-col items-center"
           >
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-              className="w-48 h-48 bg-[url('/images/Footer/logo.png')] bg-contain bg-no-repeat"
-            ></motion.div>
+            
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                className="flex justify-center  w-full"
+              >
+                <Image src={logo} className="w-48" alt="logo" />
+              </motion.div>
+           
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -54,13 +60,13 @@ const Technicals = () => {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="w-1/5 flex flex-col gap-y-2"
+            className="md:w-1/5 flex flex-col gap-y-2"
           >
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="text-4xl"
+              className="text-4xl mt-10 md:mt-auto"
             >
               Socials
             </motion.div>
@@ -199,13 +205,13 @@ const Technicals = () => {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="w-1/5 flex flex-col gap-y-4"
+            className="md:w-1/5 flex flex-col gap-y-4"
           >
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="text-4xl"
+              className="text-4xl mt-10 md:mt-auto"
             >
               Contact Us
             </motion.div>
@@ -215,7 +221,7 @@ const Technicals = () => {
               transition={{ duration: 0.5, ease: "easeOut" }}
               className="text-3xl mt-6 text-gray-400 flex flex-row"
             >
-              <IoHome className=" w-44" />
+              <IoHome className=" w-44 mx-0" />
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}

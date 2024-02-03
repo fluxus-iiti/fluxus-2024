@@ -14,7 +14,7 @@ import {
 } from "framer-motion";
 import { ReactNode, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
-
+import BurgerToCross from "@/components/main/hero/BurgerToCross";
 // const sectionVariants: Variants = {
 //   inView: {
 //     transition: {
@@ -126,8 +126,11 @@ export default function Main() {
           <Header />
           <About />
           <IntroSection />
-          {/* <Day1/> */}
           <Footer/>
+          {/* <Day1/> */}
+          
+          {/* <About />
+          <IntroSection /> */}
         {/* </motion.div>
       </motion.div> */}
     </>
