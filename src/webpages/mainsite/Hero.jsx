@@ -122,7 +122,7 @@ export default function Home() {
                   }}
                   variants={{
                     visible: { y: "0vh", opacity: 1 },
-                    hidden: { y: "-60vh", opacity: 0 },
+                    hidden: { y: "-20vh", opacity: 0 },
                   }}
                 >
                   <MainLogo />
@@ -138,13 +138,13 @@ export default function Home() {
           </div>
           <div>
             <div className="flex justify-center items-center">
-              <hr id="hr" />
+              <hr id="hr" style={{borderTop: '3px solid white'}} />
             </div>
-            <div className="text-white text-center my-1 text-[2rem]">
+            <div className="text-white text-center my-2 text-[2rem] font-serif">
               Dive into the realm of technology
             </div>
             <div className="flex justify-center items-center">
-              <hr id="hr" />
+              <hr id="hr" style={{borderTop: '3px solid white'}} />
             </div>
           </div>
         </div>

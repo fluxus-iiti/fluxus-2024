@@ -28,13 +28,14 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  background-color: #050917;
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  font-family: "Jockey One", sans-serif !important;
+  font-family: "Jockey One", sans-serif !important; */
 }
 
 html {

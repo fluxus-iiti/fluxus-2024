@@ -36,14 +36,14 @@ export default function Navbar() {
           }}
           variants={{
             visible: { y: "0vh", opacity: 1 },
-            hidden: { y: "-10vh", opacity: 0 },
+            hidden: { y: "-5vh", opacity: 0 },
           }}
         >
           <Image
             src={logo}
             alt=""
             placeholder="blur"
-            className="h-[70px] w-[35px] mt-10"
+            className="w-[5vw] mt-10"
           />
         </motion.div>
       </div>
