@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import a1 from './Arrow 1.jpg'; // Corrected import paths
-import a2 from './Arrow 2.jpg'; // Corrected import paths
+import a1 from '../../../../../public/images/Day1/Arrow1.jpg'; // Corrected import paths
+import a2 from '../../../../../public/images/Day1/Arrow2.jpg'; // Corrected import paths
 
 function Carousel({ images }) {
   const [currentImage, setCurrentImage] = useState(0);

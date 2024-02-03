@@ -11,6 +11,7 @@ const _items = [
       id: 0,
       title: "Manthan",
       image: require("../../../public/images/planet1.png"),
+      link: "https://unstop.com/competitions/manthan-ideathon-nirmal-nala-tech-challenge-fluxus-iit-indore-iit-indore-877419",
     },
   },
   {
@@ -74,13 +75,6 @@ const _items = [
       id: 9,
       title: "Gesture Control Car",
       image: require("../../../public/images/planet2.png"),
-    },
-  },
-  {
-    player: {
-      id: 10,
-      title: "Trading Vault",
-      image: require("../../../public/images/planet3.png"),
     },
   },
   {
@@ -165,6 +159,22 @@ const _items = [
       id: 22,
       title: "Building Blochs",
       image: require("../../../public/images/planet3.png"),
+    },
+  },
+  {
+    player: {
+      id: 10,
+      title: "Trading Vault",
+      image: require("../../../public/images/planet3.png"),
+      link: "https://unstop.com/o/yXlitCL?lb=OCk8n05",
+    },
+  },
+  {
+    player: {
+      id: 23,
+      title: "TinkerHub Tech Expo",
+      image: require("../../../public/images/planet3.png"),
+      link: "https://unstop.com/p/tinkerhub-tech-expo-fluxus-iit-indore-iit-indore-889724",
     },
   },
 ];
@@ -259,9 +269,18 @@ const ModalItem = () => {
                       <h4>{item.player.title}</h4>
                     </div>
 
-                    <button className="text-center translate-x-[60px] translate-y-[50px] opacity-0 group-hover:opacity-100 transition-all fade-in-out delay-100 !text-2xl cursor-pointer border-[1px] py-2 rounded-xl w-[150px]">
-                      <h4>Coming Soon! </h4>
-                    </button>
+                    {item.player.link ? (
+                      <button className="text-center translate-x-[60px] translate-y-[50px] opacity-0 group-hover:opacity-100 transition-all fade-in-out delay-100 !text-2xl cursor-pointer border-[1px] py-2 rounded-xl w-[150px]">
+                        <a href={item.player.link} target="_blank">
+                          {" "}
+                          Know More{" "}
+                        </a>
+                      </button>
+                    ) : (
+                      <button className="text-center translate-x-[60px] translate-y-[50px] opacity-0 group-hover:opacity-100 transition-all fade-in-out delay-100 !text-2xl cursor-pointer border-[1px] py-2 rounded-xl w-[150px]">
+                        <h4>Coming Soon! </h4>
+                      </button>
+                    )}
                   </div>
                 </li>
               </>
@@ -289,10 +308,18 @@ const CarouselSlideItem = ({ pos, idx, activeIdx }) => {
         <div className="text-center text-5xl font-bold translate-y-10">
           <h4>{item.player.title}</h4>
         </div>
-
-        <button className="text-center translate-x-[60px] translate-y-[50px] opacity-0 group-hover:opacity-100 transition-all fade-in-out delay-100 !text-2xl cursor-pointer border-[1px] py-2 rounded-xl w-[150px]">
-          <h4>Coming Soon! </h4>
-        </button>
+        {item.player.link ? (
+          <button className="text-center translate-x-[60px] translate-y-[50px] opacity-0 group-hover:opacity-100 transition-all fade-in-out delay-100 !text-2xl cursor-pointer border-[1px] py-2 rounded-xl w-[150px]">
+            <a href={item.player.link} target="_blank">
+              {" "}
+              Know More{" "}
+            </a>
+          </button>
+        ) : (
+          <button className="text-center translate-x-[60px] translate-y-[50px] opacity-0 group-hover:opacity-100 transition-all fade-in-out delay-100 !text-2xl cursor-pointer border-[1px] py-2 rounded-xl w-[150px]">
+            <h4>Coming Soon! </h4>
+          </button>
+        )}
       </div>
     </li>
   );
@@ -353,14 +380,14 @@ const Technicals = () => {
           hidden: { x: "-99vw" },
         }}
       > */}
-        <div id="heading" className="relative overflow-x-hidden">
-          <Image
-            src={HeadingImage}
-            className="
+      <div id="heading" className="relative overflow-x-hidden">
+        <Image
+          src={HeadingImage}
+          className="
                 !h-[20%]"
-            alt={""}
-          />
-          {/* <motion.div
+          alt={""}
+        />
+        {/* <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -375,11 +402,11 @@ const Technicals = () => {
               hidden: { opacity: 0 },
             }}
           > */}
-            <h1 className="text-white absolute ml-10 w-full h-full text-[25px] lg:!text-[50px] font-extrabold text-start flex items-center top-0">
-              Technicals
-            </h1>
-          {/* </motion.div> */}
-        </div>
+        <h1 className="text-white absolute ml-10 w-full h-full text-[25px] lg:!text-[50px] font-extrabold text-start flex items-center top-0">
+          Technicals
+        </h1>
+        {/* </motion.div> */}
+      </div>
       {/* </motion.div> */}
       <div className="mx-auto justify-center text-center text-white text-2xl w-3/4 md:top-[-50px] relative">
         You can check out all the events on our Unstop Page by clicking on the{" "}
