@@ -1,14 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-// import {
-//     Button,
-//     Dialog,
-//     DialogHeader,
-//     DialogBody,
-//     DialogFooter,
-//   } from "@material-tailwind/react";
-import { motion } from "framer-motion";
 
 import HeadingImage from "../../../public/images/meteor.png";
 const slideWidth = 30;
