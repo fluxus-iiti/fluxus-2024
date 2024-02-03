@@ -249,3 +249,48 @@ a {
 .font-metrophobic{
   font-family: 'Metrophobic', sans-serif;
 }
+
+
+.styledCard{
+  position: relative;
+}
+
+.styledCard:before,
+.styledCard:after,
+.innerCard:before,
+.innerCard:after {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background-color: #050917;
+  position: absolute;
+}
+.styledCard:before {
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 100%;
+}
+.styledCard:after {
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 100%;
+}
+
+.innerCard{
+  position: relative;
+  padding: 0.3rem;
+  font-size: 1.1rem;
+  line-height: 1.35;
+  color: #050917;
+}
+.innerCard:before {
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 100%;
+}
+.innerCard:after {
+  bottom: 0;
+  left: 0;
+  border-top-right-radius: 100%;
+}
