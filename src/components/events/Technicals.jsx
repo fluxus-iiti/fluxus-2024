@@ -16,6 +16,22 @@ const _items = [
   },
   {
     player: {
+      id: 18,
+      title: "Overtinker",
+      image: require("../../../public/images/planet3.png"),
+      link: "https://unstop.com/competitions/overtinker-iit-indore-890155",
+    },
+  },
+  {
+    player: {
+      id: 9,
+      title: "Top Gear",
+      image: require("../../../public/images/planet2.png"),
+      link: "https://unstop.com/competitions/top-gear-gesture-control-car-fluxus-iit-indore-iit-indore-890266",
+    },
+  },
+  {
+    player: {
       id: 1,
       title: "Pick n Place",
       image: require("../../../public/images/planet2.png"),
@@ -72,13 +88,6 @@ const _items = [
   },
   {
     player: {
-      id: 9,
-      title: "Gesture Control Car",
-      image: require("../../../public/images/planet2.png"),
-    },
-  },
-  {
-    player: {
       id: 11,
       title: "ReDesign",
       image: require("../../../public/images/planet1.png"),
@@ -124,13 +133,6 @@ const _items = [
       id: 17,
       title: "Concastle",
       image: require("../../../public/images/planet1.png"),
-    },
-  },
-  {
-    player: {
-      id: 18,
-      title: "Overtinker",
-      image: require("../../../public/images/planet3.png"),
     },
   },
   {
