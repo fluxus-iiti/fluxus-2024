@@ -10,10 +10,10 @@ import {
 const AnimatedLetter = ({ letter, index, springScroll }) => {
   const delay = useTransform(
     springScroll,
-    // [0, 0.3 - 0.001 * (11 - index), 0.6 + 0.001 * (11 - index), 1],
-    // [`${20 + 10 * index}vh`, "0vh", "0vh", `${100 - 5 * index}vh`]
-    [0, 0.3 - 0.001 * (11 - index)],
-    [`${20 + 10 * index}vh`, "0vh"]
+    [0, 0.3 - 0.001 * (11 - index), 0.5 + 0.001 * (11 - index), 1],
+    [`${20 + 10 * index}vh`, "0vh", "0vh", `${100 - 5 * index}vh`]
+    // [0, 0.3 - 0.001 * (11 - index)],
+    // [`${20 + 10 * index}vh`, "0vh"]
   );
 
   if (letter === " ") {

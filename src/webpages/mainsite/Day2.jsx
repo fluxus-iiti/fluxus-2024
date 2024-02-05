@@ -1,11 +1,18 @@
-import React from "react";
+import { React, useRef } from "react";
 import Carousel from "../../components/main/EventSection/Day_1/Carousel";
 import i1 from "../../../public/images/Day1/pngwing15.png";
 import i2 from "../../../public/images/Day1/pngwing16.png";
 import i3 from "../../../public/images/Day1/human.jpg";
 import Detail from "../../components/main/EventSection/Day_1/Detail";
+import {
+  motion,
+  useSpring,
+  useScroll,
+  useTransform,
+  useMotionValueEvent,
+} from "framer-motion";
 
-function heading() {
+function Heading({ vid1Scale, vid1_x }) {
   return (
     <>
       <div className="p-24">
@@ -13,13 +20,15 @@ function heading() {
           <div className="lg:grid grid-cols-[500px_auto] relative">
             <div></div>
             <div className="flex items-center justify-center rounded-lg">
-              <video
-                autoPlay
-                loop
-                muted
-                src={"/videos/1.mp4"}
-                className="h-[50vh] object-fill rounded-lg"
-              />
+              <motion.div style={{ scale: vid1Scale, x:vid1_x}} className="relative z-0">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  src={"/videos/2.mp4"}
+                  className={`object-fill rounded-lg`}
+                />
+              </motion.div>
             </div>
 
             <div className="absolute top-0 h-full w-full z-[10] bg-opacity-50 lg:bg-opacity-20 ">
@@ -50,15 +59,27 @@ function heading() {
 }
 
 export default function Day2() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "start start"],
+  });
+  const springScroll = useSpring(scrollYProgress, {
+    stiffness: 500,
+    damping: 120,
+  });
+  const day_2X = useTransform(springScroll, [0, 1], ["50vw", "0vw"]);
+  const vid1Scale = useTransform(springScroll, [0, 1], [4, 1]);
+  const vid1_x = useTransform(springScroll, [0,1], ["-50vw", "0vw"])
   const Images = [i1, i2, i3];
   return (
     <>
-      <div className="my-20">
-        {heading()}
+      <motion.div className="my-20" ref={ref} style={{ x: day_2X }}>
+        <Heading vid1Scale={vid1Scale} vid1_x={vid1_x}/>
         <div className="flex flex-col lg:flex-row justify-center mx-auto p-6 w-full h-max">
           <div className="flex-initial">
             <div className="flex flex-wrap justify-center md:flex-nowrap md:justify-start">
-              <Detail />
+              <Detail highlights={["i-Conclave", "Pronite", "GlitchPop", "Food Fest"]} />
             </div>
           </div>
           <div className="flex-initial">
@@ -69,7 +90,6 @@ export default function Day2() {
             <div className="hidden lg:block">
               <div className="border-t border-white my-4 mt-7 w-auto"></div>
               <Carousel images={Images} />
-
               <div className="border-t border-white my-4 mt-7 w-auto "></div>
               <Carousel images={Images} />
               <div className="border-t border-white md: my-8 "></div>
@@ -77,7 +97,7 @@ export default function Day2() {
           </div>
         </div>
         <hr className="border-t-2 border-white w-[90vw] mx-auto mt-10" />
-      </div>
+      </motion.div>
     </>
   );
 }
