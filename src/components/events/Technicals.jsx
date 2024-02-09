@@ -3,7 +3,6 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 import HeadingImage from "../../../public/images/meteor.png";
-import { link } from "fs";
 const slideWidth = 30;
 
 const _items = [
