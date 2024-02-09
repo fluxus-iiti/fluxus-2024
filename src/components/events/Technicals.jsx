@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 import HeadingImage from "../../../public/images/meteor.png";
+import { link } from "fs";
 const slideWidth = 30;
 
 const _items = [
@@ -49,6 +50,7 @@ const _items = [
       id: 3,
       title: "Aero Artistry",
       image: require("../../../public/images/planet1.png"),
+      link: "https://unstop.com/events/aero-artistrty-fluxus-24-iit-indore-iit-indore-893349",
     },
   },
   {
@@ -84,6 +86,7 @@ const _items = [
       id: 8,
       title: "RoboShooter",
       image: require("../../../public/images/planet1.png"),
+      link: "https://unstop.com/competitions/shooter-bot-competition-fluxus-24-iit-indore-iit-indore-890839",
     },
   },
   {
@@ -105,6 +108,7 @@ const _items = [
       id: 13,
       title: "Enosium",
       image: require("../../../public/images/planet1.png"),
+      link: "https://unstop.com/hackathons/enosium24-fluxus-iit-indore-iit-indore-892499",
     },
   },
   {
@@ -126,6 +130,7 @@ const _items = [
       id: 16,
       title: "CFA Conclave - Analytics",
       image: require("../../../public/images/planet2.png"),
+      link: "https://unstop.com/hackathons/analyticax-cfa-conclave24-fluxus-iit-indore-iit-indore-890123",
     },
   },
   {
@@ -133,6 +138,7 @@ const _items = [
       id: 17,
       title: "Concastle",
       image: require("../../../public/images/planet1.png"),
+      link: "https://unstop.com/competitions/concastle-fluxus-24-iit-indore-892867"
     },
   },
   {
@@ -140,6 +146,7 @@ const _items = [
       id: 19,
       title: "Trace it Out",
       image: require("../../../public/images/planet1.png"),
+      link: "https://unstop.com/competitions/top-gear24-trace-it-out-fluxus-iit-indore-iit-indore-892258",
     },
   },
   {
@@ -177,6 +184,22 @@ const _items = [
       title: "TinkerHub Tech Expo",
       image: require("../../../public/images/planet3.png"),
       link: "https://unstop.com/p/tinkerhub-tech-expo-fluxus-iit-indore-iit-indore-889724",
+    },
+  },
+  {
+    player: {
+      id: 24,
+      title: "Skysweep",
+      image: require("../../../public/images/planet1.png"),
+      link: "https://unstop.com/competitions/skysweep-carbon-cleanse-challenge-fluxus-iit-indore-iit-indore-892481",
+    },
+  },
+  {
+    player: {
+      id: 25,
+      title: "Sunspark",
+      image: require("../../../public/images/planet2.png"),
+      link: "https://unstop.com/competitions/sunspark-lets-simulate-it-fluxus-iit-indore-iit-indore-890296",
     },
   },
 ];
