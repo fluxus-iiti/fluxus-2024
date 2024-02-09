@@ -30,20 +30,20 @@ const _items = [
       link: "https://unstop.com/competitions/top-gear-gesture-control-car-fluxus-iit-indore-iit-indore-890266",
     },
   },
-  {
-    player: {
-      id: 1,
-      title: "Pick n Place",
-      image: require("../../../public/images/planet2.png"),
-    },
-  },
-  {
-    player: {
-      id: 2,
-      title: "Nitrothrust",
-      image: require("../../../public/images/planet2.png"),
-    },
-  },
+  // {
+  //   player: {
+  //     id: 1,
+  //     title: "Pick n Place",
+  //     image: require("../../../public/images/planet2.png"),
+  //   },
+  // },
+  // {
+  //   player: {
+  //     id: 2,
+  //     title: "Nitrothrust",
+  //     image: require("../../../public/images/planet2.png"),
+  //   },
+  // },
   {
     player: {
       id: 3,
@@ -52,34 +52,34 @@ const _items = [
       link: "https://unstop.com/events/aero-artistrty-fluxus-24-iit-indore-iit-indore-893349",
     },
   },
-  {
-    player: {
-      id: 4,
-      title: "RoboSoccer",
-      image: require("../../../public/images/planet3.png"),
-    },
-  },
-  {
-    player: {
-      id: 5,
-      title: "Obstacourse",
-      image: require("../../../public/images/planet3.png"),
-    },
-  },
-  {
-    player: {
-      id: 6,
-      title: "Margdarshak",
-      image: require("../../../public/images/planet2.png"),
-    },
-  },
-  {
-    player: {
-      id: 7,
-      title: "Robowrestling",
-      image: require("../../../public/images/planet1.png"),
-    },
-  },
+  // {
+  //   player: {
+  //     id: 4,
+  //     title: "RoboSoccer",
+  //     image: require("../../../public/images/planet3.png"),
+  //   },
+  // },
+  // {
+  //   player: {
+  //     id: 5,
+  //     title: "Obstacourse",
+  //     image: require("../../../public/images/planet3.png"),
+  //   },
+  // },
+  // {
+  //   player: {
+  //     id: 6,
+  //     title: "Margdarshak",
+  //     image: require("../../../public/images/planet2.png"),
+  //   },
+  // },
+  // {
+  //   player: {
+  //     id: 7,
+  //     title: "Robowrestling",
+  //     image: require("../../../public/images/planet1.png"),
+  //   },
+  // },
   {
     player: {
       id: 8,
@@ -88,20 +88,20 @@ const _items = [
       link: "https://unstop.com/competitions/shooter-bot-competition-fluxus-24-iit-indore-iit-indore-890839",
     },
   },
-  {
-    player: {
-      id: 11,
-      title: "ReDesign",
-      image: require("../../../public/images/planet1.png"),
-    },
-  },
-  {
-    player: {
-      id: 12,
-      title: "Euristica",
-      image: require("../../../public/images/planet2.png"),
-    },
-  },
+  // {
+  //   player: {
+  //     id: 11,
+  //     title: "ReDesign",
+  //     image: require("../../../public/images/planet1.png"),
+  //   },
+  // },
+  // {
+  //   player: {
+  //     id: 12,
+  //     title: "Euristica",
+  //     image: require("../../../public/images/planet2.png"),
+  //   },
+  // },
   {
     player: {
       id: 13,
@@ -110,24 +110,24 @@ const _items = [
       link: "https://unstop.com/hackathons/enosium24-fluxus-iit-indore-iit-indore-892499",
     },
   },
-  {
-    player: {
-      id: 14,
-      title: "CFA Conclave - Consulting",
-      image: require("../../../public/images/planet3.png"),
-    },
-  },
-  {
-    player: {
-      id: 15,
-      title: "CFA Conclave - Finance",
-      image: require("../../../public/images/planet1.png"),
-    },
-  },
+  // {
+  //   player: {
+  //     id: 14,
+  //     title: "CFA Conclave - Consulting",
+  //     image: require("../../../public/images/planet3.png"),
+  //   },
+  // },
+  // {
+  //   player: {
+  //     id: 15,
+  //     title: "CFA Conclave - Finance",
+  //     image: require("../../../public/images/planet1.png"),
+  //   },
+  // },
   {
     player: {
       id: 16,
-      title: "CFA Conclave - Analytics",
+      title: "CFA Conclave - AnalyticaX",
       image: require("../../../public/images/planet2.png"),
       link: "https://unstop.com/hackathons/analyticax-cfa-conclave24-fluxus-iit-indore-iit-indore-890123",
     },
@@ -148,27 +148,27 @@ const _items = [
       link: "https://unstop.com/competitions/top-gear24-trace-it-out-fluxus-iit-indore-iit-indore-892258",
     },
   },
-  {
-    player: {
-      id: 20,
-      title: "MetaBizz",
-      image: require("../../../public/images/planet2.png"),
-    },
-  },
-  {
-    player: {
-      id: 21,
-      title: "Nakshatra",
-      image: require("../../../public/images/planet1.png"),
-    },
-  },
-  {
-    player: {
-      id: 22,
-      title: "Building Blochs",
-      image: require("../../../public/images/planet3.png"),
-    },
-  },
+  // {
+  //   player: {
+  //     id: 20,
+  //     title: "MetaBizz",
+  //     image: require("../../../public/images/planet2.png"),
+  //   },
+  // },
+  // {
+  //   player: {
+  //     id: 21,
+  //     title: "Nakshatra",
+  //     image: require("../../../public/images/planet1.png"),
+  //   },
+  // },
+  // {
+  //   player: {
+  //     id: 22,
+  //     title: "Building Blochs",
+  //     image: require("../../../public/images/planet3.png"),
+  //   },
+  // },
   {
     player: {
       id: 10,
