@@ -10,7 +10,7 @@ const _items = [
     player: {
       id: 0,
       title: "Manthan",
-      image: require("../../../public/images/Competitions/Manthan Insta Post.png"),
+      image: require("../../../public/images/Competitions/Manthan.png"),
       link: "https://unstop.com/competitions/manthan-ideathon-nirmal-nala-tech-challenge-fluxus-iit-indore-iit-indore-877419",
     },
   },
@@ -18,7 +18,7 @@ const _items = [
     player: {
       id: 1,
       title: "Overtinker",
-      image: require("../../../public/images/Competitions/OverTinker Insta.png"),
+      image: require("../../../public/images/Competitions/OverTinker.png"),
       link: "https://unstop.com/competitions/overtinker-iit-indore-890155",
     },
   },
@@ -26,7 +26,7 @@ const _items = [
     player: {
       id: 2,
       title: "Top Gear",
-      image: require("../../../public/images/Competitions/TGGEST INSTA.png"),
+      image: require("../../../public/images/Competitions/TGGEST.png"),
       link: "https://unstop.com/competitions/top-gear-gesture-control-car-fluxus-iit-indore-iit-indore-890266",
     },
   },
@@ -48,7 +48,7 @@ const _items = [
     player: {
       id: 5,
       title: "Aero Artistry",
-      image: require("../../../public/images/Competitions/Aero Artistry INSTA.png"),
+      image: require("../../../public/images/Competitions/Aero_Artistry.png"),
       link: "https://unstop.com/events/aero-artistrty-fluxus-24-iit-indore-iit-indore-893349",
     },
   },
@@ -84,7 +84,7 @@ const _items = [
     player: {
       id: 10,
       title: "RoboShooter",
-      image: require("../../../public/images/Competitions/RoboShooter Insta.png"),
+      image: require("../../../public/images/Competitions/RoboShooter.png"),
       link: "https://unstop.com/competitions/shooter-bot-competition-fluxus-24-iit-indore-iit-indore-890839",
     },
   },
@@ -106,7 +106,7 @@ const _items = [
     player: {
       id: 13,
       title: "Enosium",
-      image: require("../../../public/images/Competitions/enosium insta.png"),
+      image: require("../../../public/images/Competitions/enosium.png"),
       link: "https://unstop.com/hackathons/enosium24-fluxus-iit-indore-iit-indore-892499",
     },
   },
@@ -136,7 +136,7 @@ const _items = [
     player: {
       id: 17,
       title: "Concastle",
-      image: require("../../../public/images/Competitions/CONCASTLE INSTA.png"),
+      image: require("../../../public/images/Competitions/CONCASTLE.png"),
       link: "https://unstop.com/competitions/concastle-fluxus-24-iit-indore-892867",
     },
   },
@@ -144,7 +144,7 @@ const _items = [
     player: {
       id: 18,
       title: "Trace it Out",
-      image: require("../../../public/images/Competitions/TGTRACE INSTA.png"),
+      image: require("../../../public/images/Competitions/TGTRACE.png"),
       link: "https://unstop.com/competitions/top-gear24-trace-it-out-fluxus-iit-indore-iit-indore-892258",
     },
   },
@@ -173,7 +173,7 @@ const _items = [
     player: {
       id: 10,
       title: "Trading Vault",
-      image: require("../../../public/images/Competitions/Trading Vault Insta.png"),
+      image: require("../../../public/images/Competitions/Trading_Vault.png"),
       link: "https://unstop.com/o/yXlitCL?lb=OCk8n05",
     },
   },
@@ -181,7 +181,7 @@ const _items = [
     player: {
       id: 23,
       title: "TinkerHub Tech Expo",
-      image: require("../../../public/images/Competitions/Tinker Hub Insta.png"),
+      image: require("../../../public/images/Competitions/Tinker_Hub.png"),
       link: "https://unstop.com/p/tinkerhub-tech-expo-fluxus-iit-indore-iit-indore-889724",
     },
   },
@@ -189,7 +189,7 @@ const _items = [
     player: {
       id: 24,
       title: "Skysweep",
-      image: require("../../../public/images/Competitions/SkySweep INSTA.png"),
+      image: require("../../../public/images/Competitions/SkySweep.png"),
       link: "https://unstop.com/competitions/skysweep-carbon-cleanse-challenge-fluxus-iit-indore-iit-indore-892481",
     },
   },
@@ -197,7 +197,7 @@ const _items = [
     player: {
       id: 25,
       title: "Sunspark",
-      image: require("../../../public/images/Competitions/SUNSPARK INSTA.png"),
+      image: require("../../../public/images/Competitions/SUNSPARK.png"),
       link: "https://unstop.com/competitions/sunspark-lets-simulate-it-fluxus-iit-indore-iit-indore-890296",
     },
   },
@@ -389,6 +389,12 @@ const Technicals = () => {
 
   return (
     <>
+    <div className="competition-section"
+    style={{
+      backgroundImage: `url(images/back.png)`,
+      backgroundRepeat: "repeat",
+    }}
+    >
       {/* <motion.div
         initial="hidden"
         whileInView="visible"
@@ -433,9 +439,9 @@ const Technicals = () => {
       </div>
       {/* </motion.div> */}
       <div className="mx-auto justify-center text-center text-white text-2xl w-3/4 md:top-[-50px] relative">
-        You can check out all the events on our Unstop Page by clicking on the{" "}
+        You can check out all the events on our Unstop Page by clicking{" "}
         <a href="https://unstop.com/college-fests/fluxus-iit-indore-indian-institute-of-technology-iit-indore-197772">
-          here
+          <span className="font-semibold">HERE</span>
         </a>
         .
       </div>
@@ -481,40 +487,39 @@ const Technicals = () => {
           </div> */}
 
           {/* ********************************************************************* */}
-          <div className="flex gap-5 overflow-x-scroll overflow-y-visible h-full no-scrollbar sm:grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+          <div className="flex mb-20 gap-5 overflow-x-scroll overflow-y-visible h-full no-scrollbar md:grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
             {itemsModal?.map((item) => (
               <>
-                <li
-                  className={`carousel__slide-item2 group hover:!h-[38rem] transition-all fade-in-out`}
-                  style={item.styles}
+                <div
+                  id="card"
+                  className="card h-fit w-fit rounded-b-[30px] !mx-5 !my-5"
                 >
-                  <div
-                    id="card"
-                    className={`h-full w-[250px] lg:w-[250px] rounded-b-[40px]`}
-                  >
+                  <div className="image">
                     <Image
                       src={item.player.image}
                       alt={item.player.title}
-                      className="lg:!w-[250px] lg:!h-[250px] !w-[250px] !h-[250px] brightness-50 md:brightness-75  mx-auto group-hover:brightness-100 transition-all fade-in-out !drop-shadow-2xl !shadow-white"
-                    />
-                    <div className="text-center text-5xl font-bold translate-y-10">
-                      <h4>{item.player.title}</h4>
-                    </div>
-
-                    {item.player.link ? (
-                      <button className="text-center translate-x-[60px] translate-y-[50px] opacity-0 group-hover:opacity-100 transition-all fade-in-out delay-100 !text-2xl cursor-pointer border-[1px] py-2 rounded-xl w-[150px]">
-                        <a href={item.player.link} target="_blank">
-                          {" "}
-                          Know More{" "}
-                        </a>
-                      </button>
-                    ) : (
-                      <button className="text-center translate-x-[60px] translate-y-[50px] opacity-0 group-hover:opacity-100 transition-all fade-in-out delay-100 !text-2xl cursor-pointer border-[1px] py-2 rounded-xl w-[150px]">
-                        <h4>Coming Soon! </h4>
-                      </button>
-                    )}
+                      className="min-w-[250px]"
+                    ></Image>
                   </div>
-                </li>
+                  <div className="content flex flex-col justify-center items-center my-4">
+                    <div className="title text-center">
+                      <span className="text-6xl font-bold">
+                        {item.player.title}
+                      </span>
+                    </div>
+                    <div className="link-box border-solid border-[1px] border-slate-300 w-fit text-center px-8 py-4 rounded-xl my-5 cursor-pointer hover:bg-slate-200 hover:text-gray-900">
+                      {item.player.link ? (
+                        <a href={item.player.link} target="_blank">
+                          <span className="text-2xl font-semibold">
+                            Know More
+                          </span>
+                        </a>
+                      ) : (
+                        <span className="text-2xl">Comming Soon</span>
+                      )}
+                    </div>
+                  </div>
+                </div>
               </>
             ))}
           </div>
@@ -527,8 +532,10 @@ const Technicals = () => {
       {/* <div className="mb-10 lg:mt-[-16vh] mt-48 md:mt-0">
         <ModalItem />
       </div> */}
+      </div>
     </>
   );
 };
 
 export default Technicals;
+
