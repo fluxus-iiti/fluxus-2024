@@ -26,7 +26,7 @@ function heading() {
               <div className="flex flex-col text-start justify-center lg:pl-[180px] h-full items-center lg:items-start border-0 ">
                 <h1 className="m-0 pl-0 font-bold sm:text-8xl my-2 text-3xl">
                   <div className="relative z-10">
-                    <div className="text-[12rem] font-bold font-serif text-center m-2 p-12 w-[40vw]">
+                    <div className="text-[12rem] font-bold text-center m-2 p-12 w-[40vw]">
                       Day 3
                     </div>
                   </div>
@@ -56,7 +56,7 @@ export default function Day3() {
 
         <div className="relative z-10">
           <hr className="px-12 mx-2 lg:border-t-[16px] border-t-8 w-[80vw]" />
-          <div className="text-[9rem] font-bold font-serif border-y-4 text-center m-2 p-12 w-[80vw]">
+          <div className="text-[9rem] font-bold border-y-4 text-center m-2 p-12 w-[80vw]">
             FLUXUS
           </div>
           <hr className="px-12 mx-2 lg:border-t-[16px] border-t-8 w-[80vw]" />

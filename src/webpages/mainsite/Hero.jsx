@@ -140,7 +140,7 @@ export default function Home() {
             <div className="flex justify-center items-center">
               <hr id="hr" style={{borderTop: '3px solid white'}} />
             </div>
-            <div className="text-white text-center my-2 text-[2rem] font-serif">
+            <div className="text-white text-center my-2 text-[2rem]">
               Dive into the realm of technology
             </div>
             <div className="flex justify-center items-center">

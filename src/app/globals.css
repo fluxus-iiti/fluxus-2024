@@ -1,14 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("../../public/fonts/fonts.css");
 @import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mate&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Metrophobic&display=swap");
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @layer utilities {
   .debug {
     border: 1px dashed red;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Azonix";
+    src: url("../../public/fonts/Azonix.otf") format("opentype");
   }
 }
 
@@ -253,4 +260,3 @@ a {
   border: 1px solid white;
   border-radius: 10px;
 }
-

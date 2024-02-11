@@ -1,11 +1,6 @@
 "use client";
 import react, { useRef } from "react";
-import {
-  motion,
-  useScroll,
-  useSpring,
-  useTransform,
-} from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const AnimatedLetter = ({ letter, index, springScroll }) => {
   const delay = useTransform(
@@ -25,7 +20,10 @@ const AnimatedLetter = ({ letter, index, springScroll }) => {
   }
 
   return (
-    <motion.div key={index} style={{ y: delay, display: "inline-block" }}>
+    <motion.div
+      key={index}
+      style={{ y: delay, display: "inline-block", fontFamily: "Azonix" }}
+    >
       {letter}
     </motion.div>
   );
@@ -58,13 +56,13 @@ const MainText = () => {
   return (
     <motion.div className="w-full pt-48 intro overflow-hidden">
       <motion.div
-        className="text-white text-center lg:text-[20rem] border-0 w-full lg:!my-[-140px] !py-0 text-[35px] sm:text-[70px] sm:my-[-0px] font-serif"
+        className="text-white text-center lg:text-[18rem] border-0 w-full lg:!my-[-120px] !py-0 text-[35px] sm:text-[70px] sm:my-[-0px] font-azonix"
         ref={ref}
       >
         {renderAnimatedLetters("A CELESTIAL")}
       </motion.div>
       <div
-        className="text-white text-center lg:text-[24rem] border-0 w-full lg:!my-[-100px] my-[-20px] text-[50px] !py-0 sm:text-[100px] sm:my-[-40px] overflow-hidden"
+        className="text-white text-center lg:text-[24rem] border-0 w-full lg:!my-[-100px] my-[-20px] text-[50px] !py-0 sm:text-[100px] sm:my-[-40px] overflow-hidden font-azonix"
         ref={ref}
       >
         <div>{renderAnimatedLetters("EUPHORIA")}</div>
