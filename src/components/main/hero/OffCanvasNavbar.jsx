@@ -17,6 +17,9 @@ export default function OffCanvasNavbar() {
 					<div className="md:mx-5 my-5 font-bold mx-10  !text-4xl md:my-auto hover:border-b-2 transition-all fade-in-out hover:!text-gray-300">
 						<Link className="text-2xl" href="https://ca.fluxus.co.in/">CA Fluxus</Link>
 					</div>
+					{/* <div className="md:mx-5 my-5 font-bold mx-10  !text-4xl md:my-auto hover:border-b-2 transition-all fade-in-out hover:!text-gray-300">
+						<Link className="text-2xl" href="/accomodation">Accomodation</Link>
+					</div> */}
 
 				</div>
 				<div className="flex justify-center items-center relative ">
