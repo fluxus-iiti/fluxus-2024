@@ -10,6 +10,14 @@
   .debug {
     border: 1px dashed red;
   }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 :root {
@@ -253,4 +261,3 @@ a {
   border: 1px solid white;
   border-radius: 10px;
 }
-

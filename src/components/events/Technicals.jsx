@@ -10,81 +10,81 @@ const _items = [
     player: {
       id: 0,
       title: "Manthan",
-      image: require("../../../public/images/planet1.png"),
+      image: require("../../../public/images/Competitions/Manthan Insta Post.png"),
       link: "https://unstop.com/competitions/manthan-ideathon-nirmal-nala-tech-challenge-fluxus-iit-indore-iit-indore-877419",
     },
   },
   {
     player: {
-      id: 18,
+      id: 1,
       title: "Overtinker",
-      image: require("../../../public/images/planet3.png"),
+      image: require("../../../public/images/Competitions/OverTinker Insta.png"),
       link: "https://unstop.com/competitions/overtinker-iit-indore-890155",
     },
   },
   {
     player: {
-      id: 9,
+      id: 2,
       title: "Top Gear",
-      image: require("../../../public/images/planet2.png"),
+      image: require("../../../public/images/Competitions/TGGEST INSTA.png"),
       link: "https://unstop.com/competitions/top-gear-gesture-control-car-fluxus-iit-indore-iit-indore-890266",
     },
   },
   // {
   //   player: {
-  //     id: 1,
+  //     id: 3,
   //     title: "Pick n Place",
   //     image: require("../../../public/images/planet2.png"),
   //   },
   // },
   // {
   //   player: {
-  //     id: 2,
+  //     id: 4,
   //     title: "Nitrothrust",
   //     image: require("../../../public/images/planet2.png"),
   //   },
   // },
   {
     player: {
-      id: 3,
+      id: 5,
       title: "Aero Artistry",
-      image: require("../../../public/images/planet1.png"),
+      image: require("../../../public/images/Competitions/Aero Artistry INSTA.png"),
       link: "https://unstop.com/events/aero-artistrty-fluxus-24-iit-indore-iit-indore-893349",
     },
   },
   // {
   //   player: {
-  //     id: 4,
+  //     id: 6,
   //     title: "RoboSoccer",
   //     image: require("../../../public/images/planet3.png"),
   //   },
   // },
   // {
   //   player: {
-  //     id: 5,
+  //     id: 7,
   //     title: "Obstacourse",
   //     image: require("../../../public/images/planet3.png"),
   //   },
   // },
   // {
   //   player: {
-  //     id: 6,
+  //     id: 8,
   //     title: "Margdarshak",
   //     image: require("../../../public/images/planet2.png"),
   //   },
   // },
   // {
   //   player: {
-  //     id: 7,
+  //     id: 9,
   //     title: "Robowrestling",
   //     image: require("../../../public/images/planet1.png"),
   //   },
   // },
   {
     player: {
-      id: 8,
+      id: 10,
       title: "RoboShooter",
-      image: require("../../../public/images/planet1.png"),
+      image: require("../../../public/images/Competitions/RoboShooter Insta.png"),
       link: "https://unstop.com/competitions/shooter-bot-competition-fluxus-24-iit-indore-iit-indore-890839",
     },
   },
@@ -106,7 +106,7 @@ const _items = [
     player: {
       id: 13,
       title: "Enosium",
-      image: require("../../../public/images/planet1.png"),
+      image: require("../../../public/images/Competitions/enosium insta.png"),
       link: "https://unstop.com/hackathons/enosium24-fluxus-iit-indore-iit-indore-892499",
     },
   },
@@ -128,7 +128,7 @@ const _items = [
     player: {
       id: 16,
       title: "CFA Conclave - AnalyticaX",
-      image: require("../../../public/images/planet2.png"),
+      image: require("../../../public/images/Competitions/AnalyticaX.png"),
       link: "https://unstop.com/hackathons/analyticax-cfa-conclave24-fluxus-iit-indore-iit-indore-890123",
     },
   },
@@ -136,28 +136,28 @@ const _items = [
     player: {
       id: 17,
       title: "Concastle",
-      image: require("../../../public/images/planet1.png"),
-      link: "https://unstop.com/competitions/concastle-fluxus-24-iit-indore-892867"
+      image: require("../../../public/images/Competitions/CONCASTLE INSTA.png"),
+      link: "https://unstop.com/competitions/concastle-fluxus-24-iit-indore-892867",
     },
   },
   {
     player: {
-      id: 19,
+      id: 18,
       title: "Trace it Out",
-      image: require("../../../public/images/planet1.png"),
+      image: require("../../../public/images/Competitions/TGTRACE INSTA.png"),
       link: "https://unstop.com/competitions/top-gear24-trace-it-out-fluxus-iit-indore-iit-indore-892258",
     },
   },
   // {
   //   player: {
-  //     id: 20,
+  //     id: 19,
   //     title: "MetaBizz",
   //     image: require("../../../public/images/planet2.png"),
   //   },
   // },
   // {
   //   player: {
-  //     id: 21,
+  //     id: 20,
   //     title: "Nakshatra",
   //     image: require("../../../public/images/planet1.png"),
   //   },
@@ -173,7 +173,7 @@ const _items = [
     player: {
       id: 10,
       title: "Trading Vault",
-      image: require("../../../public/images/planet3.png"),
+      image: require("../../../public/images/Competitions/Trading Vault Insta.png"),
       link: "https://unstop.com/o/yXlitCL?lb=OCk8n05",
     },
   },
@@ -181,7 +181,7 @@ const _items = [
     player: {
       id: 23,
       title: "TinkerHub Tech Expo",
-      image: require("../../../public/images/planet3.png"),
+      image: require("../../../public/images/Competitions/Tinker Hub Insta.png"),
       link: "https://unstop.com/p/tinkerhub-tech-expo-fluxus-iit-indore-iit-indore-889724",
     },
   },
@@ -189,7 +189,7 @@ const _items = [
     player: {
       id: 24,
       title: "Skysweep",
-      image: require("../../../public/images/planet1.png"),
+      image: require("../../../public/images/Competitions/SkySweep INSTA.png"),
       link: "https://unstop.com/competitions/skysweep-carbon-cleanse-challenge-fluxus-iit-indore-iit-indore-892481",
     },
   },
@@ -197,7 +197,7 @@ const _items = [
     player: {
       id: 25,
       title: "Sunspark",
-      image: require("../../../public/images/planet2.png"),
+      image: require("../../../public/images/Competitions/SUNSPARK INSTA.png"),
       link: "https://unstop.com/competitions/sunspark-lets-simulate-it-fluxus-iit-indore-iit-indore-890296",
     },
   },
@@ -442,7 +442,7 @@ const Technicals = () => {
       <div className="md:translate-y-[-150px]">
         {/* <div> */}
         <div id="html" className="carousel__wrap ">
-          <div className="carousel__inner">
+          {/* <div className="carousel__inner">
             <button
               className="carousel__btn carousel__btn--prev !hidden lg:!flex"
               onClick={() => prevClick()}
@@ -478,14 +478,55 @@ const Technicals = () => {
                 />
               ))}
             </div>
+          </div> */}
+
+          {/* ********************************************************************* */}
+          <div className="flex gap-5 overflow-x-scroll overflow-y-visible h-full no-scrollbar sm:grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+            {itemsModal?.map((item) => (
+              <>
+                <li
+                  className={`carousel__slide-item2 group hover:!h-[38rem] transition-all fade-in-out`}
+                  style={item.styles}
+                >
+                  <div
+                    id="card"
+                    className={`h-full w-[250px] lg:w-[250px] rounded-b-[40px]`}
+                  >
+                    <Image
+                      src={item.player.image}
+                      alt={item.player.title}
+                      className="lg:!w-[250px] lg:!h-[250px] !w-[250px] !h-[250px] brightness-50 md:brightness-75  mx-auto group-hover:brightness-100 transition-all fade-in-out !drop-shadow-2xl !shadow-white"
+                    />
+                    <div className="text-center text-5xl font-bold translate-y-10">
+                      <h4>{item.player.title}</h4>
+                    </div>
+
+                    {item.player.link ? (
+                      <button className="text-center translate-x-[60px] translate-y-[50px] opacity-0 group-hover:opacity-100 transition-all fade-in-out delay-100 !text-2xl cursor-pointer border-[1px] py-2 rounded-xl w-[150px]">
+                        <a href={item.player.link} target="_blank">
+                          {" "}
+                          Know More{" "}
+                        </a>
+                      </button>
+                    ) : (
+                      <button className="text-center translate-x-[60px] translate-y-[50px] opacity-0 group-hover:opacity-100 transition-all fade-in-out delay-100 !text-2xl cursor-pointer border-[1px] py-2 rounded-xl w-[150px]">
+                        <h4>Coming Soon! </h4>
+                      </button>
+                    )}
+                  </div>
+                </li>
+              </>
+            ))}
           </div>
+
+          {/* ********************************************************************* */}
 
           <style jsx>{``}</style>
         </div>
       </div>
-      <div className="mb-10 lg:mt-[-16vh] mt-48 md:mt-0">
+      {/* <div className="mb-10 lg:mt-[-16vh] mt-48 md:mt-0">
         <ModalItem />
-      </div>
+      </div> */}
     </>
   );
 };
