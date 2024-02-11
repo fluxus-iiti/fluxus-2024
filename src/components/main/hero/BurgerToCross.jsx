@@ -16,7 +16,7 @@ export default function BurgerToCross() {
                 <a id="menu-toggle" className="menu-toggle hidden md:block" onClick={() => {
                     if(document.getElementById('container').classList.contains('nav-open')){
                         document.getElementById('container').classList.toggle('nav-open');
-                        document.getElementById('offcanvas').style.top = "-100px"
+                        document.getElementById('offcanvas').style.top = "-1000px"
                         document.getElementById('burger_to_cross').style.transform = "translateY(0px)"
                         
                     }
@@ -31,24 +31,7 @@ export default function BurgerToCross() {
                     <span className="menu-toggle-bar menu-toggle-bar--middle"></span>
                     <span className="menu-toggle-bar menu-toggle-bar--bottom"></span>
                 </a>
-                <a id="menu-toggle" className="menu-toggle md:hidden" onClick={() => {
-                    if(document.getElementById('container').classList.contains('nav-open')){
-                        document.getElementById('container').classList.toggle('nav-open');
-                        document.getElementById('offcanvas').style.top = "-500px"
-                        document.getElementById('burger_to_cross').style.transform = "translateY(0px)"
-                        
-                    }
-                    else{
-                        document.getElementById('container').classList.toggle('nav-open');
-                        document.getElementById('offcanvas').style.top = "0px"
-                        document.getElementById('burger_to_cross').style.transform = "translateY(200px)"
-                    }
-                    
-                }}>
-                    <span className="menu-toggle-bar menu-toggle-bar--top"></span>
-                    <span className="menu-toggle-bar menu-toggle-bar--middle"></span>
-                    <span className="menu-toggle-bar menu-toggle-bar--bottom"></span>
-                </a>
+                
             </div>
             <style jsx>
                 {`

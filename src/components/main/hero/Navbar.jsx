@@ -4,14 +4,23 @@ import BurgerToCross from "./BurgerToCross";
 import logo from "../../../../public/images/Navbar/image1.png";
 import { motion } from "framer-motion";
 import OffCanvasNavbar from "./OffCanvasNavbar";
+import { FaBars } from "react-icons/fa";
+import Link from "next/link";
 export default function Navbar() {
   return (
     <>
       <div
         id="burger_to_cross"
-        className="top-5 !z-[100000000] absolute  left-5 w-full h-full my-auto flex font-weight-700 text-white text-2xl transition-all fade-in-out"
+        className="top-10 !z-[100000000] absolute  left-5 w-full h-full my-auto  font-weight-700 text-white text-2xl transition-all fade-in-out hidden lg:flex"
       >
         <BurgerToCross />
+      </div>
+      <div  className="top-5 !z-[1000] absolute  left-5 w-full h-full m-5 font-weight-700 text-white text-2xl transition-all fade-in-out lg:hidden">
+        <FaBars className="sm:w-16 sm:h-16 h-10 w-10" onClick={() => {
+          document.getElementById('container').classList.toggle('nav-open');
+          document.getElementById('offcanvas').style.top = "0px"
+          document.getElementById('burger_to_cross').style.transform = "translateY(200px)"
+        }} />
       </div>
 
       <div className=" py-2 bg-[#050917] overflow-hidden z-[-1]">
@@ -47,12 +56,18 @@ export default function Navbar() {
               hidden: { y: "-5vh", opacity: 0 },
             }}
           >
-            <Image
-              src={logo}
-              alt=""
-              placeholder="blur"
-              className="w-[5rem]"
-            />
+           
+            <div className="flex justify-center items-center Z ">
+            <Link href="/" className="cursor-pointer">
+              <Image
+                src={logo}
+                alt=""
+                placeholder="blur"
+                className="w-[5rem] my-0 md:my-auto mx-10 border-0 border-red-500"
+              />
+               </Link>
+            </div>
+           
           </motion.div>
         </div>
 
