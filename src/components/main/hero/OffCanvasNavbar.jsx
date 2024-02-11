@@ -15,7 +15,7 @@ export default function OffCanvasNavbar() {
 				{/* the below div is the left side navigation buttons in desktop view */}
 				<div className="w-full hidden lg:flex justify-end">
 					<div className="md:mx-5 my-5 font-bold mx-10  !text-4xl md:my-auto hover:border-b-2 transition-all fade-in-out hover:!text-gray-300">
-						<Link className="text-2xl" href="/technicals">CA Fluxus</Link>
+						<Link className="text-2xl" href="https://ca.fluxus.co.in/">CA Fluxus</Link>
 					</div>
 
 				</div>
