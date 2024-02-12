@@ -4,26 +4,22 @@ import ContactCard from '../../components/accomodation/ContactCard'
 import Room from '../../components/accomodation/Room'
 import FAQ from '../../components/accomodation/FAQ'
 import RulesAndRegulations from '../../components/accomodation/RulesAndRegulations'
+import IITIIndoreMap from '../../components/accomodation/IITIIndoreMap'
 const HostelData = [
-    { id: 1, name: "Hostel 1", image: require('../../../public/images/accomodation/hostel.jpeg') },
-    { id: 2, name: "Hostel 2", image: require('../../../public/images/accomodation/hostel.jpeg') },
-    { id: 3, name: "Hostel 3", image: require('../../../public/images/accomodation/hostel.jpeg') },
-    { id: 4, name: "Hostel 4", image: require('../../../public/images/accomodation/hostel.jpeg') },
-    { id: 5, name: "Hostel 5", image: require('../../../public/images/accomodation/hostel.jpeg') },
-    { id: 6, name: "Hostel 6", image: require('../../../public/images/accomodation/hostel.jpeg') },
-    { id: 7, name: "Hostel 7", image: require('../../../public/images/accomodation/hostel.jpeg') },
-    { id: 8, name: "Hostel 8", image: require('../../../public/images/accomodation/hostel.jpeg') },
-    { id: 9, name: "Hostel 9", image: require('../../../public/images/accomodation/hostel.jpeg') },
-    { id: 10, name: "Hostel 10", image: require('../../../public/images/accomodation/hostel.jpeg') },
-    { id: 11, name: "Hostel 11", image: require('../../../public/images/accomodation/hostel.jpeg') },
-    { id: 12, name: "Hostel 12", image: require('../../../public/images/accomodation/hostel.jpeg') }
+    { id: 1, name: "Hostel 1", image: require('../../../public/images/accomodation/1.jpg') },
+    { id: 2, name: "Hostel 2", image: require('../../../public/images/accomodation/2.jpg') },
+    { id: 3, name: "Hostel 3", image: require('../../../public/images/accomodation/3.jpg')},
+    { id: 4, name: "Hostel 4", image: require('../../../public/images/accomodation/4.jpg') },
+    { id: 5, name: "Hostel 5", image: require('../../../public/images/accomodation/5.jpg')},
+    { id: 6, name: "Hostel 6", image: require('../../../public/images/accomodation/6.jpg') },
+   
 ];
 
 
 export default function Page() {
     return (
         // style={{ backgroundImage: 'url(https://wallpapercave.com/wp/RMdbmli.jpg)' }}
-        <div className='h-full bg-no-repeat bg-cover' >
+        <div className='h-full bg-no-repeat bg-cover border-0 border-red-500' >
             <div className="bg"></div>
 
             <div className="star-field">
@@ -31,11 +27,16 @@ export default function Page() {
                 <div className="layer"></div>
                 <div className="layer"></div>
             </div>
+            <h2 className='font-bold text-3xl md:text-6xl mt-20 text-center w-full'>Contact Us</h2>
             <div className='pt-20 flex flex-wrap justify-center items-center'>
 
                 <ContactCard ele={{ image: require('../../../public/images/accomodation/person.jpeg'), name: 'John Doe', position: 'Event Organizer', phone: "+91 8073010756", gmail: 'rpkiit2022@gmail.com' }} />
                 <ContactCard ele={{ image: require('../../../public/images/accomodation/person.jpeg'), name: 'John Doe', position: 'Event Organizer', phone: "+91 8073010756", gmail: 'rpkiit2022@gmail.com' }} />
             </div>
+            <div className='h-full w-full'>
+                <IITIIndoreMap/>
+            </div>
+            <h2 className='font-bold text-3xl md:text-6xl lg:mt-20 mb-10  text-center w-full'>Guest Rooms</h2>
             <div className='flex flex-wrap px-20 justify-center items-center'>
                 {HostelData.map((ele) => {
                     return (

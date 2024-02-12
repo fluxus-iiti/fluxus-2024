@@ -5,17 +5,22 @@ import logo from "../../../../public/images/Navbar/image1.png";
 import { motion } from "framer-motion";
 import OffCanvasNavbar from "./OffCanvasNavbar";
 import { FaBars } from "react-icons/fa";
+import { usePathname } from 'next/navigation'
 import Link from "next/link";
+import { useLayoutEffect } from "react";
 export default function Navbar() {
+  const pathname = usePathname()
+  console.log(pathname)
+  
   return (
-    <>
+    <div id="navbar" className={`bg-transparent ${pathname=="/technicals"?"absolute":""} w-full `}>
       <div
         id="burger_to_cross"
-        className="top-10 !z-[100000000] absolute  left-5 w-full h-full my-auto  font-weight-700 text-white text-2xl transition-all fade-in-out hidden lg:flex"
+        className="top-10 !z-[100000000] absolute  left-5 w-full  my-auto  font-weight-700 text-white text-2xl transition-all fade-in-out hidden lg:flex h-fit"
       >
         <BurgerToCross />
       </div>
-      <div  className="top-5 !z-[1000] absolute  left-5 w-full h-full m-5 font-weight-700 text-white text-2xl transition-all fade-in-out lg:hidden">
+      <div  className="top-5 !z-[1000] absolute  left-5 w-full h-fit m-5 font-weight-700 text-white text-2xl transition-all fade-in-out lg:hidden">
         <FaBars className="sm:w-16 sm:h-16 h-10 w-10" onClick={() => {
           document.getElementById('container').classList.toggle('nav-open');
           document.getElementById('offcanvas').style.top = "0px"
@@ -23,7 +28,7 @@ export default function Navbar() {
         }} />
       </div>
 
-      <div className=" py-2 bg-[#050917] overflow-hidden z-[-1]">
+      <div className=" py-2  overflow-hidden z-[-1]">
         <div>
           <OffCanvasNavbar />
         </div>
@@ -86,6 +91,6 @@ export default function Navbar() {
           }}
         ></motion.div>
       </div>
-    </>
+    </div>
   );
 }

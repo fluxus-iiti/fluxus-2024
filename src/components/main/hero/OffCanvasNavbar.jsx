@@ -4,11 +4,13 @@ import Image from "next/image";
 import logo from "../../../../public/images/Navbar/image1.png";
 import Link from "next/link";
 import { IoClose } from "react-icons/io5";
+import { usePathname } from "next/navigation";
 export default function OffCanvasNavbar() {
+	const pathname = usePathname()
 	return (
 		<div
 			id="offcanvas"
-			className="bg-[#050917] py-4 transition-all fade-in-out  absolute top-[-5000px] w-full  overflow-hidden !z-[100000] "
+			className={`${pathname=="/technicals"?"bg-transparent":""} py-4 transition-all fade-in-out  absolute top-[-5000px] w-full  overflow-hidden !z-[100000] `}
 		>
 
 			<div className="w-full lg:flex justify-center border-0 border-red-500 !text-4xl">
@@ -35,13 +37,8 @@ export default function OffCanvasNavbar() {
 					}}>
 						<IoClose className="sm:w-20 sm:h-20 h-16 w-16" />
 					</div>
-					<div className="w-[5rem] md:my-auto mx-10 ">
-					<Image
-						src={logo}
-						alt=""
-						placeholder="blur"
-						className=" border-0 border-red-500"
-					/>
+					<div className={`w-[5rem] h-[8rem] md:my-auto mx-10 `}>
+					
 					</div>
 				</div>
 				{/* the below div is for mobile view  */}

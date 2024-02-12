@@ -1,7 +1,8 @@
+
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import BurgerToCross from '@/components/main/hero/BurgerToCross'
+import Navbar from '@/components/main/hero/Navbar'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -17,9 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      
-        {children}
-        </body>
+        <div className='z-[-1]'>
+          <Navbar />
+        </div>
+        <div className='!z-[100000]'>
+          {children}
+        </div>
+      </body>
     </html>
   )
 }
