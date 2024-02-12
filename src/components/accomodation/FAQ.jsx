@@ -2,24 +2,28 @@
 import React, { useEffect, useState } from 'react'
 const faqData = [
     {
-        question: 'Why is the moon sometimes out during the day?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        question: 'How to book accommodation at Fluxus?',
+        answer: 'To book your accommodation at Fluxus you have to get in touch with the accommodation team through call or whatsapp. The contact details are present in the booking section of the website and instagram on Fluxus page. The booking will be confirmed after the completion of payment.',
     },
     {
-        question: 'Why is the sky blue?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        question: 'When will my accommodation be confirmed?',
+        answer: 'After the completion of the payment for accommodation you will be provided with a ticket to confirm your booking.',
     },
     {
-        question: 'Will we ever discover aliens?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        question: 'Does the accommodation fee include the food facility as well?',
+        answer: 'No, the accommodation fee does not include food. However, there will be food stalls operational during Fluxus in the IIT Indore campus to cater to the food requirements.',
     },
     {
-        question: 'How much does the Earth weigh?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        question: 'Who all are eligible for accommodation during Fluxus?',
+        answer: 'All the participants and the attendees coming for Fluxus are eligible to avail accommodation facility. The accommodation facility is for a team/contingent as well as for individual participants and attendees.',
     },
     {
-        question: 'How do airplanes stay up?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        question: 'What all does the accommodation facilities include?',
+        answer: 'The accommodation fee includes stay in the IIT Indore campus during Fluxus, hospitality kits and entry in the competitions taking place during Fluxus.',
+    },
+    {
+        question: 'What is the procedure to be followed after we reach IIT Indore?',
+        answer: 'After reaching the IIT Indore campus, you need to come to the accommodation desk, VSB Hall of Residence along with an identity card. You will be allotted your place to stay on campus after confirming the booking. Accommodation would be strictly on a shared basis.',
     },
 ];
 export default function FAQ() {
@@ -39,7 +43,7 @@ export default function FAQ() {
                 <h2 className='font-bold text-5xl my-10'>Frequently Asked Questions</h2>
                 <div className="accordion " id="accordion">
                     {faqData.map((item, index) => (
-                        <div className="accordion-item" key={index}>
+                        <div className="accordion-item border-y-[1px]" key={index}>
                             <button
                                 className={`accordion-button ${activeIndex === index ? 'active' : ''}`}
                                 onClick={() => toggleAccordion(index)}
@@ -48,7 +52,7 @@ export default function FAQ() {
                                 <span className="flex justify-center !text-white !text-center font-bold !text-3xl">{item.question}</span>
                                 
                             </button>
-                            <div className="my-2 py-2 text-2xl mx-10 border-y-[1px]">
+                            <div className="my-2 py-2 text-2xl mx-10">
                                 <p>{item.answer}</p>
                             </div>
                         </div>
@@ -89,13 +93,13 @@ export default function FAQ() {
                       margin: 0 auto;
                       padding: 4rem;
                       width: 100%;
+                      backdrop-filter: blur(10px);
                     }
-                    
-                    
                     
                     .accordion .accordion-item button[aria-expanded='true'] {
                       border-bottom: 1px solid #03b5d2;
-                      
+                      backdrop-filter: blur(10px);
+                      background: rgba(255, 255, 255, 0.2);
                     }
                     
                     .accordion button {
@@ -185,11 +189,6 @@ export default function FAQ() {
                       font-weight: 300;
                       margin: 2em 0;
                     }
-                    
-                    
-                    
-                    
-
                 `}
             </style>
         </div>

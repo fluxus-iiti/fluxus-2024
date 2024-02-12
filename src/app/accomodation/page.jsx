@@ -46,7 +46,7 @@ export default function Page() {
                 })}
             </div>
 
-            <div className="md:grid grid-cols-2 text-center w-full mb-20 ">
+            <div className="md:grid text-center w-full mb-20 ">
                 <RulesAndRegulations />
                 <FAQ />
 

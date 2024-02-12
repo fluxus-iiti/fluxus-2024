@@ -2,25 +2,37 @@
 import React, { useEffect, useState } from 'react'
 const faqData = [
     {
-        question: 'Why is the moon sometimes out during the day?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        question: 'Prohibited Items',
+        answer: 'Strict prohibition of alcohol, drugs, sharp objects, explosives, or any other deemed unsafe items inside the campus. Decisions by the Security and Fluxus team are final in case of disputes.',
     },
     {
-        question: 'Why is the sky blue?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        question: 'Vehicle Regulations',
+        answer: 'No external vehicles will be allowed onto the campus during Fluxus 2024.',
     },
     {
-        question: 'Will we ever discover aliens?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        question: 'Campus Decorum',
+        answer: 'Guests are expected to uphold the etiquette and cleanliness along with adhering to campus rules and regulations throughout their stay.',
     },
     {
-        question: 'How much does the Earth weigh?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        question: 'Security Measures',
+        answer: 'Any items issued to guests must be returned in satisfactory condition during check-out.',
     },
     {
-        question: 'How do airplanes stay up?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        question: 'Accommodation Amenities',
+        answer: 'Each guest will be provided with a mattress, pillow & hospitality kit. Fluxus will not supply blankets or bedsheets. Guests are encouraged to arrange these items on their own, especially considering potential cooler temperatures at night.',
     },
+    {
+        question: 'Compliance and Random Check',
+        answer: 'Random checks will be conducted to prevent unauthorized stays. Teams failing to produce accommodation receipts may face fines and disqualification.',
+    },
+    {
+        question: 'Entrance',
+        answer: 'Entry is exclusively through the \'Gate 1A\' of IIT Indore; all other gates will remain closed.',
+    },
+    {
+      question: 'ID Requirements',
+      answer: 'Guests must carry valid government photo IDs at all times. Failure to produce an ID card will result in denial of entry during Fluxus 2024.Failure to produce an ID card will result in denial of entry during Fluxus 2024.',
+  },
 ];
 export default function RulesAndRegulations() {
 
@@ -39,7 +51,7 @@ export default function RulesAndRegulations() {
                 <h2 className='font-bold text-5xl my-10'>Rules and Regulations</h2>
                 <div className="accordion " id="accordion">
                     {faqData.map((item, index) => (
-                        <div className="accordion-item" key={index}>
+                        <div className="accordion-item border-y-[1px]" key={index}>
                             <button
                                 className={`accordion-button ${activeIndex === index ? 'active' : ''}`}
                                 onClick={() => toggleAccordion(index)}
@@ -48,7 +60,7 @@ export default function RulesAndRegulations() {
                                 <span className="flex justify-center !text-white !text-center font-bold !text-3xl">{item.question}</span>
                                 
                             </button>
-                            <div className="my-2 py-2 text-2xl mx-10 border-y-[1px]">
+                            <div className="my-2 py-2 text-2xl mx-10">
                                 <p>{item.answer}</p>
                             </div>
                         </div>
@@ -89,13 +101,13 @@ export default function RulesAndRegulations() {
                       margin: 0 auto;
                       padding: 4rem;
                       width: 100%;
+                      backdrop-filter: blur(10px);
                     }
-                    
-                    
-                    
+
                     .accordion .accordion-item button[aria-expanded='true'] {
                       border-bottom: 1px solid #03b5d2;
-                      
+                      backdrop-filter: blur(10px);
+                      background: rgba(255, 255, 255, 0.2);
                     }
                     
                     .accordion button {
@@ -185,11 +197,6 @@ export default function RulesAndRegulations() {
                       font-weight: 300;
                       margin: 2em 0;
                     }
-                    
-                    
-                    
-                    
-
                 `}
             </style>
         </div>

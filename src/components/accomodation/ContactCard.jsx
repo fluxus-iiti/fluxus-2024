@@ -1,7 +1,6 @@
 'use client'
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { useEffect, useRef } from "react";
 import VanillaTilt from "vanilla-tilt";
 import {
@@ -59,7 +58,7 @@ export default function ContactCard({ ele }) {
                         <div className="card-inner ">
                             <div className="grid grid-rows-[auto_auto]  ">
                                 <div className=" px-10 py-5 w-full flex flex-col justify-center items-center">
-                                    <div
+                                    {/* <div
                                         id="ProjectsImage"
                                         className="w-full h-full md:w-full md:h-full  rounded-xl md:rounded-[0px] flex  items-center justify-center mb-5 md:mb-0 px-5 mx-auto"
                                     >
@@ -71,7 +70,7 @@ export default function ContactCard({ ele }) {
                                             className="w-[200px]  "
                                             
                                         />
-                                    </div>
+                                    </div> */}
                                     <div className="w-fit md:w-full h-full ml-5">
                                         <div className="my-2 text-3xl   text-white rounded-lg text-center break-all p-2  font-bold">
                                             {ele.name}
