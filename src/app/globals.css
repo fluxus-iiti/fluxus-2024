@@ -10,6 +10,14 @@
   .debug {
     border: 1px dashed red;
   }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 :root {
@@ -71,7 +79,7 @@ a {
   height: 32rem;
   margin: 0;
   padding: 1rem;
-  transition: all 0.3s;
+  /* transition: all 0.3s; */
   width: 30rem;
 }
 
@@ -106,7 +114,7 @@ a {
   margin: 0;
   padding: 1rem;
   position: absolute;
-  transition: all 0.3s;
+  /* transition: all 0.3s; */
   width: 30rem;
 }
 
@@ -253,4 +261,3 @@ a {
   border: 1px solid white;
   border-radius: 10px;
 }
-
