@@ -30,20 +30,22 @@ const _items = [
       link: "https://unstop.com/competitions/top-gear-gesture-control-car-fluxus-iit-indore-iit-indore-890266",
     },
   },
-  // {
-  //   player: {
-  //     id: 3,
-  //     title: "Pick n Place",
-  //     image: require("../../../public/images/planet2.png"),
-  //   },
-  // },
-  // {
-  //   player: {
-  //     id: 4,
-  //     title: "Nitrothrust",
-  //     image: require("../../../public/images/planet2.png"),
-  //   },
-  // },
+  {
+    player: {
+      id: 3,
+      title: "Pick n Place",
+      image: require("../../../public/images/Competitions/Pick_N_Place.png"),
+      link: "https://unstop.com/p/pick-n-place-robotics-challenge-fluxus-iit-indore-iit-indore-897732",
+    },
+  },
+  {
+    player: {
+      id: 4,
+      title: "Nitrothrust",
+      image: require("../../../public/images/Competitions/NITROTHRUST.png"),
+      link: "https://unstop.com/p/nitrothust-rc-racing-fluxus-iit-indore-iit-indore-898119",
+    },
+  },
   {
     player: {
       id: 5,
@@ -52,34 +54,38 @@ const _items = [
       link: "https://unstop.com/events/aero-artistrty-fluxus-24-iit-indore-iit-indore-893349",
     },
   },
-  // {
-  //   player: {
-  //     id: 6,
-  //     title: "RoboSoccer",
-  //     image: require("../../../public/images/planet3.png"),
-  //   },
-  // },
-  // {
-  //   player: {
-  //     id: 7,
-  //     title: "Obstacourse",
-  //     image: require("../../../public/images/planet3.png"),
-  //   },
-  // },
-  // {
-  //   player: {
-  //     id: 8,
-  //     title: "Margdarshak",
-  //     image: require("../../../public/images/planet2.png"),
-  //   },
-  // },
-  // {
-  //   player: {
-  //     id: 9,
-  //     title: "Robowrestling",
-  //     image: require("../../../public/images/planet1.png"),
-  //   },
-  // },
+  {
+    player: {
+      id: 6,
+      title: "RoboSoccer",
+      image: require("../../../public/images/Competitions/robo-template.png"),
+      link: "https://unstop.com/p/robosoccer-robotics-challenge-fluxus-iit-indore-iit-indore-898150",
+    },
+  },
+  {
+    player: {
+      id: 7,
+      title: "Obstacourse",
+      image: require("../../../public/images/Competitions/OBSTACOURSE.png"),
+      link: "https://unstop.com/p/obstacourse-roboracing-fluxus-iit-indore-iit-indore-898092",
+    },
+  },
+  {
+    player: {
+      id: 8,
+      title: "Margdarshak",
+      image: require("../../../public/images/Competitions/MARGDARSHAK.png"),
+      link: "https://unstop.com/p/margdarshak-line-follower-robot-challenge-fluxus-iit-indore-iit-indore-897912",
+    },
+  },
+  {
+    player: {
+      id: 9,
+      title: "Robo Sumo",
+      image: require("../../../public/images/Competitions/sumo-template.png"),
+      link: "https://unstop.com/p/robosumo-robotics-challenge-fluxus-iit-indore-iit-indore-898137"
+    },
+  },
   {
     player: {
       id: 10,
@@ -95,13 +101,14 @@ const _items = [
   //     image: require("../../../public/images/planet1.png"),
   //   },
   // },
-  // {
-  //   player: {
-  //     id: 12,
-  //     title: "Euristica",
-  //     image: require("../../../public/images/planet2.png"),
-  //   },
-  // },
+  {
+    player: {
+      id: 12,
+      title: "Euristica",
+      image: require("../../../public/images/Competitions/Eurisitca.png"),
+      link: "https://euristica.iiti.ac.in/",
+    },
+  },
   {
     player: {
       id: 13,
@@ -110,13 +117,14 @@ const _items = [
       link: "https://unstop.com/hackathons/enosium24-fluxus-iit-indore-iit-indore-892499",
     },
   },
-  // {
-  //   player: {
-  //     id: 14,
-  //     title: "CFA Conclave - Consulting",
-  //     image: require("../../../public/images/planet3.png"),
-  //   },
-  // },
+  {
+    player: {
+      id: 14,
+      title: "CFA Conclave - ConsultX",
+      image: require("../../../public/images/Competitions/Consultinsta.png"),
+      link: "https://unstop.com/p/consultx-case-study-challenge-fluxus-iit-indore-iit-indore-897734",
+    },
+  },
   // {
   //   player: {
   //     id: 15,
@@ -164,14 +172,14 @@ const _items = [
   // },
   // {
   //   player: {
-  //     id: 22,
+  //     id: 21,
   //     title: "Building Blochs",
   //     image: require("../../../public/images/planet3.png"),
   //   },
   // },
   {
     player: {
-      id: 10,
+      id: 22,
       title: "Trading Vault",
       image: require("../../../public/images/Competitions/Trading_Vault.png"),
       link: "https://unstop.com/o/yXlitCL?lb=OCk8n05",
