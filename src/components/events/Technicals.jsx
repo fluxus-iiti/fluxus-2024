@@ -10,81 +10,87 @@ const _items = [
     player: {
       id: 0,
       title: "Manthan",
-      image: require("../../../public/images/planet1.png"),
+      image: require("../../../public/images/Competitions/Manthan.png"),
       link: "https://unstop.com/competitions/manthan-ideathon-nirmal-nala-tech-challenge-fluxus-iit-indore-iit-indore-877419",
     },
   },
   {
     player: {
-      id: 18,
+      id: 1,
       title: "Overtinker",
-      image: require("../../../public/images/planet3.png"),
+      image: require("../../../public/images/Competitions/OverTinker.png"),
       link: "https://unstop.com/competitions/overtinker-iit-indore-890155",
     },
   },
   {
     player: {
-      id: 9,
+      id: 2,
       title: "Top Gear",
-      image: require("../../../public/images/planet2.png"),
+      image: require("../../../public/images/Competitions/TGGEST.png"),
       link: "https://unstop.com/competitions/top-gear-gesture-control-car-fluxus-iit-indore-iit-indore-890266",
     },
   },
-  // {
-  //   player: {
-  //     id: 1,
-  //     title: "Pick n Place",
-  //     image: require("../../../public/images/planet2.png"),
-  //   },
-  // },
-  // {
-  //   player: {
-  //     id: 2,
-  //     title: "Nitrothrust",
-  //     image: require("../../../public/images/planet2.png"),
-  //   },
-  // },
   {
     player: {
       id: 3,
+      title: "Pick n Place",
+      image: require("../../../public/images/Competitions/Pick_N_Place.png"),
+      link: "https://unstop.com/p/pick-n-place-robotics-challenge-fluxus-iit-indore-iit-indore-897732",
+    },
+  },
+  {
+    player: {
+      id: 4,
+      title: "Nitrothrust",
+      image: require("../../../public/images/Competitions/NITROTHRUST.png"),
+      link: "https://unstop.com/p/nitrothust-rc-racing-fluxus-iit-indore-iit-indore-898119",
+    },
+  },
+  {
+    player: {
+      id: 5,
       title: "Aero Artistry",
-      image: require("../../../public/images/planet1.png"),
+      image: require("../../../public/images/Competitions/Aero_Artistry.png"),
       link: "https://unstop.com/events/aero-artistrty-fluxus-24-iit-indore-iit-indore-893349",
     },
   },
-  // {
-  //   player: {
-  //     id: 4,
-  //     title: "RoboSoccer",
-  //     image: require("../../../public/images/planet3.png"),
-  //   },
-  // },
-  // {
-  //   player: {
-  //     id: 5,
-  //     title: "Obstacourse",
-  //     image: require("../../../public/images/planet3.png"),
-  //   },
-  // },
-  // {
-  //   player: {
-  //     id: 6,
-  //     title: "Margdarshak",
-  //     image: require("../../../public/images/planet2.png"),
-  //   },
-  // },
-  // {
-  //   player: {
-  //     id: 7,
-  //     title: "Robowrestling",
-  //     image: require("../../../public/images/planet1.png"),
-  //   },
-  // },
+  {
+    player: {
+      id: 6,
+      title: "RoboSoccer",
+      image: require("../../../public/images/Competitions/robo-template.png"),
+      link: "https://unstop.com/p/robosoccer-robotics-challenge-fluxus-iit-indore-iit-indore-898150",
+    },
+  },
+  {
+    player: {
+      id: 7,
+      title: "Obstacourse",
+      image: require("../../../public/images/Competitions/OBSTACOURSE.png"),
+      link: "https://unstop.com/p/obstacourse-roboracing-fluxus-iit-indore-iit-indore-898092",
+    },
+  },
   {
     player: {
       id: 8,
+      title: "Margdarshak",
+      image: require("../../../public/images/Competitions/MARGDARSHAK.png"),
+      link: "https://unstop.com/p/margdarshak-line-follower-robot-challenge-fluxus-iit-indore-iit-indore-897912",
+    },
+  },
+  {
+    player: {
+      id: 9,
+      title: "Robo Sumo",
+      image: require("../../../public/images/Competitions/sumo-template.png"),
+      link: "https://unstop.com/p/robosumo-robotics-challenge-fluxus-iit-indore-iit-indore-898137"
+    },
+  },
+  {
+    player: {
+      id: 10,
       title: "RoboShooter",
-      image: require("../../../public/images/planet1.png"),
+      image: require("../../../public/images/Competitions/RoboShooter.png"),
       link: "https://unstop.com/competitions/shooter-bot-competition-fluxus-24-iit-indore-iit-indore-890839",
     },
   },
@@ -95,28 +101,30 @@ const _items = [
   //     image: require("../../../public/images/planet1.png"),
   //   },
   // },
-  // {
-  //   player: {
-  //     id: 12,
-  //     title: "Euristica",
-  //     image: require("../../../public/images/planet2.png"),
-  //   },
-  // },
+  {
+    player: {
+      id: 12,
+      title: "Euristica",
+      image: require("../../../public/images/Competitions/Eurisitca.png"),
+      link: "https://euristica.iiti.ac.in/",
+    },
+  },
   {
     player: {
       id: 13,
       title: "Enosium",
-      image: require("../../../public/images/planet1.png"),
+      image: require("../../../public/images/Competitions/enosium.png"),
       link: "https://unstop.com/hackathons/enosium24-fluxus-iit-indore-iit-indore-892499",
     },
   },
-  // {
-  //   player: {
-  //     id: 14,
-  //     title: "CFA Conclave - Consulting",
-  //     image: require("../../../public/images/planet3.png"),
-  //   },
-  // },
+  {
+    player: {
+      id: 14,
+      title: "CFA Conclave - ConsultX",
+      image: require("../../../public/images/Competitions/Consultinsta.png"),
+      link: "https://unstop.com/p/consultx-case-study-challenge-fluxus-iit-indore-iit-indore-897734",
+    },
+  },
   // {
   //   player: {
   //     id: 15,
@@ -128,7 +136,7 @@ const _items = [
     player: {
       id: 16,
       title: "CFA Conclave - AnalyticaX",
-      image: require("../../../public/images/planet2.png"),
+      image: require("../../../public/images/Competitions/AnalyticaX.png"),
       link: "https://unstop.com/hackathons/analyticax-cfa-conclave24-fluxus-iit-indore-iit-indore-890123",
     },
   },
@@ -136,44 +144,44 @@ const _items = [
     player: {
       id: 17,
       title: "Concastle",
-      image: require("../../../public/images/planet1.png"),
-      link: "https://unstop.com/competitions/concastle-fluxus-24-iit-indore-892867"
+      image: require("../../../public/images/Competitions/CONCASTLE.png"),
+      link: "https://unstop.com/competitions/concastle-fluxus-24-iit-indore-892867",
     },
   },
   {
     player: {
-      id: 19,
+      id: 18,
       title: "Trace it Out",
-      image: require("../../../public/images/planet1.png"),
+      image: require("../../../public/images/Competitions/TGTRACE.png"),
       link: "https://unstop.com/competitions/top-gear24-trace-it-out-fluxus-iit-indore-iit-indore-892258",
     },
   },
   // {
   //   player: {
-  //     id: 20,
+  //     id: 19,
   //     title: "MetaBizz",
   //     image: require("../../../public/images/planet2.png"),
   //   },
   // },
   // {
   //   player: {
-  //     id: 21,
+  //     id: 20,
   //     title: "Nakshatra",
   //     image: require("../../../public/images/planet1.png"),
   //   },
   // },
   // {
   //   player: {
-  //     id: 22,
+  //     id: 21,
   //     title: "Building Blochs",
   //     image: require("../../../public/images/planet3.png"),
   //   },
   // },
   {
     player: {
-      id: 10,
+      id: 22,
       title: "Trading Vault",
-      image: require("../../../public/images/planet3.png"),
+      image: require("../../../public/images/Competitions/Trading_Vault.png"),
       link: "https://unstop.com/o/yXlitCL?lb=OCk8n05",
     },
   },
@@ -181,7 +189,7 @@ const _items = [
     player: {
       id: 23,
       title: "TinkerHub Tech Expo",
-      image: require("../../../public/images/planet3.png"),
+      image: require("../../../public/images/Competitions/Tinker_Hub.png"),
       link: "https://unstop.com/p/tinkerhub-tech-expo-fluxus-iit-indore-iit-indore-889724",
     },
   },
@@ -189,7 +197,7 @@ const _items = [
     player: {
       id: 24,
       title: "Skysweep",
-      image: require("../../../public/images/planet1.png"),
+      image: require("../../../public/images/Competitions/SkySweep.png"),
       link: "https://unstop.com/competitions/skysweep-carbon-cleanse-challenge-fluxus-iit-indore-iit-indore-892481",
     },
   },
@@ -197,7 +205,7 @@ const _items = [
     player: {
       id: 25,
       title: "Sunspark",
-      image: require("../../../public/images/planet2.png"),
+      image: require("../../../public/images/Competitions/SUNSPARK.png"),
       link: "https://unstop.com/competitions/sunspark-lets-simulate-it-fluxus-iit-indore-iit-indore-890296",
     },
   },
@@ -389,6 +397,12 @@ const Technicals = () => {
 
   return (
     <>
+    <div className="competition-section"
+    style={{
+      backgroundImage: `url(images/back.png)`,
+      backgroundRepeat: "repeat",
+    }}
+    >
       {/* <motion.div
         initial="hidden"
         whileInView="visible"
@@ -433,16 +447,16 @@ const Technicals = () => {
       </div>
       {/* </motion.div> */}
       <div className="mx-auto justify-center text-center text-white text-2xl w-3/4 md:top-[-50px] relative">
-        You can check out all the events on our Unstop Page by clicking on the{" "}
+        You can check out all the events on our Unstop Page by clicking{" "}
         <a href="https://unstop.com/college-fests/fluxus-iit-indore-indian-institute-of-technology-iit-indore-197772">
-          here
+          <span className="font-semibold">HERE</span>
         </a>
         .
       </div>
       <div className="md:translate-y-[-150px]">
         {/* <div> */}
         <div id="html" className="carousel__wrap ">
-          <div className="carousel__inner">
+          {/* <div className="carousel__inner">
             <button
               className="carousel__btn carousel__btn--prev !hidden lg:!flex"
               onClick={() => prevClick()}
@@ -478,16 +492,58 @@ const Technicals = () => {
                 />
               ))}
             </div>
+          </div> */}
+
+          {/* ********************************************************************* */}
+          <div className="flex mb-20 gap-5 overflow-x-scroll overflow-y-visible h-full no-scrollbar md:grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+            {itemsModal?.map((item) => (
+              <>
+                <div
+                  id="card"
+                  className="card h-fit w-fit rounded-b-[30px] !mx-5 !my-5"
+                >
+                  <div className="image">
+                    <Image
+                      src={item.player.image}
+                      alt={item.player.title}
+                      className="min-w-[250px]"
+                    ></Image>
+                  </div>
+                  <div className="content flex flex-col justify-center items-center my-4">
+                    <div className="title text-center">
+                      <span className="text-6xl font-bold">
+                        {item.player.title}
+                      </span>
+                    </div>
+                    <div className="link-box border-solid border-[1px] border-slate-300 w-fit text-center px-8 py-4 rounded-xl my-5 cursor-pointer hover:bg-slate-200 hover:text-gray-900">
+                      {item.player.link ? (
+                        <a href={item.player.link} target="_blank">
+                          <span className="text-2xl font-semibold">
+                            Know More
+                          </span>
+                        </a>
+                      ) : (
+                        <span className="text-2xl">Comming Soon</span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </>
+            ))}
           </div>
+
+          {/* ********************************************************************* */}
 
           <style jsx>{``}</style>
         </div>
       </div>
-      <div className="mb-10 lg:mt-[-16vh] mt-48 md:mt-0">
+      {/* <div className="mb-10 lg:mt-[-16vh] mt-48 md:mt-0">
         <ModalItem />
+      </div> */}
       </div>
     </>
   );
 };
 
 export default Technicals;
+
