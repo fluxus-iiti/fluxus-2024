@@ -11,43 +11,32 @@ import { useLayoutEffect } from "react";
 export default function Navbar() {
   const pathname = usePathname()
   console.log(pathname)
-  
+
   return (
-    <div id="navbar" className={`bg-transparent ${pathname=="/technicals"?"absolute":""} w-full `}>
-      <div
-        id="burger_to_cross"
-        className="top-10 !z-[100000000] absolute  left-5 w-full  my-auto  font-weight-700 text-white text-2xl transition-all fade-in-out hidden lg:flex h-fit"
-      >
-        <BurgerToCross />
-      </div>
-      <div  className="top-5 !z-[1000] absolute  left-5 w-full h-fit m-5 font-weight-700 text-white text-2xl transition-all fade-in-out lg:hidden">
-        <FaBars className="sm:w-16 sm:h-16 h-10 w-10" onClick={() => {
-          document.getElementById('container').classList.toggle('nav-open');
-          document.getElementById('offcanvas').style.top = "0px"
-          document.getElementById('burger_to_cross').style.transform = "translateY(200px)"
-        }} />
+    <div>
+      <div>
+        <OffCanvasNavbar />
       </div>
 
-      <div className=" py-2  overflow-hidden z-[-1]">
-        <div>
-          <OffCanvasNavbar />
+      <div id="navbar" className={`bg-transparent ${pathname == "/technicals" ? "absolute" : ""} w-full backdrop-blur-md md:backdrop-blur-none !z-[10000000000000000] `}>
+        <div
+          id="burger_to_cross"
+          className="top-14 !z-[10000000] absolute  left-5 w-fit  my-auto  font-weight-700 text-white text-2xl transition-all fade-in-out  hidden lg:flex h-fit"
+        >
+          <BurgerToCross />
+        </div>
+        <div className="top-5 !z-[1000] absolute  left-5 w-full h-fit m-5 font-weight-700 text-white text-2xl transition-all fade-in-out lg:hidden">
+          <FaBars className="sm:w-16 sm:h-16 h-10 w-10" onClick={() => {
+            document.getElementById('container').classList.toggle('nav-open');
+            document.getElementById('offcanvas').style.top = "0px"
+            document.getElementById('burger_to_cross').style.transform = "translateY(200px)"
+            document.getElementById('navbar').style.visibility= "hidden"
+          }} />
         </div>
 
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{
-            duration: 2.5,
-            type: "spring",
-            delay: 1,
-          }}
-          variants={{
-            visible: { y: "1vh", opacity: 1 },
-            hidden: { y: "0vh", opacity: 0 },
-          }}
-        ></motion.div>
-        <div className="w-full flex justify-center items-center">
+        <div className=" py-2  overflow-hidden ">
+
+
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -55,41 +44,57 @@ export default function Navbar() {
             transition={{
               duration: 2.5,
               type: "spring",
+              delay: 1,
             }}
             variants={{
-              visible: { y: "0vh", opacity: 1 },
-              hidden: { y: "-5vh", opacity: 0 },
+              visible: { y: "1vh", opacity: 1 },
+              hidden: { y: "0vh", opacity: 0 },
             }}
-          >
-           
-            <div className="flex justify-center items-center Z ">
-            <Link href="/" className="cursor-pointer">
-              <Image
-                src={logo}
-                alt=""
-                placeholder="blur"
-                className="w-[5rem] my-0 md:my-auto mx-10 border-0 border-red-500"
-              />
-               </Link>
-            </div>
-           
-          </motion.div>
-        </div>
+          ></motion.div>
+          <div className="w-full flex justify-center items-center">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{
+                duration: 2.5,
+                type: "spring",
+              }}
+              variants={{
+                visible: { y: "0vh", opacity: 1 },
+                hidden: { y: "-5vh", opacity: 0 },
+              }}
+            >
 
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{
-            duration: 2.5,
-            type: "spring",
-            delay: 1,
-          }}
-          variants={{
-            visible: { y: "1vh", opacity: 1 },
-            hidden: { y: "0vh", opacity: 0 },
-          }}
-        ></motion.div>
+              <div className="flex justify-center items-center Z ">
+                <Link href="/" className="cursor-pointer">
+                  <Image
+                    src={logo}
+                    alt=""
+                    placeholder="blur"
+                    className="w-[5rem] my-0 md:my-auto mx-10 border-0 border-red-500"
+                  />
+                </Link>
+              </div>
+
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{
+              duration: 2.5,
+              type: "spring",
+              delay: 1,
+            }}
+            variants={{
+              visible: { y: "1vh", opacity: 1 },
+              hidden: { y: "0vh", opacity: 0 },
+            }}
+          ></motion.div>
+        </div>
       </div>
     </div>
   );

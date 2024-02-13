@@ -54,7 +54,7 @@ const Hero = () => {
               hidden: { opacity: 0, scale: 0.8 },
             }}
           >
-            <div id="constellation" className="">
+            <div id="constellation" className="z-[-10]">
               <Image
                 src={Constellation}
                 alt="Constellation"
