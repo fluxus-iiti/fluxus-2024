@@ -13,7 +13,7 @@ export default function Navbar() {
   console.log(pathname)
   
   return (
-    <div id="navbar" className={`bg-transparent ${pathname=="/technicals"?"absolute":""} w-full `}>
+    <div id="navbar" className={`bg-transparent ${pathname=="/technicals"?"absolute":""} w-full backdrop-blur-md md:backdrop-blur-none`}>
       <div
         id="burger_to_cross"
         className="top-10 !z-[100000000] absolute  left-5 w-full  my-auto  font-weight-700 text-white text-2xl transition-all fade-in-out hidden lg:flex h-fit"

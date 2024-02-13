@@ -44,7 +44,7 @@ export default function OffCanvasNavbar() {
 				{/* the below div is for mobile view  */}
 					<div className="w-full flex flex-col lg:flex-row justify-end items-center lg:hidden">
 						
-						<div className={`md:mx-5 my-5 font-bold mx-10  !text-4xl md:my-auto transition-all fade-in-out hover:!text-gray-300 hover:border-b-2`}>
+						<div className={`md:mx-5 my-5 font-bold mx-10  !text-4xl md:my-auto transition-all fade-in-out hover:!text-gray-300 hover:border-b-2 backdrop-blur-md md:backdrop-blur-none`}>
 							<Link className="text-2xl" href="https://ca.fluxus.co.in/">CA Fluxus</Link>
 						</div>
 						<div className={`md:mx-5 my-5 font-bold mx-10  !text-4xl md:my-auto transition-all fade-in-out hover:!text-gray-300 hover:border-b-2`}>
