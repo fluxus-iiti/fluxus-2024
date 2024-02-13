@@ -12,7 +12,7 @@ export default function BurgerToCross() {
     }, [])
     return (
         <>
-            <div id="container" className="container !z-[100000000]">
+            <div id="container" className="container cursor-pointer !z-[100000000]">
                 <a id="menu-toggle" className="menu-toggle hidden md:block" onClick={() => {
                     if(document.getElementById('container').classList.contains('nav-open')){
                         document.getElementById('container').classList.toggle('nav-open');
