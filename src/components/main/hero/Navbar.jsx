@@ -14,14 +14,12 @@ export default function Navbar() {
 
   return (
     <div>
-      <div>
-        <OffCanvasNavbar />
-      </div>
+      
 
-      <div id="navbar" className={`bg-transparent ${pathname == "/technicals" ? "absolute" : ""} w-full backdrop-blur-md md:backdrop-blur-none !z-[10000000000000000] `}>
+      <div id="navbar" className={`bg-transparent ${pathname == "/technicals" ? "absolute" : ""} w-full backdrop-blur-md md:backdrop-blur-none `}>
         <div
           id="burger_to_cross"
-          className="top-14 !z-[10000000] absolute  left-5 w-fit  my-auto  font-weight-700 text-white text-2xl transition-all fade-in-out  hidden lg:flex h-fit"
+          className="top-14 !z-[100000000] absolute  left-5 w-fit  my-auto  font-weight-700 text-white text-2xl transition-all fade-in-out  hidden lg:flex h-fit "
         >
           <BurgerToCross />
         </div>
@@ -29,7 +27,7 @@ export default function Navbar() {
           <FaBars className="sm:w-16 sm:h-16 h-10 w-10" onClick={() => {
             document.getElementById('container').classList.toggle('nav-open');
             document.getElementById('offcanvas').style.top = "0px"
-            document.getElementById('burger_to_cross').style.transform = "translateY(200px)"
+            document.getElementById('burger_to_cross').style.transform = "translateY(50px)"
             document.getElementById('navbar').style.visibility= "hidden"
           }} />
         </div>
@@ -95,6 +93,9 @@ export default function Navbar() {
             }}
           ></motion.div>
         </div>
+      </div>
+      <div className="z-[-1]">
+        <OffCanvasNavbar />
       </div>
     </div>
   );

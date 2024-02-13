@@ -12,7 +12,7 @@ export default function BurgerToCross() {
     }, [])
     return (
         <>
-            <div id="container" className="container  !z-[10000000000000]">
+            <div id="container" className="container !z-[100000000]">
                 <a id="menu-toggle" className="menu-toggle hidden md:block" onClick={() => {
                     if(document.getElementById('container').classList.contains('nav-open')){
                         document.getElementById('container').classList.toggle('nav-open');
@@ -23,13 +23,13 @@ export default function BurgerToCross() {
                     else{
                         document.getElementById('container').classList.toggle('nav-open');
                         document.getElementById('offcanvas').style.top = "0px"
-                        document.getElementById('burger_to_cross').style.transform = "translateY(0px)"
+                        document.getElementById('burger_to_cross').style.transform = "translateY(50px)"
                     }
                     
                 }}>
-                    <span className="menu-toggle-bar menu-toggle-bar--top"></span>
-                    <span className="menu-toggle-bar menu-toggle-bar--middle"></span>
-                    <span className="menu-toggle-bar menu-toggle-bar--bottom"></span>
+                    <span className="menu-toggle-bar menu-toggle-bar--top !z-[100000000]"></span>
+                    <span className="menu-toggle-bar menu-toggle-bar--middle !z-[100000000]"></span>
+                    <span className="menu-toggle-bar menu-toggle-bar--bottom !z-[100000000]"></span>
                 </a>
                 
             </div>

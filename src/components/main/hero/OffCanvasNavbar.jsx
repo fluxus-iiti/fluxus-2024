@@ -10,10 +10,10 @@ export default function OffCanvasNavbar() {
 	return (
 		<div
 			id="offcanvas"
-			className={` py-4 transition-all fade-in-out  absolute top-[-5000px] w-full   overflow-hidden !z-[100000000] bg-black lg:bg-transparent bg-opacity-80 lg:!z-[100000] `}
+			className={` py-4 transition-all fade-in-out  absolute top-[-5000px] w-full   overflow-hidden  bg-black lg:bg-transparent bg-opacity-80 ${pathname=="/technicals"?"!z-[1000000]":""}`}
 		>
 
-			<div className="w-full lg:flex justify-center border-0 border-red-500 !text-4xl">
+			<div className="w-full lg:flex justify-center border-0 border-red-500 !text-4xl ">
 				{/* the below div is the left side navigation buttons in desktop view */}
 				<div className="w-full hidden lg:flex justify-end">
 					<div className="md:mx-5 my-5 font-bold mx-10  !text-4xl md:my-auto hover:border-b-2 transition-all fade-in-out hover:!text-gray-300">
