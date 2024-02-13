@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import logo from "../../../public/images/Footer/logo.png";
 
-const Technicals = () => {
+const Technicals = ({ prop }) => {
   return (
     <>
       {/* Main Div */}
@@ -223,23 +223,60 @@ const Technicals = () => {
                 Indore 453552,
               </motion.div>
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-              className="text-3xl text-gray-400 capitalize"
-            >
-              <a href="tel:+919344446245" target="_blank">
-                <SocialIcon
-                  url="www.whatsapp.com"
-                  bgColor="transparent"
-                  fgColor="rgb(156 163 175)"
-                  as="motion.div"
-                  style={{ height: 30, width: 30 }}
-                />
-                +919344446245
-              </a>
-            </motion.div>
+            {prop.contact ? (
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                className="text-3xl text-gray-400 capitalize"
+              >
+                <a href={`tel:${prop.contact}`}target="_blank">
+                  <SocialIcon
+                    url="www.whatsapp.com"
+                    bgColor="transparent"
+                    fgColor="rgb(156 163 175)"
+                    as="motion.div"
+                    style={{ height: 30, width: 30 }}
+                  />
+                  {prop.contact}
+                </a>
+              </motion.div>
+            ) : (
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                className="text-3xl text-gray-400 capitalize"
+              >
+                <a href="tel:+919344446245" target="_blank">
+                  <SocialIcon
+                    url="www.whatsapp.com"
+                    bgColor="transparent"
+                    fgColor="rgb(156 163 175)"
+                    as="motion.div"
+                    style={{ height: 30, width: 30 }}
+                  />
+                  +919344446245
+                </a>
+              </motion.div>
+            )}
+            {prop.contact2?(<motion.div
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                className="text-3xl text-gray-400 capitalize"
+              >
+                <a href={`tel:${prop.contact2}`} target="_blank">
+                  <SocialIcon
+                    url="www.whatsapp.com"
+                    bgColor="transparent"
+                    fgColor="rgb(156 163 175)"
+                    as="motion.div"
+                    style={{ height: 30, width: 30 }}
+                  />
+                  {prop.contact2}
+                </a>
+              </motion.div>):(<></>)}
           </motion.div>
         </div>
         {/* Copyright */}

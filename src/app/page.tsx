@@ -131,7 +131,7 @@ export default function Main() {
           {/* <Day1/> 
           <Day2/>
           <Day3/> */}
-          <Footer/>
+          <Footer prop = {{contact:+919344446245}}/>
           
           {/* <About />
           <IntroSection /> */}

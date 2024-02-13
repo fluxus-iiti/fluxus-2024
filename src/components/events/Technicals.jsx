@@ -495,7 +495,7 @@ const Technicals = () => {
           </div> */}
 
           {/* ********************************************************************* */}
-          <div className="flex mb-20 gap-5 overflow-x-scroll overflow-y-visible h-full no-scrollbar md:grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+          <div className="flex mb-20 gap-5 overflow-x-scroll overflow-y-visible h-full md:no-scrollbar md:grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
             {itemsModal?.map((item) => (
               <>
                 <div
@@ -534,7 +534,30 @@ const Technicals = () => {
 
           {/* ********************************************************************* */}
 
-          <style jsx>{``}</style>
+          <style jsx>{`
+            ::-webkit-scrollbar {
+              width: 10px;
+              height: 7px;
+              scrollbar-width: thick;
+            }
+            
+            /* Track */
+            ::-webkit-scrollbar-track {
+              box-shadow: inset 0 0 5px grey; 
+              border-radius: 5px;
+            }
+             
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+              background: #482CB9; 
+              border-radius: 5px;
+            }
+            
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+              background: #482CB9; 
+            }
+          `}</style>
         </div>
       </div>
       {/* <div className="mb-10 lg:mt-[-16vh] mt-48 md:mt-0">
