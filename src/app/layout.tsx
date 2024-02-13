@@ -21,7 +21,7 @@ export default function RootLayout({
         <div className='z-[-1]'>
           <Navbar />
         </div>
-        <div className='!z-[100000]'>
+        <div className=''>
           {children}
         </div>
       </body>

@@ -23,7 +23,7 @@ export default function BurgerToCross() {
                     else{
                         document.getElementById('container').classList.toggle('nav-open');
                         document.getElementById('offcanvas').style.top = "0px"
-                        document.getElementById('burger_to_cross').style.transform = "translateY(100px)"
+                        document.getElementById('burger_to_cross').style.transform = "translateY(0px)"
                     }
                     
                 }}>

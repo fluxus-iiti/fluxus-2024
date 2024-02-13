@@ -39,8 +39,8 @@ export default function Home() {
 
   return (
     <motion.div>
-      <main className="overflow-hidden">
-        <div className="max-w-full max-h-full relative ">
+      <main className="overflow-hidden ">
+        <div className="max-w-full max-h-full relative z-[-2]">
           <div className="absolute w-full h-full z-[-2]">
             <motion.div
               initial="hidden"
@@ -61,8 +61,8 @@ export default function Home() {
               <SaturnPlanet />
             </motion.div>
           </div>
-          <div id="content" className={`relative  w-full h-full top-0 grid `}>
-            <div className="grid  grid-cols-3 absolute">
+          <div id="content" className={`relative  w-full h-full top-0 grid z-[-2]`}>
+            <div className="grid  grid-cols-3 absolute z-[-3]">
               <div className="z-[-3] translate-y-[55px]">
                 <motion.div
                   initial="hidden"

@@ -5,6 +5,7 @@ import Room from "../../components/accommodation/Room";
 import FAQ from "../../components/accommodation/FAQ";
 import RulesAndRegulations from "../../components/accommodation/RulesAndRegulations";
 import IITIIndoreMap from "../../components/accommodation/IITIIndoreMap";
+
 const HostelData = [
   {
     id: 1,
@@ -41,7 +42,7 @@ const HostelData = [
 export default function Page() {
   return (
     // style={{ backgroundImage: 'url(https://wallpapercave.com/wp/RMdbmli.jpg)' }}
-    <div className="h-full bg-no-repeat bg-cover border-0 border-red-500">
+    <div className="h-full bg-no-repeat bg-cover border-0 border-red-500 z-[-1]">
       <div className="bg"></div>
 
       <div className="star-field">
@@ -53,10 +54,11 @@ export default function Page() {
         For Accommodation <br />
         Contact
       </h2>
-      <div className="text-center w-full mt-20 mainBackdrop">
-        <a target="_blank" href="https://forms.gle/u4Va2Wm9pPYvpuqq9">
-          <button className="justify-center items-center text-3xl rounded-lg bg-white-500 text-white py-3 px-5 formButton font-bold">
-            Accommodation Form
+      <div className="text-center w-full mt-20  ">
+        
+        <a target="_blank" href="https://forms.gle/u4Va2Wm9pPYvpuqq9" >
+          <button className="justify-center items-center text-3xl rounded-lg bg-white-500 text-white py-3 px-5 formButton font-bold  !border-2 !border-red-500 !bg-red-600 hover:!bg-red-500">
+            Register Here
           </button>
         </a>
       </div>
@@ -106,12 +108,13 @@ export default function Page() {
           .formButton {
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
             border: 1px solid #fff;
+            
           }
           .formButton:hover {
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
             border: 1px solid #fff;
             background-color: #fff;
-            color: #000;
+           
           }
           .bg {
             background: url(./images/accommodation/bg.jpeg) no-repeat;
