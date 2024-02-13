@@ -1,7 +1,7 @@
 import Hero from "@/components/events/Hero";
 import About from "@/components/events/About";
 import Technicals from "@/components/events/Technicals";
-import Footer from "@/components/events/Footer";
+import TechnicalsFooter from "@/components/events/TechnicalsFooter";
 
 export default function EventsPage() {
 
@@ -10,7 +10,7 @@ export default function EventsPage() {
       <Hero />
       <About />
       <Technicals />
-      <Footer prop = {{contact:+919022566026, contact2:+919920702153}}/>
+      <TechnicalsFooter />
     </>
   );
 }

@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import logo from "../../../public/images/Footer/logo.png";
 
-const Technicals = () => {
+const TechnicalsFooter = () => {
   return (
     <>
       {/* Main Div */}
@@ -57,27 +57,15 @@ const Technicals = () => {
               transition={{ duration: 0.5, ease: "easeOut" }}
               className="text-4xl mt-10 md:mt-auto"
             >
-              Socials
+              Head of Technicals
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="mt-6 text-3xl text-gray-400 capitalize"
+              className="mt-6 text-3xl capitalize"
             >
-              <a
-                href="https://www.instagram.com/fluxus_iit_indore/"
-                target="_blank"
-              >
-                <SocialIcon
-                  url="www.instagram.com"
-                  bgColor="transparent"
-                  fgColor="rgb(156 163 175)"
-                  as="motion.div"
-                  style={{ height: 30, width: 30 }}
-                />
-                Instagram
-              </a>
+              Ebrahim Rampurawala
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -85,19 +73,40 @@ const Technicals = () => {
               transition={{ duration: 0.5, ease: "easeOut" }}
               className="text-3xl text-gray-400 capitalize"
             >
-              <a
-                href="https://www.linkedin.com/company/fluxus---iit-indore/mycompany/"
-                target="_blank"
-              >
+              <a href="tel:+919920702153" target="_blank">
                 <SocialIcon
-                  url="www.linkedin.com"
+                  url="www.whatsapp.com"
                   bgColor="transparent"
                   fgColor="rgb(156 163 175)"
                   as="motion.div"
                   style={{ height: 30, width: 30 }}
                 />
-                linkedin
+                +919920702153
               </a>
+            </motion.div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="md:w-1/5 flex flex-col gap-y-2 lg:items-start"
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              className="text-4xl mt-10 md:mt-auto"
+            >
+              Head of Technicals
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              className="mt-6 text-3xl capitalize"
+            >
+              Rohan Jha
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -105,35 +114,15 @@ const Technicals = () => {
               transition={{ duration: 0.5, ease: "easeOut" }}
               className="text-3xl text-gray-400 capitalize"
             >
-              <a
-                href="https://www.youtube.com/@fluxusiitindore"
-                target="_blank"
-              >
+              <a href="tel:+919022566026" target="_blank">
                 <SocialIcon
-                  url="www.youtube.com"
+                  url="www.whatsapp.com"
                   bgColor="transparent"
                   fgColor="rgb(156 163 175)"
                   as="motion.div"
                   style={{ height: 30, width: 30 }}
                 />
-                Youtube
-              </a>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-              className="text-3xl text-gray-400"
-            >
-              <a href="mailto:fluxus@iiti.ac.in" target="_blank">
-                <SocialIcon
-                  url="www.email.com"
-                  bgColor="transparent"
-                  fgColor="rgb(156 163 175)"
-                  as="motion.div"
-                  style={{ height: 30, width: 30 }}
-                />
-                {"fluxus@iiti.ac.in"}
+                +919022566026
               </a>
             </motion.div>
           </motion.div>
@@ -223,23 +212,23 @@ const Technicals = () => {
                 Indore 453552,
               </motion.div>
             </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
-                className="text-3xl text-gray-400 capitalize"
-              >
-                <a href="tel:+919344446245" target="_blank">
-                  <SocialIcon
-                    url="www.whatsapp.com"
-                    bgColor="transparent"
-                    fgColor="rgb(156 163 175)"
-                    as="motion.div"
-                    style={{ height: 30, width: 30 }}
-                  />
-                  +919344446245
-                </a>
-              </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              className="text-3xl text-gray-400 capitalize"
+            >
+              <a href="tel:+919344446245" target="_blank">
+                <SocialIcon
+                  url="www.whatsapp.com"
+                  bgColor="transparent"
+                  fgColor="rgb(156 163 175)"
+                  as="motion.div"
+                  style={{ height: 30, width: 30 }}
+                />
+                +919344446245
+              </a>
+            </motion.div>
           </motion.div>
         </div>
         {/* Copyright */}
@@ -252,4 +241,4 @@ const Technicals = () => {
   );
 };
 
-export default Technicals;
+export default TechnicalsFooter;
