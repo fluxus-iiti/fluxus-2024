@@ -31,7 +31,7 @@ const faqData = [
     },
     {
       question: 'ID Requirements',
-      answer: 'Guests must carry valid government photo IDs at all times. Failure to produce an ID card will result in denial of entry during Fluxus 2024.Failure to produce an ID card will result in denial of entry during Fluxus 2024.',
+      answer: 'Guests must carry valid government photo IDs at all times. Failure to produce an ID card will result in denial of entry during Fluxus 2024.',
   },
 ];
 export default function RulesAndRegulations() {

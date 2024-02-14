@@ -31,6 +31,16 @@ const faqData = [
     answer:
       "After reaching the IIT Indore campus, you need to come to the accommodation desk, HJB Hall of Residence along with an identity card. You will be allotted your place to stay on campus after confirming the booking. Accommodation would be strictly on a shared basis.",
   },
+  {
+    question: "What is the refund policy??",
+    answer:
+      "Once the Payment is done, there is no cancellation policy.",
+  },
+  {
+    question: "Note",
+    answer:
+      "accommodation price of 2400 does not include pronites passes",
+  },
 ];
 export default function FAQ() {
   const [activeIndex, setActiveIndex] = useState(null);
