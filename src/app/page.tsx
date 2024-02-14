@@ -131,7 +131,7 @@ export default function Main() {
           {/* <Day1/> 
           <Day2/>
           <Day3/> */}
-          <Footer/>
+          <Footer />
           
           {/* <About />
           <IntroSection /> */}
