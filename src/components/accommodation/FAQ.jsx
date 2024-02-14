@@ -36,11 +36,6 @@ const faqData = [
     answer:
       "Once the Payment is done, there is no cancellation policy.",
   },
-  {
-    question: "Note",
-    answer:
-      "accommodation price of 2400 does not include pronites passes",
-  },
 ];
 export default function FAQ() {
   const [activeIndex, setActiveIndex] = useState(null);
