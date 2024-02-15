@@ -121,7 +121,7 @@ const _items = [
     player: {
       id: 14,
       title: "CFA Conclave - ConsultX",
-      image: require("../../../public/images/Competitions/Consultinsta.png"),
+      image: require("../../../public/images/Competitions/ConsultX.jpg"),
       link: "https://unstop.com/p/consultx-case-study-challenge-fluxus-iit-indore-iit-indore-897734",
     },
   },
