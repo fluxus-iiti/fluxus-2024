@@ -1,6 +1,16 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+// SWIPER IMPORTS
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/free-mode";
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/scrollbar';
+
+import { Autoplay, FreeMode, Navigation, Pagination, EffectCoverflow, Scrollbar } from "swiper/modules";
 
 import HeadingImage from "../../../public/images/meteor.png";
 const slideWidth = 30;
@@ -440,7 +450,7 @@ const Technicals = () => {
               hidden: { opacity: 0 },
             }}
           > */}
-        <h1 className="text-white absolute ml-10 w-full h-full text-[25px] lg:!text-[50px] font-extrabold text-start flex items-center top-0">
+        <h1 className="text-white absolute pl-10 w-full h-full text-[25px] lg:!text-[50px] font-extrabold text-start flex items-center top-0">
           Technicals
         </h1>
         {/* </motion.div> */}
@@ -454,6 +464,93 @@ const Technicals = () => {
         .
       </div>
       <div className="md:translate-y-[-150px]">
+        <>
+        {/* **************************COROUSEL IN MOBILE VIEW STARTS*************************************** */}
+        {/* <SwiperComponent /> */}
+        <div className="overflow-hidden w-full mt-14 md:hidden">
+        <Swiper
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+        breakpoints={
+          {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            380: {
+              slidesPerView:1.5,
+              spaceBetween: 20
+            }
+          }
+        }
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        // freeMode={true}
+        loop={true}
+        navigation={true}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        }}
+        
+        // slidesPerView={'auto'}
+        // scrollbar={{
+        //   hide: true,
+        // }}
+        // pagination={{
+        //   clickable: true,
+        // }}
+
+
+        modules={[FreeMode, Autoplay, Navigation, Pagination, EffectCoverflow, Scrollbar]}
+        className=""
+      >
+        {_items.map((item, index) => {
+            return(
+                <SwiperSlide key={index}>
+                    <>
+                <div
+                  id="card"
+                  className="card h-fit w-fit rounded-b-[30px] !mx-5 !my-5"
+                >
+                  <div className="image">
+                    <Image
+                      src={item.player.image}
+                      alt={item.player.title}
+                      className="min-w-[200px]"
+                    ></Image>
+                  </div>
+                  <div className="content flex flex-col justify-center items-center my-4">
+                    <div className="title text-center">
+                      <span className="text-6xl font-bold">
+                        {item.player.title}
+                      </span>
+                    </div>
+                    <div className="link-box border-solid border-[1px] border-slate-300 w-fit text-center px-8 py-4 rounded-xl my-5 cursor-pointer hover:bg-slate-200 hover:text-gray-900">
+                      {item.player.link ? (
+                        <a href={item.player.link} target="_blank">
+                          <span className="text-2xl font-semibold">
+                            Know More
+                          </span>
+                        </a>
+                      ) : (
+                        <span className="text-2xl">Comming Soon</span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </>
+                </SwiperSlide>
+            )
+        })}
+    </Swiper>
+  </div>
+        {/* *************************COROUSEL IN MOBILE VIEW END*********************************** */}
+        </>
         {/* <div> */}
         <div id="html" className="carousel__wrap ">
           {/* <div className="carousel__inner">
@@ -495,7 +592,7 @@ const Technicals = () => {
           </div> */}
 
           {/* ********************************************************************* */}
-          <div className="flex mb-20 gap-5 overflow-x-scroll overflow-y-visible h-full md:no-scrollbar md:grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+          <div className="hidden mb-20 gap-5 overflow-x-scroll overflow-y-visible h-full md:no-scrollbar md:grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
             {itemsModal?.map((item) => (
               <>
                 <div

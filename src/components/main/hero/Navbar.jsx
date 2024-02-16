@@ -23,7 +23,7 @@ export default function Navbar() {
         >
           <BurgerToCross />
         </div>
-        <div className="top-5 !z-[1000] absolute  left-5 w-full h-fit m-5 font-weight-700 text-white text-2xl transition-all fade-in-out lg:hidden">
+        <div className="top-5 !z-[1000] absolute  left-5 w-[90%] h-fit m-5 font-weight-700 text-white text-2xl transition-all fade-in-out lg:hidden">
           <FaBars className="sm:w-16 sm:h-16 h-10 w-10" onClick={() => {
             document.getElementById('container').classList.toggle('nav-open');
             document.getElementById('offcanvas').style.top = "0px"
