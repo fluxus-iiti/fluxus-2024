@@ -1,9 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-
-import SwiperComponent from "./swiper";
-
 // SWIPER IMPORTS
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -481,14 +478,14 @@ const Technicals = () => {
             slidesPerView: 'auto',
             spaceBetween: 20,
             380: {
-              slidesPerView:2,
+              slidesPerView:1.5,
               spaceBetween: 20
             }
           }
         }
         effect={'coverflow'}
         grabCursor={true}
-        // centeredSlides={true}
+        centeredSlides={true}
         // freeMode={true}
         loop={true}
         navigation={true}
