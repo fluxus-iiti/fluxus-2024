@@ -3,7 +3,7 @@ import React from 'react'
 export default function NeonButton() {
     return (
         <div>
-            <button className="custom-btn btn-9">Get Passes</button>
+            <button className="custom-btn btn-9 ">Get Passes</button>
             <style jsx>
                 {`
                 body {
