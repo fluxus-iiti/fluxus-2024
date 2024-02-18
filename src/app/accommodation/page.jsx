@@ -55,8 +55,7 @@ export default function Page() {
         Contact
       </h2>
       <div className="text-center w-full mt-20  ">
-        
-        <a target="_blank" href="https://forms.gle/u4Va2Wm9pPYvpuqq9" >
+        <a target="_blank" href="https://forms.gle/u4Va2Wm9pPYvpuqq9">
           <button className="justify-center items-center text-3xl rounded-lg bg-white-500 text-white py-3 px-5 formButton font-bold  !border-2 !border-red-500 !bg-red-600 hover:!bg-red-500">
             Register Here
           </button>
@@ -65,7 +64,7 @@ export default function Page() {
       <div className="pt-20 flex flex-wrap justify-center items-center">
         <ContactCard
           ele={{
-            name: "Prasson Pandey",
+            name: "Prasoon Pandey",
             position: "Head of Accommodation",
             phone: "8604631501",
             gmail: "contactus.fluxus@iiti.ac.in",
@@ -96,9 +95,12 @@ export default function Page() {
         })}
       </div>
 
-      <div className="md:grid text-center w-full mb-20 ">
+      <div className="md:grid text-center w-full mb-6 ">
         <RulesAndRegulations />
         <FAQ />
+      </div>
+      <div className="text-center w-full my-5 text-red-500 font-bold">
+        *Note: Accommodation charges does not include pronites passes
       </div>
       <style jsx>
         {`
@@ -108,13 +110,11 @@ export default function Page() {
           .formButton {
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
             border: 1px solid #fff;
-            
           }
           .formButton:hover {
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
             border: 1px solid #fff;
             background-color: #fff;
-           
           }
           .bg {
             background: url(./images/accommodation/bg.jpeg) no-repeat;
