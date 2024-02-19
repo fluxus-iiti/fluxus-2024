@@ -17,9 +17,9 @@ import {
 import { ReactNode, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import BurgerToCross from "@/components/main/hero/BurgerToCross";
-import Modal from 'react-modal';
+import Modal from "react-modal";
 import Image from "next/image";
-import artist from '../../public/images/Hero/artist.jpg'
+import artist from "../../public/images/Hero/artist.jpg";
 import NeonButton from "@/components/main/hero/NeonButton";
 import Link from "next/link";
 const customStyles = {
@@ -36,22 +36,18 @@ const customStyles = {
     justifyContent: "center",
   },
   content: {
-    
-    
     background: "transparent",
     overflow: "hidden",
-    
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    border:'0px',
+
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    border: "0px",
   },
 };
-
-
 
 // const sectionVariants: Variants = {
 //   inView: {
@@ -158,23 +154,30 @@ export default function Main() {
   const [modalIsOpen, setIsOpen] = React.useState(true);
   return (
     <>
-
       {/* <motion.div>
         <motion.div ref={containerRef} style={{ y: spring }} className="App"> */}
       <Modal
         isOpen={modalIsOpen}
-
         onRequestClose={() => {
-          setIsOpen(false)
+          setIsOpen(false);
         }}
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <Image src={artist} placeholder="blur" className="w-[400px]" alt="artist photo" />
-        <Link className="text-2xl" target={"_blank"} href="https://forms.gle/oETzssE9asLVme8Y8">
-        <div className="flex justify-center">
-        <NeonButton />
-        </div>
+        <Image
+          src={artist}
+          placeholder="blur"
+          className="w-[400px]"
+          alt="artist photo"
+        />
+        <Link
+          className="text-2xl"
+          target={"_blank"}
+          href="https://forms.gle/oETzssE9asLVme8Y8"
+        >
+          <div className="flex justify-center">
+            <NeonButton />
+          </div>
         </Link>
       </Modal>
       <Header />

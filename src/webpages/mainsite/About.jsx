@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import Image from "next/image";
-import AboutImg from "../../../public/images/Main/About/AboutImg.png";
+import AboutImg from "../../../public/images/Main/About/temp.webp";
 import {
   motion,
   useScroll,
@@ -28,11 +28,11 @@ const About = () => {
   return (
     <div className="flex lg:space-x-12 flex-col md:flex-row items-center overflow-hidden md:my-10 ">
       {/* <motion.div style={{ x: textX, opacity: springScroll }} ref={ref} className="flex flex-1"> */}
-      <div className="text-4xl md:text-3xl lg:text-5xl lg:ml-40 md:pr-10 md:my-16 my-8 md:my-0 mx-10 p-5 m-5 lg:leading-loose md:leading-[3.5rem] underline text-center md:text-left">
-        Embark on a cosmic journey as Fluxus IIT Indore presents &apos;A
-        Celestial Euphoria&apos; a theme that transcends boundaries and merges
-        technology with culture. Explore the interstellar blend of innovation
-        and creativity at our annual techno-cultural fest.
+      <div className="text-4xl md:text-3xl lg:text-5xl lg:ml-40 md:pr-10 md:my-16 my-8 md:my-0 mx-10 p-5 m-5 lg:leading-loose md:leading-[3.5rem] text-center md:text-left font-fontspring">
+        Embark on a cosmic journey as Fluxus IIT Indore presents{" "}
+        <i>A Celestial Euphoria</i>, a theme that transcends boundaries and
+        merges technology with culture. Explore the interstellar blend of
+        innovation and creativity at our annual fest.
       </div>
       {/* </motion.div>
       <motion.div */}
@@ -41,7 +41,7 @@ const About = () => {
         className="flex justify-center"
       > */}
       {/* <div className="flex lg:basis-6/8"> */}
-        <Image src={AboutImg} alt="About Video Here" />
+      <Image src={AboutImg} alt="About Video Here" className="w-[55vw]" />
       {/* </div> */}
       {/* </motion.div> */}
     </div>
