@@ -2,3 +2,9 @@
   font-family: "azonix";
   src: local("azonix"), local("azonix"), url("azonix.otf") format("openType");
 }
+
+@font-face {
+  font-family: "fontspring";
+  src: local("fontspring"), local("fontspring"),
+    url("fontspring.otf") format("openType");
+}
