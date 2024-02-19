@@ -6,7 +6,7 @@ export default function room({ele}) {
     return (
         <div>
             <div className="card">
-                <Image src={ele.image} placeholder="blur"/>
+                <Image src={ele.image} placeholder="blur" alt='room'/>
             </div>
             <style jsx>
                 {`

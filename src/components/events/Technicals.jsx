@@ -20,7 +20,7 @@ const _items = [
     player: {
       id: 3,
       title: "Pick n Place",
-      image: require("../../../public/images/Competitions/Pick_N_Place.png"),
+      image: require("../../../public/images/Competitions/Pick_N_Place.webp"),
       link: "https://unstop.com/p/pick-n-place-robotics-challenge-fluxus-iit-indore-iit-indore-897732",
     },
   },
@@ -28,7 +28,7 @@ const _items = [
     player: {
       id: 4,
       title: "Nitrothrust",
-      image: require("../../../public/images/Competitions/NITROTHRUST.png"),
+      image: require("../../../public/images/Competitions/NITROTHRUST.webp"),
       link: "https://unstop.com/p/nitrothust-rc-racing-fluxus-iit-indore-iit-indore-898119",
     },
   },
@@ -36,7 +36,7 @@ const _items = [
     player: {
       id: 12,
       title: "Euristica",
-      image: require("../../../public/images/Competitions/Eurisitca.png"),
+      image: require("../../../public/images/Competitions/Eurisitca.webp"),
       link: "https://euristica.iiti.ac.in/",
     },
   },
@@ -44,7 +44,7 @@ const _items = [
     player: {
       id: 5,
       title: "Aero Artistry",
-      image: require("../../../public/images/Competitions/Aero_Artistry.png"),
+      image: require("../../../public/images/Competitions/Aero_Artistry.webp"),
       link: "https://unstop.com/events/aero-artistrty-fluxus-24-iit-indore-iit-indore-893349",
     },
   },
@@ -52,7 +52,7 @@ const _items = [
     player: {
       id: 6,
       title: "RoboSoccer",
-      image: require("../../../public/images/Competitions/robo-template.png"),
+      image: require("../../../public/images/Competitions/robo-template.webp"),
       link: "https://unstop.com/p/robosoccer-robotics-challenge-fluxus-iit-indore-iit-indore-898150",
     },
   },
@@ -60,7 +60,7 @@ const _items = [
     player: {
       id: 7,
       title: "Obstacourse",
-      image: require("../../../public/images/Competitions/OBSTACOURSE.png"),
+      image: require("../../../public/images/Competitions/OBSTACOURSE.webp"),
       link: "https://unstop.com/p/obstacourse-roboracing-fluxus-iit-indore-iit-indore-898092",
     },
   },
@@ -68,7 +68,7 @@ const _items = [
     player: {
       id: 9,
       title: "Robo Sumo",
-      image: require("../../../public/images/Competitions/sumo-template.png"),
+      image: require("../../../public/images/Competitions/sumo-template.webp"),
       link: "https://unstop.com/p/robosumo-robotics-challenge-fluxus-iit-indore-iit-indore-898137"
     },
   },
@@ -76,7 +76,7 @@ const _items = [
     player: {
       id: 8,
       title: "Margdarshak",
-      image: require("../../../public/images/Competitions/MARGDARSHAK.png"),
+      image: require("../../../public/images/Competitions/MARGDARSHAK.webp"),
       link: "https://unstop.com/p/margdarshak-line-follower-robot-challenge-fluxus-iit-indore-iit-indore-897912",
     },
   },
@@ -84,7 +84,7 @@ const _items = [
     player: {
       id: 0,
       title: "Manthan",
-      image: require("../../../public/images/Competitions/Manthan.png"),
+      image: require("../../../public/images/Competitions/Manthan.webp"),
       link: "https://unstop.com/competitions/manthan-ideathon-nirmal-nala-tech-challenge-fluxus-iit-indore-iit-indore-877419",
     },
   },
@@ -92,7 +92,7 @@ const _items = [
     player: {
       id: 14,
       title: "CFA Conclave - ConsultX",
-      image: require("../../../public/images/Competitions/ConsultX.jpg"),
+      image: require("../../../public/images/Competitions/ConsultX.webp"),
       link: "https://unstop.com/p/consultx-case-study-challenge-fluxus-iit-indore-iit-indore-897734",
     },
   },
@@ -100,7 +100,7 @@ const _items = [
     player: {
       id: 23,
       title: "TinkerHub Tech Expo",
-      image: require("../../../public/images/Competitions/Tinker_Hub.png"),
+      image: require("../../../public/images/Competitions/Tinker_Hub.webp"),
       link: "https://unstop.com/p/tinkerhub-tech-expo-fluxus-iit-indore-iit-indore-889724",
     },
   },
@@ -108,7 +108,7 @@ const _items = [
     player: {
       id: 13,
       title: "Enosium",
-      image: require("../../../public/images/Competitions/enosium.png"),
+      image: require("../../../public/images/Competitions/enosium.webp"),
       link: "https://unstop.com/hackathons/enosium24-fluxus-iit-indore-iit-indore-892499",
     },
   },
@@ -116,7 +116,7 @@ const _items = [
     player: {
       id: 10,
       title: "RoboShooter",
-      image: require("../../../public/images/Competitions/RoboShooter.png"),
+      image: require("../../../public/images/Competitions/roboshooter.webp"),
       link: "https://unstop.com/competitions/shooter-bot-competition-fluxus-24-iit-indore-iit-indore-890839",
     },
   },
@@ -124,7 +124,7 @@ const _items = [
     player: {
       id: 2,
       title: "Top Gear",
-      image: require("../../../public/images/Competitions/TGGEST.png"),
+      image: require("../../../public/images/Competitions/TGGEST.webp"),
       link: "https://unstop.com/competitions/top-gear-gesture-control-car-fluxus-iit-indore-iit-indore-890266",
     },
   },
@@ -132,7 +132,7 @@ const _items = [
     player: {
       id: 22,
       title: "Trading Vault",
-      image: require("../../../public/images/Competitions/Trading_Vault.png"),
+      image: require("../../../public/images/Competitions/Trading_Vault.webp"),
       link: "https://unstop.com/o/yXlitCL?lb=OCk8n05",
     },
   },
@@ -140,7 +140,7 @@ const _items = [
     player: {
       id: 16,
       title: "CFA Conclave - AnalyticaX",
-      image: require("../../../public/images/Competitions/AnalyticaX.png"),
+      image: require("../../../public/images/Competitions/AnalyticaX.webp"),
       link: "https://unstop.com/hackathons/analyticax-cfa-conclave24-fluxus-iit-indore-iit-indore-890123",
     },
   },
@@ -148,7 +148,7 @@ const _items = [
     player: {
       id: 17,
       title: "Concastle",
-      image: require("../../../public/images/Competitions/CONCASTLE.png"),
+      image: require("../../../public/images/Competitions/CONCASTLE.webp"),
       link: "https://unstop.com/competitions/concastle-fluxus-24-iit-indore-892867",
     },
   },
@@ -156,7 +156,7 @@ const _items = [
     player: {
       id: 1,
       title: "Overtinker",
-      image: require("../../../public/images/Competitions/OverTinker.png"),
+      image: require("../../../public/images/Competitions/OverTinker.webp"),
       link: "https://unstop.com/competitions/overtinker-iit-indore-890155",
     },
   },
@@ -164,7 +164,7 @@ const _items = [
     player: {
       id: 25,
       title: "Sunspark",
-      image: require("../../../public/images/Competitions/SUNSPARK.png"),
+      image: require("../../../public/images/Competitions/SUNSPARK.webp"),
       link: "https://unstop.com/competitions/sunspark-lets-simulate-it-fluxus-iit-indore-iit-indore-890296",
     },
   },
@@ -172,7 +172,7 @@ const _items = [
     player: {
       id: 18,
       title: "Trace it Out",
-      image: require("../../../public/images/Competitions/TGTRACE.png"),
+      image: require("../../../public/images/Competitions/TGTRACE.webp"),
       link: "https://unstop.com/competitions/top-gear24-trace-it-out-fluxus-iit-indore-iit-indore-892258",
     },
   },
@@ -180,7 +180,7 @@ const _items = [
     player: {
       id: 24,
       title: "Skysweep",
-      image: require("../../../public/images/Competitions/SkySweep.png"),
+      image: require("../../../public/images/Competitions/SkySweep.webp"),
       link: "https://unstop.com/competitions/skysweep-carbon-cleanse-challenge-fluxus-iit-indore-iit-indore-892481",
     },
   },
