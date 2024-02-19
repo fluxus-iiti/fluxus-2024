@@ -9,7 +9,7 @@ const About = () => {
   return (
     <>
       <div
-        className="about-section overflow-x-hidden"
+        className="about-section overflow-x-hidden overflow-y-hidden"
         style={{
           backgroundImage: `url(images/back.png)`,
           backgroundRepeat: "repeat",
@@ -59,7 +59,7 @@ const About = () => {
             {/* </motion.div> */}
           </div>
           {/* </motion.div> */}
-          <div className="flex justify-center items-center flex-row mx-20">
+          <div className="flex justify-center items-center flex-row mx-20 lg:mt-[-10rem] md:mt-[-5rem]">
             <div className="flex w-1/3 hidden lg:block ml-5 self-center">
               <motion.div
                 initial="hidden"
@@ -74,7 +74,7 @@ const About = () => {
                   hidden: { opacity: 0, x: "-30vh" },
                 }}
               >
-                <Image src={about} className="imag" alt=""/>
+                <Image src={about} className="imag" alt="" />
               </motion.div>
             </div>
             <div className="flex text xl:w-2/3 w-full mx-[0vw]">
@@ -91,12 +91,12 @@ const About = () => {
                   hidden: { opacity: 0, x: "30vh" },
                 }}
               >
-                <p className="text-4xl px-48">
+                <p className="text-4xl lg:px-48">
                   Welcome to the pulsating hub of competition at Fluxus, IIT
-                  Indore&apos;s flagship event! Our eleventh edition promises to be
-                  the pinnacle of excellence, showcasing talents from across the
-                  spectrum. With renowned guest appearances and a platform for
-                  emerging artists, Fluxus is set to redefine excitement and
+                  Indore&apos;s flagship event! Our eleventh edition promises to
+                  be the pinnacle of excellence, showcasing talents from across
+                  the spectrum. With renowned guest appearances and a platform
+                  for emerging artists, Fluxus is set to redefine excitement and
                   innovation. Get ready to embark on an unforgettable journey of
                   competition, camaraderie, and celebration!
                 </p>

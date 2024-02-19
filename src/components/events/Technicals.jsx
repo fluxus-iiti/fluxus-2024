@@ -428,7 +428,7 @@ const Technicals = () => {
           hidden: { x: "-99vw" },
         }}
       > */}
-      <div id="heading" className="relative overflow-x-hidden">
+      <div id="heading" className="relative overflow-x-hidden z-[0]">
         <Image
           src={HeadingImage}
           className="
