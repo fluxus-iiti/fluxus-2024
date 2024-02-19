@@ -17,8 +17,8 @@ const config: Config = {
       fontFamily: {
         azonix: ['azonix'],
         fontspring: ['fontspring'],
+        neuropol: ['neuropol'],
         BlackHanSans: ['BlackHanSans', 'sans-serif']
-        
        },
     },
   },

@@ -36,19 +36,17 @@ const IntroSection = () => {
       </div>
       <div className="flex basis-1/2 lg:basis-2/5">
         <div className="px-10 mx-10 md:mx-0">
-          <div className="font-mate text-6xl decoration-2 lg:text-8xl lg:leading-[70px] underline lg:ml-10 text-center md:text-left">
-            Introducing <br />
-            11th version of <br />
-            Fluxus
+          <div className="text-6xl decoration-2 lg:text-6xl lg:leading-[70px] lg:mx-10 text-center md:text-left font-azonix">
+            Introducing 11th version of Fluxus
           </div>
           <br />
-          <div className="font-metrophobic text-3xl lg:leading-[35px] lg:p-10 lg:pr-48 md:text-left text-center">
-            Fluxus, the annual techno-cultural fest of IIT Indore, is a dynamic
-            convergence of innovation, creativity, and cultural expression.
-            Through a kaleidoscope of events spanning technology, arts, and
-            entertainment, Fluxus offers a vibrant platform for students to
-            showcase their talents, exchange ideas, and celebrate the spirit of
-            ingenuity.
+          <div className="text-4xl lg:leading-[30px] lg:p-10 lg:pr-48 md:text-left text-center font-fontspring">
+            Fluxus, the annual techno<span className="font-serif">-</span>
+            cultural fest of IIT Indore, is a dynamic convergence of innovation,
+            creativity, and cultural expression. Through a kaleidoscope of
+            events spanning technology, arts, and entertainment, Fluxus offers a
+            vibrant platform for students to showcase their talents, exchange
+            ideas, and celebrate the spirit of ingenuity.
           </div>
         </div>
       </div>

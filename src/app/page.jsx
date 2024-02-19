@@ -183,9 +183,9 @@ export default function Main() {
       <Header />
       <About />
       <IntroSection />
-      {/* <Day1/> 
-          <Day2/>
-          <Day3/> */}
+      {/* <Day1 />
+      <Day2 />
+      <Day3 /> */}
       <Footer />
 
       {/* <About />

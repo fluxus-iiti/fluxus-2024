@@ -33,98 +33,90 @@ const TechnicalsFooter = () => {
             >
               <Image src={logo} className="w-48" alt="logo" />
             </motion.div>
-            {/* <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
-                className="flex justify-center w-full text-4xl mt-5 font-bold"
-              >
-                Fluxus
-              </motion.div> */}
+
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              className="flex justify-center w-full text-4xl mt-5 font-bold"
+            >
+              Fluxus
+            </motion.div>
             {/* <motion.div                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease: "easeOut" }} className="w-full mt-16 text-3xl">Made with 🍌 by Fluxus</motion.div> */}
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className="md:w-1/5 flex flex-col gap-y-2 lg:items-start"
-          >
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-              className="text-4xl mt-10 md:mt-auto"
-            >
-              Head of Technicals
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-              className="mt-6 text-3xl capitalize"
-            >
-              Ebrahim Rampurawala
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-              className="text-3xl text-gray-400 capitalize"
-            >
-              <a href="tel:+919920702153" target="_blank">
-                <SocialIcon
-                  url="www.whatsapp.com"
-                  bgColor="transparent"
-                  fgColor="rgb(156 163 175)"
-                  as="motion.div"
-                  style={{ height: 30, width: 30 }}
-                />
-                +919920702153
-              </a>
-            </motion.div>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="md:w-1/5 flex flex-col gap-y-2 lg:items-start"
+            className=" flex flex-col gap-y-2 lg:items-start"
           >
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="text-4xl mt-10 md:mt-auto"
+              className="text-4xl mt-10 md:mx-auto"
             >
               Head of Technicals
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-              className="mt-6 text-3xl capitalize"
-            >
-              Rohan Jha
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-              className="text-3xl text-gray-400 capitalize"
-            >
-              <a href="tel:+919022566026" target="_blank">
-                <SocialIcon
-                  url="www.whatsapp.com"
-                  bgColor="transparent"
-                  fgColor="rgb(156 163 175)"
-                  as="motion.div"
-                  style={{ height: 30, width: 30 }}
-                />
-                +919022566026
-              </a>
-            </motion.div>
+            <div>
+              <div>
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                  className="mt-6 text-3xl capitalize"
+                >
+                  Ebrahim Rampurawala
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                  className="text-3xl text-gray-400 capitalize"
+                >
+                  <a href="tel:+919920702153" target="_blank">
+                    <SocialIcon
+                      url="www.whatsapp.com"
+                      bgColor="transparent"
+                      fgColor="rgb(156 163 175)"
+                      as="motion.div"
+                      style={{ height: 30, width: 30 }}
+                    />
+                    +919920702153
+                  </a>
+                </motion.div>
+              </div>
+              <div>
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                  className="mt-6 text-3xl capitalize"
+                >
+                  Rohan Jha
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                  className="text-3xl text-gray-400 capitalize"
+                >
+                  <a href="tel:+919022566026" target="_blank">
+                    <SocialIcon
+                      url="www.whatsapp.com"
+                      bgColor="transparent"
+                      fgColor="rgb(156 163 175)"
+                      as="motion.div"
+                      style={{ height: 30, width: 30 }}
+                    />
+                    +919022566026
+                  </a>
+                </motion.div>
+              </div>
+            </div>
           </motion.div>
           {/* <motion.div
             initial={{ opacity: 0, y: 10 }}

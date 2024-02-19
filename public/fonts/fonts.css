@@ -8,3 +8,9 @@
   src: local("fontspring"), local("fontspring"),
     url("fontspring.otf") format("openType");
 }
+
+@font-face {
+  font-family: "neuropol";
+  src: local("neuropol"), local("neuropol"),
+    url("neuropol.otf") format("openType");
+}

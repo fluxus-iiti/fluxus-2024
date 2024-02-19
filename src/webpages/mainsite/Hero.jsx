@@ -7,15 +7,9 @@ import MainText from "@/components/main/hero/MainText";
 import RightSmokeDust from "@/components/main/hero/RightSmokeDust";
 import SaturnPlanet from "@/components/main/hero/SaturnPlanet";
 import { useWindowSize } from "@react-hook/window-size";
-import { useEffect, useLayoutEffect } from "react";
+import { useEffect } from "react";
 import { useRef } from "react";
-import {
-  motion,
-  useScroll,
-  useTransform,
-  useTime,
-  useAnimation,
-} from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 export default function Home() {
   const ref = useRef(null);
@@ -61,7 +55,10 @@ export default function Home() {
               <SaturnPlanet />
             </motion.div>
           </div>
-          <div id="content" className={`relative  w-full h-full top-0 grid z-[-2]`}>
+          <div
+            id="content"
+            className={`relative  w-full h-full top-0 grid z-[-2]`}
+          >
             <div className="grid  grid-cols-3 absolute z-[-3]">
               <div className="z-[-3] translate-y-[55px]">
                 <motion.div
@@ -122,7 +119,7 @@ export default function Home() {
                   }}
                   variants={{
                     visible: { y: "0vh", opacity: 1 },
-                    hidden: { y: "-20vh", opacity: 0 },
+                    hidden: { y: `${width>1440?"-20vh": "-10vh"}`, opacity: 0 },
                   }}
                 >
                   <MainLogo />
@@ -138,13 +135,13 @@ export default function Home() {
           </div>
           <div>
             <div className="flex justify-center items-center">
-              <hr id="hr" style={{borderTop: '3px solid white'}} />
+              <hr id="hr" style={{ borderTop: "3px solid white" }} />
             </div>
             <div className="text-white text-center my-2 text-[2rem]">
               Dive into the realm of technology
             </div>
             <div className="flex justify-center items-center">
-              <hr id="hr" style={{borderTop: '3px solid white'}} />
+              <hr id="hr" style={{ borderTop: "3px solid white" }} />
             </div>
           </div>
         </div>
