@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import Image from "next/image";
-import AboutImg from "../../../public/images/Main/About/temp.webp";
+import AboutImg from "../../../public/images/Main/About/AboutImg.webp";
 import {
   motion,
   useScroll,
