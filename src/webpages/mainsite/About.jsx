@@ -41,7 +41,7 @@ const About = () => {
         className="flex justify-center"
       > */}
       {/* <div className="flex lg:basis-6/8"> */}
-      <Image src={AboutImg} alt="About Video Here" className="w-[55vw]" />
+      <Image src={AboutImg} alt="About Video Here" className="md:w-[55vw]" />
       {/* </div> */}
       {/* </motion.div> */}
     </div>
