@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import Image from "next/image";
-import AboutImg from "../../../public/images/Main/About/temp.webp";
+import AboutImg from "../../../public/images/Main/About/AboutImg.webp";
 import {
   motion,
   useScroll,
@@ -41,7 +41,7 @@ const About = () => {
         className="flex justify-center"
       > */}
       {/* <div className="flex lg:basis-6/8"> */}
-      <Image src={AboutImg} alt="About Video Here" className="w-[55vw]" />
+      <Image src={AboutImg} alt="About Video Here" className="md:w-[55vw]" />
       {/* </div> */}
       {/* </motion.div> */}
     </div>
