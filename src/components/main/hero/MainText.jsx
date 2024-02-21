@@ -63,13 +63,13 @@ const MainText = () => {
   return (
     <motion.div className="w-full pt-48 intro overflow-hidden">
       <motion.div
-        className="text-white text-center lg:text-[18rem] border-0 w-full lg:!my-[-120px] !py-0 text-[38px] sm:text-[70px] sm:my-[-0px] font-azonix"
+        className="text-white text-center lg:text-[12rem] xl:text-[17rem] 2xl:text-[20rem] border-0 w-full xl:!my-[-120px] lg:!my-[-70px] !py-0 text-[36px] sm:text-[70px] sm:my-[-0px] font-azonix"
         ref={ref}
       >
         {renderAnimatedLetters("A CELESTIAL")}
       </motion.div>
       <div
-        className="text-white text-center lg:text-[24rem] border-0 w-full lg:!my-[-100px] my-[-20px] text-[50px] !py-0 sm:text-[100px] sm:my-[-40px] overflow-hidden font-azonix"
+        className="text-white text-center lg:text-[17rem] xl:text-[23rem] 2xl:text-[27rem] border-0 w-full xl:!my-[-100px] lg:!my-[-60px] my-[-20px] text-[50px] !py-0 sm:text-[100px] sm:my-[-40px] overflow-hidden font-azonix"
         ref={ref}
       >
         <div>{renderAnimatedLetters("EUPHORIA")}</div>
