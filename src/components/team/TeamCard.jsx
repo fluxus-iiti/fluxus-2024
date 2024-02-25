@@ -7,7 +7,7 @@ const TeamCard = ({ teamName, teamInfo }) => {
   const [ width ] = useWindowSize();
   return (
     <div className="my-16">
-      <h2 className="text-5xl font-bold mb-10 justify-center flex flex-wrap" id={teamName}>{teamName} Team</h2>
+      <h2 className="text-4xl lg:text-5xl font-bold mb-10 justify-center flex flex-wrap font-azonix text-center" id={teamName}>{teamName}</h2>
       
       {/* Head members */}
       <div className={`flex ${window.innerWidth <= 768 ? 'overflow-x-auto' : 'flex-wrap justify-center'}`}>

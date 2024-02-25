@@ -32,13 +32,13 @@ const MemberCard = ({ member, isHead }) => {
           <p className="font-bold text-2xl">{member.name}</p>
           {isHead && (
             <>
-              <p className="text-sm text-gray-200">Head</p>
+              <p className="text-gray-200">{member.title}</p>
               <div className="social-icons flex justify-center my-1">
                 <SocialIcon
                   network="whatsapp"
                   bgColor="transparent"
                   fgColor="rgb(255 255 255)"
-                  url="tel:+919344446245"
+                  url={`tel:+91${member.phoneNumber}`}
                   target="_blank"
                   style={{ height: 30, width: 30, margin: "0 0.5rem" }}
                 />
@@ -46,7 +46,7 @@ const MemberCard = ({ member, isHead }) => {
                   network="linkedin"
                   bgColor="transparent"
                   fgColor="rgb(255 255 255)"
-                  url="https://www.linkedin.com/company/fluxus---iit-indore/mycompany/"
+                  url={member.linkedin}
                   target="_blank"
                   style={{ height: 30, width: 30, margin: "0 0.5rem" }}
                 />
@@ -54,7 +54,7 @@ const MemberCard = ({ member, isHead }) => {
                   network="email"
                   bgColor="transparent"
                   fgColor="rgb(255 255 255)"
-                  url="mailto:fluxus@iiti.ac.in"
+                  url={`mailto:${member.email}`}
                   target="_blank"
                   style={{ height: 30, width: 30, margin: "0 0.5rem" }}
                 />

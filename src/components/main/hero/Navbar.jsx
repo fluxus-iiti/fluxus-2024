@@ -96,6 +96,9 @@ export default function Navbar() {
                   <div className="md:mx-5 my-5 font-bold mx-10  !text-4xl md:my-auto hover:border-b-2 transition-all fade-in-out hover:!text-gray-300">
                     <Link className="text-2xl" href="technicals">Technicals</Link>
                   </div>
+                  <div className="md:mx-5 my-5 font-bold mx-10  !text-4xl md:my-auto hover:border-b-2 transition-all fade-in-out hover:!text-gray-300">
+                    <Link className="text-2xl" href="team">Team</Link>
+                  </div>
                 </div>
                 <div className="md:mx-5 my-5 font-bold mx-10  !text-4xl md:my-auto transition-all fade-in-out hover:!text-gray-300">
                   <Link className="text-2xl" target={"_blank"} href="https://forms.gle/oETzssE9asLVme8Y8"><NeonButton/></Link>
