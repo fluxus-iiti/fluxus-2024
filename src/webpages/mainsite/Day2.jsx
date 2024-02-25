@@ -1,8 +1,10 @@
 import React from "react";
 import Carousel from "../../components/main/EventSection/Day_1/Carousel";
-import i1 from "../../../public/images/Day1/pngwing15.png";
-import i2 from "../../../public/images/Day1/pngwing16.png";
-import i3 from "../../../public/images/Day1/human.jpg";
+import i1 from "../../../public/images/Day2/1.webp";
+import i2 from "../../../public/images/Day2/2.webp";
+import i3 from "../../../public/images/Day2/3.webp";
+import i4 from "../../../public/images/Day2/4.webp";
+import PE from "../../../public/images/Day2/PELive.webp";
 import Detail from "../../components/main/EventSection/Day_1/Detail";
 
 function heading() {
@@ -50,7 +52,9 @@ function heading() {
 }
 
 export default function Day2() {
-  const Images = [i1, i2, i3];
+  const Images1 = [PE];
+  const Images2 = [i1, i2];
+  const Images3 = [i3, i4];
   return (
     <>
       <div className="my-20">
@@ -64,14 +68,14 @@ export default function Day2() {
           <div className="flex-initial">
             <div className="border-t border-white my-4 mt-7 w-auto hidden lg:block"></div>
             <div className="lg:flex flex-row items-center">
-              <Carousel images={Images} />
+              <Carousel images={Images1} />
             </div>
             <div className="hidden lg:block">
               <div className="border-t border-white my-4 mt-7 w-auto"></div>
-              <Carousel images={Images} />
+              <Carousel images={Images2} />
 
               <div className="border-t border-white my-4 mt-7 w-auto "></div>
-              <Carousel images={Images} />
+              <Carousel images={Images3} />
               <div className="border-t border-white md: my-8 "></div>
             </div>
           </div>
