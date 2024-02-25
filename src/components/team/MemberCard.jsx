@@ -5,20 +5,20 @@ import "react-social-icons/email";
 import "react-social-icons/whatsapp";
 import { useWindowSize } from "@react-hook/window-size";
 
-const MemberCard = ({ member, isHead }) => {
-  const [width] = useWindowSize();
+const MemberCard = ({ member, isHead, flag }) => {
+  // const [width] = useWindowSize();
   return (
     <div
       className="mr-4 mb-8 rounded-xl mainBackdrop"
       style={{
         width: `${
-          width <= 768
+          flag
             ? "calc(100% - 1rem)"
             : isHead
             ? "calc(25% - 1rem)"
             : "calc(20% - 1rem)"
         }`,
-        minWidth: `${width <= 768? "25rem" :""}`,
+        minWidth: `${flag ? "25rem" : ""}`,
         border: "1px solid white",
       }}
     >
