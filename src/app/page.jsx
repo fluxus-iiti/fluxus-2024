@@ -22,6 +22,7 @@ import Image from "next/image";
 import artist from "../../public/images/Hero/artist.jpg";
 import NeonButton from "@/components/main/hero/NeonButton";
 import Link from "next/link";
+import { IoClose, IoCloseCircle } from "react-icons/io5";
 const customStyles = {
   overlay: {
     position: "fixed",
@@ -164,6 +165,12 @@ export default function Main() {
         style={customStyles}
         contentLabel="Example Modal"
       >
+        <button
+          className="float-right relative right-10 top-5"
+          onClick={() => setIsOpen(false)}
+        >
+          <IoClose size={20} />
+        </button>
         <Image
           src={artist}
           placeholder="blur"
