@@ -1,4 +1,4 @@
-import Image from "next/image";
+import React from "react";
 import { SocialIcon } from "react-social-icons/component";
 import "react-social-icons/linkedin";
 import "react-social-icons/email";
@@ -23,7 +23,7 @@ const MemberCard = ({ member, isHead }) => {
       }}
     >
       <div className="relative">
-        <Image
+        <img
           src={member.imagePath}
           alt={member.name}
           className="w-full h-auto rounded-t-xl"
