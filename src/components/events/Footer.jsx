@@ -96,7 +96,7 @@ const Technicals = () => {
                   as="motion.div"
                   style={{ height: 30, width: 30 }}
                 />
-                linkedin
+                Linkedin
               </a>
             </motion.div>
             <motion.div

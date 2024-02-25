@@ -14,7 +14,7 @@ const faqData = [
   {
     question: "Does the accommodation fee include the food facility as well?",
     answer:
-      "No, the accommodation fee does not include food. However, there will be food stalls operational during Fluxus in the IIT Indore campus to cater to the food requirements.",
+      "Yes, the accommodation fee includes mess food.",
   },
   {
     question: "Who all are eligible for accommodation during Fluxus?",
