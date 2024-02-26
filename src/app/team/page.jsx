@@ -3,7 +3,7 @@ import React from "react";
 import TeamCard from "../../components/team/TeamCard";
 
 const teamData = {
-  "Overall Coordinator and Heads": {
+  "Overall Coordinator": {
     heads: [
       {
         name: "Arunaditya Dash",
@@ -14,7 +14,10 @@ const teamData = {
         title: "",
       },
     ],
-    members: [
+    members: [],
+  },
+  Heads: {
+    heads: [
       {
         name: "Spandan Chakraborty",
         phoneNumber: "8582908301",
@@ -145,22 +148,6 @@ const teamData = {
         title: "Head of Pronites",
       },
       {
-        name: "Hrishikesh Jawale",
-        phoneNumber: "7020052382",
-        email: "me220003038@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/hrishikesh-jawale-66199225a",
-        imagePath: "/images/Team/0.webp",
-        title: "Head of Graphic Design",
-      },
-      {
-        name: "Gauttam Mandan",
-        phoneNumber: "9752249642",
-        email: "mems220005022@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/gauttam-mandan-0a8a712b5",
-        imagePath: "/images/Team/93.webp",
-        title: "Head of Ambience",
-      },
-      {
         name: "Madhav Rathore",
         phoneNumber: "7987199289",
         email: "mems220005034@iiti.ac.in",
@@ -241,22 +228,6 @@ const teamData = {
         title: "Head of Informals",
       },
       {
-        name: "Harshit Gupta",
-        phoneNumber: "9968685180",
-        email: "mems220005026@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/harshit-gupta-184bb4255",
-        imagePath: "/images/Team/7.webp",
-        title: "Head of Video Production",
-      },
-      {
-        name: "Hrishikesh Hiremath",
-        phoneNumber: "9449796245",
-        email: "me220003037@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/hrishikesh-hiremath",
-        imagePath: "/images/Team/15.webp",
-        title: "Head of Video Production",
-      },
-      {
         name: "Sanket Panigrahi",
         phoneNumber: "8093480243",
         email: "mems220005047@iiti.ac.in",
@@ -288,7 +259,40 @@ const teamData = {
         imagePath: "/images/Team/17.webp",
         title: "Head of Accommodation",
       },
+      {
+        name: "Hrishikesh Jawale",
+        phoneNumber: "7020052382",
+        email: "me220003038@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/hrishikesh-jawale-66199225a",
+        imagePath: "/images/Team/0.webp",
+        title: "Head of Graphic Design",
+      },
+      {
+        name: "Gauttam Mandan",
+        phoneNumber: "9752249642",
+        email: "mems220005022@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/gauttam-mandan-0a8a712b5",
+        imagePath: "/images/Team/93.webp",
+        title: "Head of Ambience",
+      },
+      {
+        name: "Harshit Gupta",
+        phoneNumber: "9968685180",
+        email: "mems220005026@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/harshit-gupta-184bb4255",
+        imagePath: "/images/Team/7.webp",
+        title: "Head of Video Production",
+      },
+      {
+        name: "Hrishikesh Hiremath",
+        phoneNumber: "9449796245",
+        email: "me220003037@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/hrishikesh-hiremath",
+        imagePath: "/images/Team/15.webp",
+        title: "Head of Video Production",
+      },
     ],
+    members: [],
   },
   "Public and Campus Relations": {
     heads: [],
