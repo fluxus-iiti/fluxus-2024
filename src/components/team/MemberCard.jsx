@@ -30,7 +30,7 @@ const MemberCard = ({ member, isHead, flag }) => {
         />
         <div className="member-details text-center my-2">
           <p className="font-bold text-2xl">{member.name}</p>
-          {isHead && (
+          {member.email && (
             <>
               <p className="text-gray-200">{member.title}</p>
               <div className="social-icons flex justify-center my-1">

@@ -3,232 +3,89 @@ import React from "react";
 import TeamCard from "../../components/team/TeamCard";
 
 const teamData = {
-  "Overall Coordinator": {
+  "Overall Coordinator and Heads": {
     heads: [
       {
         name: "Arunaditya Dash",
         phoneNumber: "9344446245",
         linkedin: "https://in.linkedin.com/in/arunaditya-dash",
         email: "oc.fluxus@iiti.ac.in",
-        imagePath: "/images/Team/24.jpg",
+        imagePath: "/images/Team/24.webp",
         title: "",
       },
     ],
-    members: [],
-  },
-  "Public and Campus Relations": {
-    heads: [
+    members: [
       {
         name: "Spandan Chakraborty",
         phoneNumber: "8582908301",
         linkedin: "https://in.linkedin.com/in/spandan-chakraborty-4184b3228",
         email: "contactus.fluxus@iiti.ac.in",
-        imagePath: "/images/Team/108.jpg",
+        imagePath: "/images/Team/108.webp",
         title: "Head of Public Relations",
       },
-      {
-        name: "Shagun Ghatak",
-        phoneNumber: "9653155107",
-        linkedin: "https://www.linkedin.com/in/shagun-ghatak-59a411230/",
-        email: "me210003069@iiti.ac.in",
-        imagePath: "/images/Team/25.jpg",
-        title: "Head of Campus Relations",
-      },
-    ],
-    members: [
-      {
-        name: "Naman Goyal",
-        imagePath: "/images/Team/30.jpg",
-      },
-      {
-        name: "Ayush Jindal",
-        imagePath: "/images/Team/33.jpg",
-      },
-      {
-        name: "Shubham Pawar",
-        imagePath: "/images/Team/34.jpg",
-      },
-      {
-        name: "Rohan Dhiman",
-        imagePath: "/images/Team/35.jpg",
-      },
-      {
-        name: "Pranshu Devlia",
-        imagePath: "/images/Team/39.jpg",
-      },
-      {
-        name: "Atharvakant",
-        imagePath: "/images/Team/41.JPG",
-      },
-      {
-        name: "Daksh Chandel",
-        imagePath: "/images/Team/43.jpg",
-      },
-      {
-        name: "Shorya Kshettry",
-        imagePath: "/images/Team/45.jpg",
-      },
-      {
-        name: "Moreshwar",
-        imagePath: "/images/Team/48.jpeg",
-      },
-      {
-        name: "Vighnesh",
-        imagePath: "/images/Team/49.jpg",
-      },
-      {
-        name: "Sneha Bains",
-        imagePath: "/images/Team/52.jpg",
-      },
-      {
-        name: "Niyati Mishra",
-        imagePath: "/images/Team/55.jpeg",
-      },
-      {
-        name: "Ansh Kyal",
-        imagePath: "/images/Team/59.jpg",
-      },
-      {
-        name: "Anay Sachin",
-        imagePath: "/images/Team/65.jpg",
-      },
-      {
-        name: "Satyajeet Pani",
-        imagePath: "/images/Team/66.jpg",
-      },
-      {
-        name: "Rishabh Patel",
-        imagePath: "/images/Team/69.jpg",
-      },
-      {
-        name: "Mannan Mahajan",
-        imagePath: "/images/Team/71.jpg",
-      },
-      {
-        name: "Lavanya Bhatnagar",
-        imagePath: "/images/Team/110.jpg",
-      },
-      {
-        name: "Varad Pendse",
-        imagePath: "/images/Team/74.jpg",
-      },
-      {
-        name: "Suryansh Garg",
-        imagePath: "/images/Team/78.jpeg",
-      },
-      {
-        name: "Sakshi Sidhe",
-        imagePath: "/images/Team/80.jpeg",
-      },
-      {
-        name: "Tanvi Agarwal",
-        imagePath: "/images/Team/82.jpg",
-      },
-      {
-        name: "Manan Jiwnani",
-        imagePath: "/images/Team/83.jpg",
-      },
-      {
-        name: "Kanav Bansal",
-        imagePath: "/images/Team/85.jpeg",
-      },
-      {
-        name: "Yagyaparna Mandwale",
-        imagePath: "/images/Team/54.jpg",
-      },
-      {
-        name: "Anshita Pandey",
-        imagePath: "/images/Team/90.jpg",
-      },
-    ],
-  },
-  "Marketing and Corporate Relations": {
-    heads: [
       {
         name: "Geetika Tirumalasetty",
         phoneNumber: "8454052361",
         linkedin:
           "https://www.linkedin.com/in/geetika-tirumalasetty-9ab02722a/",
         email: "hom.fluxus@iiti.ac.in",
-        imagePath: "/images/Team/23.jpg",
+        imagePath: "/images/Team/23.webp",
         title: "Head of Marketing",
       },
-    ],
-    members: [
       {
-        name: "Anand Nambiar",
-        imagePath: "/images/Team/42.jpg",
+        name: "Sahil Yardi",
+        phoneNumber: "7566669892",
+        email: "me210003065@iiti.ac.in",
+        linkedin: "https://in.linkedin.com/in/sahil-yardi-45390a235",
+        imagePath: "/images/Team/112.webp",
+        title: "Head of Operations and Logistics",
       },
       {
-        name: "Md Sharik",
-        imagePath: "/images/Team/46.jpg",
+        name: "Saral Sethi",
+        email: "contactus.fluxus@iiti.ac.in",
+        phoneNumber: "9111306423",
+        linkedin: "https://in.linkedin.com/in/saral-sethi-b15400231",
+        imagePath: "/images/Team/91.webp",
+        title: "Head of Sales and Engagement",
       },
       {
-        name: "Tejas",
-        imagePath: "/images/Team/47.jpg",
+        name: "Girish Jarwal",
+        phoneNumber: "8269516962",
+        email: "hofa.fluxus@iiti.ac.in",
+        linkedin: "https://in.linkedin.com/in/girish-jarwal-330369231",
+        imagePath: "/images/Team/16.webp",
+        title: "Head of Finance and Accounts",
       },
       {
-        name: "Prabhat Sati",
-        imagePath: "/images/Team/50.jpg",
+        name: "Ebrahim",
+        email: "ee210002030@iiti.ac.in",
+        phoneNumber: "9920702153",
+        linkedin: "https://www.linkedin.com/in/ebrahim-rampurawala",
+        imagePath: "/images/Team/19.webp",
+        title: "Head of Technicals",
       },
       {
-        name: "Kavya Patel",
-        imagePath: "/images/Team/53.jpg",
+        name: "Rohan Jha",
+        email: "ee210002041@iiti.ac.in",
+        phoneNumber: "9022566026",
+        linkedin: "https://www.linkedin.com/in/rohan-jha-aa2177231/",
+        imagePath: "/images/Team/1.webp",
+        title: "Head of Technicals",
       },
       {
-        name: "Kshitiz Gupta",
-        imagePath: "/images/Team/57.jpeg",
+        name: "Shagun Ghatak",
+        phoneNumber: "9653155107",
+        linkedin: "https://www.linkedin.com/in/shagun-ghatak-59a411230/",
+        email: "me210003069@iiti.ac.in",
+        imagePath: "/images/Team/25.webp",
+        title: "Head of Campus Relations",
       },
-      {
-        name: "Abhijeet Singh",
-        imagePath: "/images/Team/111.jpg",
-      },
-      {
-        name: "Divanshi Mehta",
-        imagePath: "/images/Team/63.jpg",
-      },
-      {
-        name: "Adinath Apte",
-        imagePath: "/images/Team/67.jpg",
-      },
-      {
-        name: "Abhinav Singh",
-        imagePath: "/images/Team/56.jpg",
-      },
-      {
-        name: "Anurag Sinha",
-        imagePath: "/images/Team/75.jpg",
-      },
-      {
-        name: "Chanakya",
-        imagePath: "/images/Team/76.jpg",
-      },
-      {
-        name: "Khush Paliwal",
-        imagePath: "/images/Team/77.jpg",
-      },
-      {
-        name: "Sahajmeet Kaur",
-        imagePath: "/images/Team/81.jpg",
-      },
-      {
-        name: "Garv Jain",
-        imagePath: "/images/Team/84.jpg",
-      },
-      {
-        name: "Kishan Gupta",
-        imagePath: "/images/Team/103.jpg",
-      },
-    ],
-  },
-  "Creatives, Design and Ambience": {
-    heads: [
       {
         name: "Tejal Uplenchwar",
         phoneNumber: "8830291040",
         email: "me210003078@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/tejal-uplenchwar-a93a31226",
-        imagePath: "/images/Team/4.jpg",
+        imagePath: "/images/Team/4.webp",
         title: "Head of Creatives",
       },
       {
@@ -236,351 +93,15 @@ const teamData = {
         phoneNumber: "9984480146",
         email: "ce210004043@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/sarthak-agarwal-740b541a6",
-        imagePath: "/images/Team/22.jpg",
+        imagePath: "/images/Team/22.webp",
         title: "Head of Creatives",
       },
-      {
-        name: "Hrishikesh Jawale",
-        phoneNumber: "7020052382",
-        email: "me220003038@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/hrishikesh-jawale-66199225a",
-        imagePath: "/images/Team/0.jpg",
-        title: "Head of Graphic Design",
-      },
-      {
-        name: "Gauttam Mandan",
-        phoneNumber: "9752249642",
-        email: "mems220005022@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/gauttam-mandan-0a8a712b5",
-        imagePath: "/images/Team/93.jpg",
-        title: "Head of Ambience",
-      },
-    ],
-    members: [
-      {
-        name: "Ruva Kacchia",
-        imagePath: "/images/Team/51.jpg",
-      },
-      {
-        name: "Priyash Patel",
-        imagePath: "/images/Team/60.jpg",
-      },
-      {
-        name: "Saket Jaiswal",
-        imagePath: "/images/Team/64.jpg",
-      },
-      {
-        name: "Samriddha Sirsant",
-        imagePath: "/images/Team/98.jpg",
-      },
-      {
-        name: "Himanshu",
-        imagePath: "/images/Team/79.jpg",
-      },
-      {
-        name: "Shivmuni Sarup",
-        imagePath: "/images/Team/96.JPG",
-      },
-      {
-        name: "Anurag Prasad",
-        imagePath: "/images/Team/97.jpg",
-      },
-      {
-        name: "Avani Ravindra Wanjari",
-        imagePath: "/images/Team/99.jpg",
-      },
-      {
-        name: "Darryl David",
-        imagePath: "/images/Team/105.jpg",
-      },
-      {
-        name: "Hilori Jain",
-        imagePath: "/images/Team/95.jpg",
-      },
-    ],
-  },
-  Pronites: {
-    heads: [
-      {
-        name: "Rohan Maji",
-        phoneNumber: "9474867609",
-        email: "ee220002070@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/rohan-maji-93053a249",
-        imagePath: "/images/Team/2.JPG",
-        title: "Head of Pronites",
-      },
-      {
-        name: "Sahil Umale",
-        phoneNumber: "9699464157",
-        email: "me220003070@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/sahil-umale-03333025b/",
-        imagePath: "/images/Team/3.jpg",
-        title: "Head of Pronites",
-      },
-      {
-        name: "Garima Sharma",
-        phoneNumber: "6026987258",
-        email: "ce220004018@iiti.ac.in",
-        linkedin: "https://in.linkedin.com/in/garima-sharma-a6509825b",
-        imagePath: "/images/Team/5.jpg",
-        title: "Head of Pronites",
-      },
-      {
-        name: "Kartik Khandelwal",
-        phoneNumber: "8094743992",
-        email: "ce220004022@iiti.ac.in",
-        linkedin: "https://linkedin.com/in/kartik-khandelwal-3b8789213",
-        imagePath: "/images/Team/18.jpg",
-        title: "Head of Pronites",
-      },
-    ],
-    members: [],
-  },
-  Events: {
-    heads: [
-      {
-        name: "Madhav Rathore",
-        phoneNumber: "7987199289",
-        email: "mems220005034@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/madhav-rathore-8a42bb253",
-        imagePath: "/images/Team/26.jpeg",
-        title: "Head of Events",
-      },
-      {
-        name: "Anubhuti Sharma",
-        phoneNumber: "6350365964",
-        email: "mems220005010@iiti.ac.in",
-        linkedin: "https://in.linkedin.com/in/anubhuti-sharma-689733275",
-        imagePath: "/images/Team/6.jpg",
-        title: "Head of Events",
-      },
-      {
-        name: "Khwab Gupta",
-        phoneNumber: "8529879965",
-        email: "me220003047@iiti.ac.in",
-        linkedin: "https://in.linkedin.com/in/khwab-gupta",
-        imagePath: "/images/Team/9.jpg",
-        title: "Head of Events",
-      },
-      {
-        name: "Agrim Jain",
-        phoneNumber: "9811085456",
-        email: "ce220004004@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/agrim-jain-a13258218",
-        imagePath: "/images/Team/109.jpg",
-        title: "Head of Events",
-      },
-    ],
-    members: [],
-  },
-  Conclaves: {
-    heads: [
-      {
-        name: "Rishit Mehrotra",
-        phoneNumber: "8090004900",
-        email: "ee220002069@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/rishit-mehrotra-637488250",
-        imagePath: "/images/Team/27.jpg",
-        title: "Head of Conclaves",
-      },
-      {
-        name: "Satvik Desai",
-        phoneNumber: "9924452549",
-        email: "ee220002074@iiti.ac.in",
-        linkedin: "https://in.linkedin.com/in/satvik-desai-b77a2524b",
-        imagePath: "/images/Team/88.jpg",
-        title: "Head of Conclaves",
-      },
-      {
-        name: "Yash Yewale",
-        phoneNumber: "9303182028",
-        email: "me220003087@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/yash-yewale-29a453256",
-        imagePath: "/images/Team/28.jpg",
-        title: "Head of Conclaves",
-      },
-    ],
-    members: [
-      {
-        name: "Advay Kunte",
-        imagePath: "/images/Team/37.jpg",
-      },
-      {
-        name: "Aishwarya Agrawal",
-        imagePath: "/images/Team/62.jpg",
-      },
-    ],
-  },
-  Informals: {
-    heads: [
-      {
-        name: "Pranjay Chouhan",
-        phoneNumber: "8269690977",
-        email: "cse220001059@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/pranjay-chouhan-687304171/",
-        imagePath: "/images/Team/8.jpg",
-        title: "Head of Informals",
-      },
-      {
-        name: "Dushyant Chaudhari",
-        phoneNumber: "9422223363",
-        email: "me220003026@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/dushyant-chaudhari-775159257/",
-        imagePath: "/images/Team/10.jpg",
-        title: "Head of Informals",
-      },
-      {
-        name: "Joreegala Nithisha",
-        phoneNumber: "9014789494",
-        email: "me220003043@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/nithisha-joreegala-4bb942290",
-        imagePath: "/images/Team/12.jpg",
-        title: "Head of Informals",
-      },
-    ],
-    members: [],
-  },
-  Technicals: {
-    heads: [
-      {
-        name: "Rohan Jha",
-        email: "ee210002041@iiti.ac.in",
-        phoneNumber: "9022566026",
-        linkedin: "https://www.linkedin.com/in/rohan-jha-aa2177231/",
-        imagePath: "/images/Team/1.jpeg",
-        title: "Head of Technicals",
-      },
-      {
-        name: "Ebrahim",
-        email: "ee210002030@iiti.ac.in",
-        phoneNumber: "9920702153",
-        linkedin: "https://www.linkedin.com/in/ebrahim-rampurawala",
-        imagePath: "/images/Team/19.jpg",
-        title: "Head of Technicals",
-      },
-    ],
-    members: [
-      {
-        name: "Ayush Sharma",
-        imagePath: "/images/Team/40.jpg",
-      },
-    ],
-  },
-  "Video Production": {
-    heads: [
-      {
-        name: "Harshit Gupta",
-        phoneNumber: "9968685180",
-        email: "mems220005026@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/harshit-gupta-184bb4255",
-        imagePath: "/images/Team/7.jpg",
-        title: "Head of Video Production",
-      },
-      {
-        name: "Hrishikesh Hiremath",
-        phoneNumber: "9449796245",
-        email: "me220003037@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/hrishikesh-hiremath",
-        imagePath: "/images/Team/15.jpg",
-        title: "Head of Video Production",
-      },
-    ],
-    members: [
-      {
-        name: "B. Dinesh",
-        imagePath: "/images/Team/104.jpg",
-      },
-    ],
-  },
-  "Guest Relations": {
-    heads: [
-      {
-        name: "Sanket Panigrahi",
-        phoneNumber: "8093480243",
-        email: "mems220005047@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/sanket-panigrahi-59011625b",
-        imagePath: "/images/Team/14.jpg",
-        title: "Head of Guest Relations",
-      },
-      {
-        name: "Shivansh Malpani",
-        phoneNumber: "9214092091",
-        email: "mems220005048@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/shivansh-malpani-5a8374291",
-        imagePath: "/images/Team/20.jpg",
-        title: "Head of Guest Relations",
-      },
-    ],
-    members: [],
-  },
-  Accommodation: {
-    heads: [
-      {
-        name: "Saket Prashant Thamke",
-        phoneNumber: "9321526377",
-        email: "cse220001067@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/saket-thamke-10999325a/",
-        imagePath: "/images/Team/107.jpg",
-        title: "Head of Accommodation",
-      },
-      {
-        name: "Prasoon Pandey",
-        phoneNumber: "8604631501",
-        email: "mems220005038@iiti.ac.in",
-        linkedin: "https://www.linkedin.com/in/prasoon-pandey-b59953296",
-        imagePath: "/images/Team/17.jpg",
-        title: "Head of Accommodation",
-      },
-    ],
-    members: [],
-  },
-  "Sales & Engagement": {
-    heads: [
-      {
-        name: "Saral Sethi",
-        email: "contactus.fluxus@iiti.ac.in",
-        phoneNumber: "9111306423",
-        linkedin: "https://in.linkedin.com/in/saral-sethi-b15400231",
-        imagePath: "/images/Team/91.jpg",
-        title: "Head of Sales and Engagement",
-      },
-    ],
-    members: [],
-  },
-  "Operations & Logistics": {
-    heads: [
-      {
-        name: "Sahil Yardi",
-        phoneNumber: "7566669892",
-        email: "me210003065@iiti.ac.in",
-        linkedin: "https://in.linkedin.com/in/sahil-yardi-45390a235",
-        imagePath: "/images/Team/112.jpg",
-        title: "Head of Operations and Logistics",
-      },
-    ],
-    members: [],
-  },
-  "Finance and Accounts": {
-    heads: [
-      {
-        name: "Girish Jarwal",
-        phoneNumber: "8269516962",
-        email: "hofa.fluxus@iiti.ac.in",
-        linkedin: "https://in.linkedin.com/in/girish-jarwal-330369231",
-        imagePath: "/images/Team/16.jpg",
-        title: "Head of Finance and Accounts",
-      },
-    ],
-    members: [],
-  },
-  "Web and App Development": {
-    heads: [
       {
         name: "Rupal Shah",
         phoneNumber: "9826293293",
         email: "ee210002065@iiti.ac.in",
         linkedin: "https://in.linkedin.com/in/rupal17shah",
-        imagePath: "/images/Team/106.jpg",
+        imagePath: "/images/Team/106.webp",
         title: "Head of Web and App Development",
       },
       {
@@ -588,35 +109,459 @@ const teamData = {
         phoneNumber: "7024401110",
         email: "cse210001034@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/krish-agrawal-472784146",
-        imagePath: "/images/Team/101.jpg",
+        imagePath: "/images/Team/101.webp",
         title: "Head of Web and App Development",
       },
+      {
+        name: "Rohan Maji",
+        phoneNumber: "9474867609",
+        email: "ee220002070@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/rohan-maji-93053a249",
+        imagePath: "/images/Team/2.webp",
+        title: "Head of Pronites",
+      },
+      {
+        name: "Sahil Umale",
+        phoneNumber: "9699464157",
+        email: "me220003070@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/sahil-umale-03333025b/",
+        imagePath: "/images/Team/3.webp",
+        title: "Head of Pronites",
+      },
+      {
+        name: "Garima Sharma",
+        phoneNumber: "6026987258",
+        email: "ce220004018@iiti.ac.in",
+        linkedin: "https://in.linkedin.com/in/garima-sharma-a6509825b",
+        imagePath: "/images/Team/5.webp",
+        title: "Head of Pronites",
+      },
+      {
+        name: "Kartik Khandelwal",
+        phoneNumber: "8094743992",
+        email: "ce220004022@iiti.ac.in",
+        linkedin: "https://linkedin.com/in/kartik-khandelwal-3b8789213",
+        imagePath: "/images/Team/18.webp",
+        title: "Head of Pronites",
+      },
+      {
+        name: "Hrishikesh Jawale",
+        phoneNumber: "7020052382",
+        email: "me220003038@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/hrishikesh-jawale-66199225a",
+        imagePath: "/images/Team/0.webp",
+        title: "Head of Graphic Design",
+      },
+      {
+        name: "Gauttam Mandan",
+        phoneNumber: "9752249642",
+        email: "mems220005022@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/gauttam-mandan-0a8a712b5",
+        imagePath: "/images/Team/93.webp",
+        title: "Head of Ambience",
+      },
+      {
+        name: "Madhav Rathore",
+        phoneNumber: "7987199289",
+        email: "mems220005034@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/madhav-rathore-8a42bb253",
+        imagePath: "/images/Team/26.webp",
+        title: "Head of Events",
+      },
+      {
+        name: "Anubhuti Sharma",
+        phoneNumber: "6350365964",
+        email: "mems220005010@iiti.ac.in",
+        linkedin: "https://in.linkedin.com/in/anubhuti-sharma-689733275",
+        imagePath: "/images/Team/6.webp",
+        title: "Head of Events",
+      },
+      {
+        name: "Khwab Gupta",
+        phoneNumber: "8529879965",
+        email: "me220003047@iiti.ac.in",
+        linkedin: "https://in.linkedin.com/in/khwab-gupta",
+        imagePath: "/images/Team/9.webp",
+        title: "Head of Events",
+      },
+      {
+        name: "Agrim Jain",
+        phoneNumber: "9811085456",
+        email: "ce220004004@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/agrim-jain-a13258218",
+        imagePath: "/images/Team/109.webp",
+        title: "Head of Events",
+      },
+      {
+        name: "Rishit Mehrotra",
+        phoneNumber: "8090004900",
+        email: "ee220002069@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/rishit-mehrotra-637488250",
+        imagePath: "/images/Team/27.webp",
+        title: "Head of Conclaves",
+      },
+      {
+        name: "Satvik Desai",
+        phoneNumber: "9924452549",
+        email: "ee220002074@iiti.ac.in",
+        linkedin: "https://in.linkedin.com/in/satvik-desai-b77a2524b",
+        imagePath: "/images/Team/88.webp",
+        title: "Head of Conclaves",
+      },
+      {
+        name: "Yash Yewale",
+        phoneNumber: "9303182028",
+        email: "me220003087@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/yash-yewale-29a453256",
+        imagePath: "/images/Team/28.webp",
+        title: "Head of Conclaves",
+      },
+      {
+        name: "Pranjay Chouhan",
+        phoneNumber: "8269690977",
+        email: "cse220001059@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/pranjay-chouhan-687304171/",
+        imagePath: "/images/Team/8.webp",
+        title: "Head of Informals",
+      },
+      {
+        name: "Dushyant Chaudhari",
+        phoneNumber: "9422223363",
+        email: "me220003026@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/dushyant-chaudhari-775159257/",
+        imagePath: "/images/Team/10.webp",
+        title: "Head of Informals",
+      },
+      {
+        name: "Joreegala Nithisha",
+        phoneNumber: "9014789494",
+        email: "me220003043@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/nithisha-joreegala-4bb942290",
+        imagePath: "/images/Team/12.webp",
+        title: "Head of Informals",
+      },
+      {
+        name: "Harshit Gupta",
+        phoneNumber: "9968685180",
+        email: "mems220005026@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/harshit-gupta-184bb4255",
+        imagePath: "/images/Team/7.webp",
+        title: "Head of Video Production",
+      },
+      {
+        name: "Hrishikesh Hiremath",
+        phoneNumber: "9449796245",
+        email: "me220003037@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/hrishikesh-hiremath",
+        imagePath: "/images/Team/15.webp",
+        title: "Head of Video Production",
+      },
+      {
+        name: "Sanket Panigrahi",
+        phoneNumber: "8093480243",
+        email: "mems220005047@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/sanket-panigrahi-59011625b",
+        imagePath: "/images/Team/14.webp",
+        title: "Head of Guest Relations",
+      },
+      {
+        name: "Shivansh Malpani",
+        phoneNumber: "9214092091",
+        email: "mems220005048@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/shivansh-malpani-5a8374291",
+        imagePath: "/images/Team/20.webp",
+        title: "Head of Guest Relations",
+      },
+      {
+        name: "Saket Prashant Thamke",
+        phoneNumber: "9321526377",
+        email: "cse220001067@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/saket-thamke-10999325a/",
+        imagePath: "/images/Team/107.webp",
+        title: "Head of Accommodation",
+      },
+      {
+        name: "Prasoon Pandey",
+        phoneNumber: "8604631501",
+        email: "mems220005038@iiti.ac.in",
+        linkedin: "https://www.linkedin.com/in/prasoon-pandey-b59953296",
+        imagePath: "/images/Team/17.webp",
+        title: "Head of Accommodation",
+      },
     ],
+  },
+  "Public and Campus Relations": {
+    heads: [],
+    members: [
+      {
+        name: "Naman Goyal",
+        imagePath: "/images/Team/30.webp",
+      },
+      {
+        name: "Ayush Jindal",
+        imagePath: "/images/Team/33.webp",
+      },
+      {
+        name: "Shubham Pawar",
+        imagePath: "/images/Team/34.webp",
+      },
+      {
+        name: "Rohan Dhiman",
+        imagePath: "/images/Team/35.webp",
+      },
+      {
+        name: "Pranshu Devlia",
+        imagePath: "/images/Team/39.webp",
+      },
+      {
+        name: "Atharvakant",
+        imagePath: "/images/Team/41.webp",
+      },
+      {
+        name: "Daksh Chandel",
+        imagePath: "/images/Team/43.webp",
+      },
+      {
+        name: "Shorya Kshettry",
+        imagePath: "/images/Team/45.webp",
+      },
+      {
+        name: "Moreshwar",
+        imagePath: "/images/Team/48.webp",
+      },
+      {
+        name: "Vighnesh",
+        imagePath: "/images/Team/49.webp",
+      },
+      {
+        name: "Sneha Bains",
+        imagePath: "/images/Team/52.webp",
+      },
+      {
+        name: "Niyati Mishra",
+        imagePath: "/images/Team/55.webp",
+      },
+      {
+        name: "Ansh Kyal",
+        imagePath: "/images/Team/59.webp",
+      },
+      {
+        name: "Anay Sachin",
+        imagePath: "/images/Team/65.webp",
+      },
+      {
+        name: "Satyajeet Pani",
+        imagePath: "/images/Team/66.webp",
+      },
+      {
+        name: "Rishabh Patel",
+        imagePath: "/images/Team/69.webp",
+      },
+      {
+        name: "Mannan Mahajan",
+        imagePath: "/images/Team/71.webp",
+      },
+      {
+        name: "Lavanya Bhatnagar",
+        imagePath: "/images/Team/110.webp",
+      },
+      {
+        name: "Varad Pendse",
+        imagePath: "/images/Team/74.webp",
+      },
+      {
+        name: "Suryansh Garg",
+        imagePath: "/images/Team/78.webp",
+      },
+      {
+        name: "Sakshi Sidhe",
+        imagePath: "/images/Team/80.webp",
+      },
+      {
+        name: "Tanvi Agarwal",
+        imagePath: "/images/Team/82.webp",
+      },
+      {
+        name: "Manan Jiwnani",
+        imagePath: "/images/Team/83.webp",
+      },
+      {
+        name: "Kanav Bansal",
+        imagePath: "/images/Team/85.webp",
+      },
+      {
+        name: "Yagyaparna Mandwale",
+        imagePath: "/images/Team/54.webp",
+      },
+      {
+        name: "Anshita Pandey",
+        imagePath: "/images/Team/90.webp",
+      },
+      {
+        name: "Ayush Sharma",
+        imagePath: "/images/Team/40.webp",
+      },
+    ],
+  },
+  "Marketing and Corporate Relations": {
+    heads: [],
+    members: [
+      {
+        name: "Anand Nambiar",
+        imagePath: "/images/Team/42.webp",
+      },
+      {
+        name: "Md Sharik",
+        imagePath: "/images/Team/46.webp",
+      },
+      {
+        name: "Tejas",
+        imagePath: "/images/Team/47.webp",
+      },
+      {
+        name: "Prabhat Sati",
+        imagePath: "/images/Team/50.webp",
+      },
+      {
+        name: "Kavya Patel",
+        imagePath: "/images/Team/53.webp",
+      },
+      {
+        name: "Kshitiz Gupta",
+        imagePath: "/images/Team/57.webp",
+      },
+      {
+        name: "Abhijeet Singh",
+        imagePath: "/images/Team/111.webp",
+      },
+      {
+        name: "Divanshi Mehta",
+        imagePath: "/images/Team/63.webp",
+      },
+      {
+        name: "Adinath Apte",
+        imagePath: "/images/Team/67.webp",
+      },
+      {
+        name: "Abhinav Singh",
+        imagePath: "/images/Team/56.webp",
+      },
+      {
+        name: "Anurag Sinha",
+        imagePath: "/images/Team/75.webp",
+      },
+      {
+        name: "Chanakya",
+        imagePath: "/images/Team/76.webp",
+      },
+      {
+        name: "Khush Paliwal",
+        imagePath: "/images/Team/77.webp",
+      },
+      {
+        name: "Sahajmeet Kaur",
+        imagePath: "/images/Team/81.webp",
+      },
+      {
+        name: "Garv Jain",
+        imagePath: "/images/Team/84.webp",
+      },
+      {
+        name: "Kishan Gupta",
+        imagePath: "/images/Team/103.webp",
+      },
+    ],
+  },
+  "Creatives, Design and Ambience": {
+    heads: [],
+    members: [
+      {
+        name: "Ruva Kacchia",
+        imagePath: "/images/Team/51.webp",
+      },
+      {
+        name: "Priyash Patel",
+        imagePath: "/images/Team/60.webp",
+      },
+      {
+        name: "Saket Jaiswal",
+        imagePath: "/images/Team/64.webp",
+      },
+      {
+        name: "Samriddha Sirsant",
+        imagePath: "/images/Team/98.webp",
+      },
+      {
+        name: "Himanshu",
+        imagePath: "/images/Team/79.webp",
+      },
+      {
+        name: "Shivmuni Sarup",
+        imagePath: "/images/Team/96.webp",
+      },
+      {
+        name: "Anurag Prasad",
+        imagePath: "/images/Team/97.webp",
+      },
+      {
+        name: "Avani Ravindra Wanjari",
+        imagePath: "/images/Team/99.webp",
+      },
+      {
+        name: "Darryl David",
+        imagePath: "/images/Team/105.webp",
+      },
+      {
+        name: "Hilori Jain",
+        imagePath: "/images/Team/95.webp",
+      },
+    ],
+  },
+  "Web and App Development": {
+    heads: [],
     members: [
       {
         name: "Pradeep Kumar Rebbavarapu",
-        imagePath: "/images/Team/94.jpg",
+        imagePath: "/images/Team/94.webp",
       },
       {
         name: "Harsh Soni",
-        imagePath: "/images/Team/86.jpg",
+        imagePath: "/images/Team/86.webp",
       },
       {
         name: "Tarun Balaji",
-        imagePath: "/images/Team/100.jpg",
+        imagePath: "/images/Team/100.webp",
       },
       {
         name: "Arnav Jain",
-        imagePath: "/images/Team/73.jpg",
+        imagePath: "/images/Team/73.webp",
       },
       {
         name: "Riddhi Chandekar",
-        imagePath: "/images/Team/70.jpg",
+        imagePath: "/images/Team/70.webp",
       },
-      // {
-      //   name: "Siddharth Jain",
-      //   imagePath: "/images/Day1/human.jpg",
-      // },
+    ],
+  },
+  Conclaves: {
+    heads: [],
+    members: [
+      {
+        name: "Advay Kunte",
+        imagePath: "/images/Team/37.webp",
+      },
+      {
+        name: "Aishwarya Agrawal",
+        imagePath: "/images/Team/62.webp",
+      },
+    ],
+  },
+  "Video Production": {
+    heads: [],
+    members: [
+      {
+        name: "B. Dinesh",
+        imagePath: "/images/Team/104.webp",
+      },
     ],
   },
 };
