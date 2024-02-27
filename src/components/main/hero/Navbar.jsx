@@ -17,7 +17,7 @@ export default function Navbar() {
     <div>
 
 
-      <div id="navbar" className={`bg-transparent ${pathname == "/technicals" ? "absolute" : ""} w-full backdrop-blur-md md:backdrop-blur-none !z-[10000000000000000]`}>
+      <div id="navbar" className={`bg-transparent ${pathname == "/technicals" || pathname=="/sponsors"? "absolute" : ""} w-full backdrop-blur-md md:backdrop-blur-none !z-[10000000000000000]`}>
 
         <div id="bars" className="top-5 !z-[1000] absolute  left-5 w-full h-fit m-5 font-weight-700 text-white text-2xl transition-all fade-in-out lg:hidden">
           <FaBars className="sm:w-16 sm:h-16 h-10 w-10" onClick={() => {
