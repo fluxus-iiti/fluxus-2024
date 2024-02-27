@@ -99,7 +99,7 @@ const SponsorData6 = [
 
 export default function SnapScroll() {
     return (
-        <div className=" ">
+        <div className="pb-8 ">
             <div className="support-scrollsnap"></div>
 
             <div className="scroll-container">

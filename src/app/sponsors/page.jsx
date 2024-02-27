@@ -6,11 +6,12 @@ export default function page() {
     return (
         <div className=''>
             <div className="home  !bg-no-repeat !bg-cover" >
-              
-                <div className="home-content !py-64 bg-black  bg-opacity-40">
-                    <h1 className='!my-0 font-bold text-6xl'>Sponsors</h1>
-                   <SnapScroll />
-                
+                <div className='bg-black  bg-opacity-40'>
+                    <div className="home-content  ">
+                        <h1 className=' font-bold text-6xl !pt-52 !pb-4'>Sponsors</h1>
+                        <SnapScroll />
+
+                    </div>
                 </div>
             </div>
             <style jsx>

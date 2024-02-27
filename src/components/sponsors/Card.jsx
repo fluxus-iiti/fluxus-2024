@@ -43,11 +43,12 @@ function Tilt(props) {
 export default function Card({ ele }) {
     return (
         <Tilt>
-            <div className="m-10  text-white text-center font-semibold lg:w-[300px] lg:h-[300px] w-[120px] h-[120px] p-[10px] card-inner flex items-center flex-col justify-center">
+            <div className="m-10  text-white text-center font-semibold lg:w-[300px] lg:h-[300px] p-[10px] card-inner flex items-center flex-col justify-center w-[120px] h-[120px]">
                 <div className='lg:w-[300px] lg:h-[300px] w-[120px] h-[120px] my-auto flex flex-col justify-center'>
                     <Image className='mx-auto my-auto    ' width={300} height={300} src={ele.image} alt="sponsor_logo" />
                 </div>
-                <div className='!text-md my-5'>{ele.title}</div>
+                <div className='lg:!hidden my-5 !text-[9px]'>{ele.title}</div>
+                <div className='hidden lg:block my-5  '>{ele.title}</div>
 
                 <style jsx>
                     {`
