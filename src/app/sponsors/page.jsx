@@ -1,14 +1,14 @@
 'use client'
+import Image from 'next/image'
 import SnapScroll from '../../components/sponsors/SnapScroll'
+import main from '../../../public/images/sponsor/main.webp'
 export default function page() {
     return (
-        <div>
-            <div className="home">
-                <video muted loop autoPlay>
-                    <source src="./videos/3.mp4" type="video/mp4"/>
-                </video>
-                <div className="home-content">
-                    <h1>Sponsors</h1>
+        <div className=''>
+            <div className="home  !bg-no-repeat !bg-cover" >
+              
+                <div className="home-content !py-64 bg-black  bg-opacity-40">
+                    <h1 className='!my-0 font-bold text-6xl'>Sponsors</h1>
                    <SnapScroll />
                 
                 </div>
@@ -28,27 +28,19 @@ export default function page() {
                     .home {
                         height: 100vh;
                         position: relative;
+                        background:url('./images/sponsor/main.jpg')
                     }
-                    video {
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
+                    
                     .home-content {
                         position: relative;
-                        padding-top: 150px;
+                        
                         color: #fff;
                         text-align: center;
                     }
-                    h1 {
-                        font-family: Playfair Display, serif;
-                        font-size: clamp(45px, 7vw, 130px);
-                        line-height: 1.1;
-                    }
+                   
                     
                     .home p {
-                        font-size: clamp(25px, 4vw, 40px);
+                        font-size: clamp(20px, 4vw, 30px);  
                         margin-top: 10px;
                     }
                     

@@ -7,20 +7,22 @@ import OffCanvasNavbar from "./OffCanvasNavbar";
 import { FaBars } from "react-icons/fa";
 import { usePathname } from 'next/navigation'
 import Link from "next/link";
+import { useRef, useEffect } from "react";
 import { useLayoutEffect } from "react";
 import NeonButton from "./NeonButton";
 export default function Navbar() {
   const pathname = usePathname()
+  
   console.log(pathname)
-
+  
   return (
     <div>
 
 
       <div id="navbar" className={`bg-transparent ${pathname == "/technicals" || pathname=="/sponsors"? "absolute" : ""} w-full backdrop-blur-md md:backdrop-blur-none !z-[10000000000000000]`}>
 
-        <div id="bars" className="top-5 !z-[1000] absolute  left-5 w-full h-fit m-5 font-weight-700 text-white text-2xl transition-all fade-in-out lg:hidden">
-          <FaBars className="sm:w-16 sm:h-16 h-10 w-10" onClick={() => {
+        <div id="bars" className="top-5 !z-[1000] cursor-pointer absolute  left-5 w-full h-fit m-5 font-weight-700 text-white text-2xl transition-all fade-in-out lg:hidden">
+          <FaBars className="sm:w-16 sm:h-16 h-10 w-10 cursor-pointer" onClick={() => {
 
             document.getElementById('offcanvas').style.top = "0px"
 
@@ -127,7 +129,7 @@ export default function Navbar() {
           ></motion.div>
         </div>
       </div>
-      <div className="z-[-1]">
+      <div  className="z-[-1]">
         <OffCanvasNavbar />
       </div>
     </div>

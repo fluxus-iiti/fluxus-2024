@@ -8,33 +8,32 @@ const SponsorData1 = [
         image:require('../../../public/images/sponsor/1.png')
     },
     {
-        id:"2",
-        company:"Metro Shoes",
-        title:"Styled By Partner",
-        image:require('../../../public/images/sponsor/2.png')
+        id:"1_22",
+        company:"NHAI",
+        title:"Platinum Partner ",
+        image:require('../../../public/images/sponsor/1_@.png')
     },
-    {
-        id:"3",
-        company:"Suzuki ",
-        title:"Motorcycle Partner ",
-        image:require('../../../public/images/sponsor/3.png')
-    },
+]
+
+const SponsorData2 = [
     {
         id:"4",
         company:"Dabur ",
         title:"Ayurveda Partner ",
         image:require('../../../public/images/sponsor/4.png')
     },
-    
-]
-
-const SponsorData2 = [
     {
         id:"5",
         company:"Adriot Associates ",
         title:"Water Technology Partner",
         image:require('../../../public/images/sponsor/5.png')
     },
+    
+    
+    
+]
+
+const SponsorData3 = [
     {
         id:"6",
         company:"Prestige",
@@ -47,22 +46,25 @@ const SponsorData2 = [
         title:"Steel Partner ",
         image:require('../../../public/images/sponsor/7.png')
     },
+    
+]
+const SponsorData4 = [
     {
         id:"8",
         company:"Teachnook ",
         title:"Ed-Tech Partner  ",
         image:require('../../../public/images/sponsor/8.jpg')
     },
-    
-]
-
-const SponsorData3 = [
     {
         id:"9",
         company:"Supergrads",
         title:"Education Partner ",
         image:require('../../../public/images/sponsor/9.png')
     },
+    
+    
+]
+const SponsorData5 = [
     {
         id:"10",
         company:"KSG",
@@ -75,28 +77,29 @@ const SponsorData3 = [
         title:"Style Partner",
         image:require('../../../public/images/sponsor/11.png')
     },
+    
+    
+    
+]
+const SponsorData6 = [
     {
         id:"12",
         company:"EaseMyTrip",
         title:"Travel Partner",
         image:require('../../../public/images/sponsor/12.png')
     },
-    
-]
-const SponsorData4 = [
     {
         id:"13",
         company:"JioSaavn",
         title:"Partner ",
         image:require('../../../public/images/sponsor/13.png')
     },
-    
 ]
 
 
 export default function SnapScroll() {
     return (
-        <div className="     w-full ">
+        <div className=" ">
             <div className="support-scrollsnap"></div>
 
             <div className="scroll-container">
@@ -140,6 +143,26 @@ export default function SnapScroll() {
                     })}
                     
                 </div>
+                <div className="scroll-area !flex-wrap !py-20">
+                    {SponsorData5.map((ele,index)=>{
+                        return (
+                            <div key={index}>
+                            <Card ele={ele} />
+                            </div>
+                        )
+                    })}
+                    
+                </div>
+                <div className="scroll-area !flex-wrap !py-20">
+                    {SponsorData6.map((ele,index)=>{
+                        return (
+                            <div key={index}>
+                            <Card ele={ele} />
+                            </div>
+                        )
+                    })}
+                    
+                </div>
                 
                 
                 
@@ -153,7 +176,7 @@ export default function SnapScroll() {
                     .scroll-container,
                     .scroll-area {
                         max-width: 100%;
-                        height: 60vh;
+                        height: 70vh;
                         font-size: 15px;
                     }
 
