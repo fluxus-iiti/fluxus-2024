@@ -5,13 +5,13 @@ const SponsorData1 = [
         id:"1",
         company:"NHAI",
         title:"Platinum Partner ",
-        image:require('../../../public/images/sponsor/1.jpeg')
+        image:require('../../../public/images/sponsor/1.png')
     },
     {
         id:"2",
         company:"Metro Shoes",
         title:"Styled By Partner",
-        image:require('../../../public/images/sponsor/2.jpg')
+        image:require('../../../public/images/sponsor/2.png')
     },
     {
         id:"3",
@@ -25,15 +25,16 @@ const SponsorData1 = [
         title:"Ayurveda Partner ",
         image:require('../../../public/images/sponsor/4.png')
     },
+    
+]
+
+const SponsorData2 = [
     {
         id:"5",
         company:"Adriot Associates ",
         title:"Water Technology Partner",
         image:require('../../../public/images/sponsor/5.png')
     },
-]
-
-const SponsorData2 = [
     {
         id:"6",
         company:"Prestige",
@@ -52,6 +53,10 @@ const SponsorData2 = [
         title:"Ed-Tech Partner  ",
         image:require('../../../public/images/sponsor/8.jpg')
     },
+    
+]
+
+const SponsorData3 = [
     {
         id:"9",
         company:"Supergrads",
@@ -64,9 +69,6 @@ const SponsorData2 = [
         title:"Official UPSC Partner",
         image:require('../../../public/images/sponsor/10.jpeg')
     },
-]
-
-const SponsorData3 = [
     {
         id:"11",
         company:"Spykar",
@@ -79,6 +81,9 @@ const SponsorData3 = [
         title:"Travel Partner",
         image:require('../../../public/images/sponsor/12.png')
     },
+    
+]
+const SponsorData4 = [
     {
         id:"13",
         company:"JioSaavn",
@@ -117,6 +122,16 @@ export default function SnapScroll() {
                 </div>
                 <div className="scroll-area !flex-wrap !py-20">
                     {SponsorData3.map((ele,index)=>{
+                        return (
+                            <div key={index}>
+                            <Card ele={ele} />
+                            </div>
+                        )
+                    })}
+                    
+                </div>
+                <div className="scroll-area !flex-wrap !py-20">
+                    {SponsorData4.map((ele,index)=>{
                         return (
                             <div key={index}>
                             <Card ele={ele} />
