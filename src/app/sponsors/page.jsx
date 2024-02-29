@@ -8,7 +8,7 @@ export default function page() {
             <div className="home  !bg-no-repeat !bg-cover" >
                 <div className='bg-black  bg-opacity-40'>
                     <div className="home-content  ">
-                        <h1 className=' font-bold text-6xl !pt-52 !pb-4'>Sponsors</h1>
+                        <h1 className=' font-bold text-6xl !pt-52 !pb-4 font-neuropol'>Sponsors</h1>
                         <SnapScroll />
 
                     </div>
