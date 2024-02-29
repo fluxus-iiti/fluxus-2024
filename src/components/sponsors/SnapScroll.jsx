@@ -1,5 +1,20 @@
 import Card from "./Card";
 
+const SponsorData_0 = [
+  {
+    id: "0",
+    company: "Cosanostra",
+    title: "Festival Partner",
+    image: require("../../../public/images/sponsor/0.png"),
+  },
+  {
+    id: "00",
+    company: "Creative Torrent Events & Promotions",
+    title: "Artist Management Partner",
+    image: require("../../../public/images/sponsor/01.png"),
+  },
+];
+
 const SponsorData0 = [
   {
     id: "1",
@@ -49,7 +64,7 @@ const SponsorData3 = [
   {
     id: "6",
     company: "Prestige",
-    title: "Partner ",
+    title: "ConsultX Partner",
     image: require("../../../public/images/sponsor/6.png"),
   },
   {
@@ -91,8 +106,38 @@ const SponsorData6 = [
   {
     id: "13",
     company: "JioSaavn",
-    title: "Partner ",
+    title: "Music Streaming Partner ",
     image: require("../../../public/images/sponsor/13.png"),
+  },
+  {
+    id: "14",
+    company: "RedFM",
+    title: "Radio Partner",
+    image: require("../../../public/images/sponsor/14.png"),
+  },
+];
+
+const SponsorData7 = [
+  {
+    id: "15",
+    company: "Indori Events",
+    title: "Event Partner",
+    image: require("../../../public/images/sponsor/15.png"),
+  },
+  {
+    id: "16",
+    company: "GDIOT",
+    title: "Technical Partner",
+    image: require("../../../public/images/sponsor/16.png"),
+  },
+];
+
+const SponsorData8 = [
+  {
+    id: "17",
+    company: "Entellus Events & Photography",
+    title: "Photography Partner",
+    image: require("../../../public/images/sponsor/17.png"),
   },
 ];
 
@@ -102,7 +147,16 @@ export default function SnapScroll() {
       <div className="support-scrollsnap"></div>
 
       <div className="scroll-container">
-        <div className="scroll-area !flex-wrap !py-20">
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
+          {SponsorData_0.map((ele, index) => {
+            return (
+              <div key={index}>
+                <Card ele={ele} />
+              </div>
+            );
+          })}
+        </div>
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
           {SponsorData0.map((ele, index) => {
             return (
               <div key={index}>
@@ -111,7 +165,7 @@ export default function SnapScroll() {
             );
           })}
         </div>
-        <div className="scroll-area !flex-wrap !py-20">
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
           {SponsorData1.map((ele, index) => {
             return (
               <div key={index}>
@@ -120,7 +174,7 @@ export default function SnapScroll() {
             );
           })}
         </div>
-        <div className="scroll-area !flex-wrap !py-20">
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
           {SponsorData2.map((ele, index) => {
             return (
               <div key={index}>
@@ -129,7 +183,7 @@ export default function SnapScroll() {
             );
           })}
         </div>
-        <div className="scroll-area !flex-wrap !py-20">
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
           {SponsorData3.map((ele, index) => {
             return (
               <div key={index}>
@@ -138,7 +192,7 @@ export default function SnapScroll() {
             );
           })}
         </div>
-        <div className="scroll-area !flex-wrap !py-20">
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
           {SponsorData4.map((ele, index) => {
             return (
               <div key={index}>
@@ -147,7 +201,7 @@ export default function SnapScroll() {
             );
           })}
         </div>
-        <div className="scroll-area !flex-wrap !py-20">
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
           {SponsorData5.map((ele, index) => {
             return (
               <div key={index}>
@@ -156,8 +210,26 @@ export default function SnapScroll() {
             );
           })}
         </div>
-        <div className="scroll-area !flex-wrap !py-20">
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
           {SponsorData6.map((ele, index) => {
+            return (
+              <div key={index}>
+                <Card ele={ele} />
+              </div>
+            );
+          })}
+        </div>
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
+          {SponsorData7.map((ele, index) => {
+            return (
+              <div key={index}>
+                <Card ele={ele} />
+              </div>
+            );
+          })}
+        </div>
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
+          {SponsorData8.map((ele, index) => {
             return (
               <div key={index}>
                 <Card ele={ele} />
