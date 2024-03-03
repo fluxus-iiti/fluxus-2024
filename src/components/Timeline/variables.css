@@ -1,0 +1,11 @@
+.events-home {
+    --h1: "400vh";
+    --h2: "350vh";
+    --h3: "300vh";
+
+    @media (min-width: 480px) {
+        --h1: "300vh";
+        --h2: "250vh";
+        --h3: "200vh";
+    }
+}
