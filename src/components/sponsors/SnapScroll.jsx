@@ -139,6 +139,134 @@ const SponsorData8 = [
     title: "Photography Partner",
     image: require("../../../public/images/sponsor/17.png"),
   },
+  {
+    id: "18",
+    company: "Colorhome Smart Lighting",
+    title: "Ambience Partner",
+    image: require("../../../public/images/sponsor/18.jpg"),
+  },
+];
+
+const SponsorData9 = [
+  {
+    id: "19",
+    company: "Stock Gro",
+    title: "Trading Partner",
+    image: require("../../../public/images/sponsor/19.png"),
+  },
+  {
+    id: "20",
+    company: "The Fit Squad",
+    title: "Nutrition Partner",
+    image: require("../../../public/images/sponsor/20.png"),
+  },
+];
+
+const OutreachPartners = [
+  [
+    {
+      id: "op1",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op1.PNG"),
+    },
+    {
+      id: "op2",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op2.jpg"),
+    },
+    {
+      id: "op3",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op3.jpg"),
+    },
+    {
+      id: "op4",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op4.jpg"),
+    },
+  ],
+  [
+    {
+      id: "op5",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op5.jpg"),
+    },
+    {
+      id: "op6",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op6.png"),
+    },
+    {
+      id: "op7",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op7.png"),
+    },
+    {
+      id: "op8",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op8.jpg"),
+    },
+  ],
+  [
+    {
+      id: "op9",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op9.jpg"),
+    },
+    {
+      id: "op10",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op10.png"),
+    },
+    {
+      id: "op11",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op11.jpg"),
+    },
+    {
+      id: "op12",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op12.jpg"),
+    },
+  ],
+  [
+    {
+      id: "op13",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op13.png"),
+    },
+    {
+      id: "op14",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op14.png"),
+    },
+    {
+      id: "op15",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op15.png"),
+    },
+    {
+      id: "op16",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op16.PNG"),
+    },
+  ],
 ];
 
 export default function SnapScroll() {
@@ -151,7 +279,7 @@ export default function SnapScroll() {
           {SponsorData_0.map((ele, index) => {
             return (
               <div key={index}>
-                <Card ele={ele} />
+                <Card ele={ele} sponsor={true} />
               </div>
             );
           })}
@@ -160,7 +288,7 @@ export default function SnapScroll() {
           {SponsorData0.map((ele, index) => {
             return (
               <div key={index}>
-                <Card ele={ele} />
+                <Card ele={ele} sponsor={true} />
               </div>
             );
           })}
@@ -169,7 +297,7 @@ export default function SnapScroll() {
           {SponsorData1.map((ele, index) => {
             return (
               <div key={index}>
-                <Card ele={ele} />
+                <Card ele={ele} sponsor={true} />
               </div>
             );
           })}
@@ -178,7 +306,7 @@ export default function SnapScroll() {
           {SponsorData2.map((ele, index) => {
             return (
               <div key={index}>
-                <Card ele={ele} />
+                <Card ele={ele} sponsor={true} />
               </div>
             );
           })}
@@ -187,7 +315,7 @@ export default function SnapScroll() {
           {SponsorData3.map((ele, index) => {
             return (
               <div key={index}>
-                <Card ele={ele} />
+                <Card ele={ele} sponsor={true} />
               </div>
             );
           })}
@@ -196,7 +324,7 @@ export default function SnapScroll() {
           {SponsorData4.map((ele, index) => {
             return (
               <div key={index}>
-                <Card ele={ele} />
+                <Card ele={ele} sponsor={true} />
               </div>
             );
           })}
@@ -205,7 +333,7 @@ export default function SnapScroll() {
           {SponsorData5.map((ele, index) => {
             return (
               <div key={index}>
-                <Card ele={ele} />
+                <Card ele={ele} sponsor={true} />
               </div>
             );
           })}
@@ -214,7 +342,7 @@ export default function SnapScroll() {
           {SponsorData6.map((ele, index) => {
             return (
               <div key={index}>
-                <Card ele={ele} />
+                <Card ele={ele} sponsor={true} />
               </div>
             );
           })}
@@ -223,7 +351,7 @@ export default function SnapScroll() {
           {SponsorData7.map((ele, index) => {
             return (
               <div key={index}>
-                <Card ele={ele} />
+                <Card ele={ele} sponsor={true} />
               </div>
             );
           })}
@@ -232,11 +360,36 @@ export default function SnapScroll() {
           {SponsorData8.map((ele, index) => {
             return (
               <div key={index}>
-                <Card ele={ele} />
+                <Card ele={ele} sponsor={true} />
               </div>
             );
           })}
         </div>
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
+          {SponsorData9.map((ele, index) => {
+            return (
+              <div key={index}>
+                <Card ele={ele} sponsor={true} />
+              </div>
+            );
+          })}
+        </div>
+        {OutreachPartners.map((ele, index) => {
+          return (
+            <div
+              key={index}
+              className="scroll-area !flex-wrap !md:py-20 !py-10"
+            >
+              {ele.map((ele, index) => {
+                return (
+                  <div key={index}>
+                    <Card ele={ele} sponsor={false} />
+                  </div>
+                );
+              })}
+            </div>
+          );
+        })}
       </div>
       <style jsx>
         {`
