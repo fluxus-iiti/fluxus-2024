@@ -129,6 +129,13 @@ export default function OffCanvasNavbar() {
           <div
             className={`md:mx-5 my-5 font-bold mx-10  !text-4xl md:my-auto transition-all fade-in-out hover:!text-gray-300 hover:border-b-2`}
           >
+            <Link className="text-2xl" href="/timeline">
+              Timeline
+            </Link>
+          </div>
+          <div
+            className={`md:mx-5 my-5 font-bold mx-10  !text-4xl md:my-auto transition-all fade-in-out hover:!text-gray-300 hover:border-b-2`}
+          >
             <Link
               className="text-2xl"
               target={"_blank"}

@@ -203,8 +203,8 @@ export const dtw = [
         venue: "Seminar Hall",
     },
     {
-        title: "Pronite - 1",
-        time: "7 PM (Gate Closing)",
+        title: "Pronite\n(Pineapple Express)",
+        time: "7 PM",
         venue: "Pronite Ground",
     },
 ]
@@ -286,8 +286,8 @@ export const dth = [
         venue: "Nalanda Auditorium",
     },
     {
-        title: "Pronite - 2",
-        time: "7 PM (Gate Closing)",
+        title: "Pronite\n(Sachin Jigar)",
+        time: "7 PM",
         venue: "Pronite Ground",
     },
 ]

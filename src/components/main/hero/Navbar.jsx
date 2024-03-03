@@ -131,6 +131,11 @@ export default function Navbar() {
                       Team
                     </Link>
                   </div>
+                  <div className="md:mx-5 my-5 font-bold mx-10  !text-4xl md:my-auto hover:border-b-2 transition-all fade-in-out hover:!text-gray-300">
+                    <Link className="text-2xl" href="timeline">
+                      Timeline
+                    </Link>
+                  </div>
                 </div>
                 <div className="md:mx-5 my-5 font-bold mx-10  !text-4xl md:my-auto transition-all fade-in-out hover:!text-gray-300">
                   <Link

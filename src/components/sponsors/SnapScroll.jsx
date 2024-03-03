@@ -21,12 +21,14 @@ const SponsorData0 = [
     company: "NHAI",
     title: "Platinum Partner ",
     image: require("../../../public/images/sponsor/1.png"),
+    link: "https://nhai.gov.in/",
   },
   {
     id: "1_22",
     company: "NHAI",
     title: "Platinum Partner ",
     image: require("../../../public/images/sponsor/1_@.png"),
+    link: "https://nhai.gov.in/",
   },
 ];
 
@@ -34,8 +36,9 @@ const SponsorData1 = [
   {
     id: "2",
     company: "Metro Shoes ",
-    title: "Styled By Partner",
+    title: "Fashion Footwear Partner",
     image: require("../../../public/images/sponsor/2.png"),
+    link: "https://www.metroshoes.com/",
   },
   {
     id: "3",
@@ -51,30 +54,50 @@ const SponsorData2 = [
     company: "Dabur ",
     title: "Ayurveda Partner ",
     image: require("../../../public/images/sponsor/4.png"),
-  },
-  {
-    id: "5",
-    company: "Adriot Associates ",
-    title: "Water Technology Partner",
-    image: require("../../../public/images/sponsor/5.png"),
-  },
-];
-
-const SponsorData3 = [
-  {
-    id: "6",
-    company: "Prestige",
-    title: "ConsultX Partner",
-    image: require("../../../public/images/sponsor/6.png"),
+    link: "https://www.dabur.com/our-brand/dabur-hajmola",
   },
   {
     id: "7",
     company: "Tata Steel ",
     title: "Steel Partner ",
     image: require("../../../public/images/sponsor/7.png"),
+    link: "https://www.tatatiscon.co.in/",
+  },
+];
+
+const SponsorData3 = [
+  {
+    id: "18",
+    company: "Colorhome Smart Lighting",
+    title: "Ambience Partner",
+    image: require("../../../public/images/sponsor/18.jpg"),
+    link: "https://www.colorhomelighting.com/",
+  },
+  {
+    id: "5",
+    company: "Adriot Associates ",
+    title: "Water Technology Partner",
+    image: require("../../../public/images/sponsor/5.png"),
+    link: "https://adroitassociates.com/index.html#/",
   },
 ];
 const SponsorData4 = [
+  {
+    id: "6",
+    company: "Prestige",
+    title: "ConsultX Partner",
+    image: require("../../../public/images/sponsor/6.png"),
+    link: "https://prestigeuniversity.edu.in/",
+  },
+  {
+    id: "haier",
+    company: "Haier",
+    title: "Home Appliances Partner",
+    image: require("../../../public/images/sponsor/haier.jpg"),
+    link: "https://www.haier.com/in/",
+  },
+];
+const SponsorData5 = [
   {
     id: "9",
     company: "Supergrads",
@@ -86,28 +109,33 @@ const SponsorData4 = [
     company: "KSG",
     title: "Official UPSC Partner",
     image: require("../../../public/images/sponsor/10.jpeg"),
+    link: "https://www.ksgindia.com/",
   },
 ];
-const SponsorData5 = [
+const SponsorData6 = [
   {
     id: "11",
     company: "Spykar",
     title: "Style Partner",
     image: require("../../../public/images/sponsor/11.png"),
+    link: "https://spykar.com/",
   },
   {
     id: "12",
     company: "EaseMyTrip",
     title: "Travel Partner",
     image: require("../../../public/images/sponsor/12.png"),
+    link: "https://www.easemytrip.com/",
   },
 ];
-const SponsorData6 = [
+
+const SponsorData7 = [
   {
     id: "13",
     company: "JioSaavn",
     title: "Music Streaming Partner ",
     image: require("../../../public/images/sponsor/13.png"),
+    link: "https://www.jiosaavn.com/",
   },
   {
     id: "14",
@@ -117,7 +145,103 @@ const SponsorData6 = [
   },
 ];
 
-const SponsorData7 = [
+const SponsorData72 = [
+  {
+    id: "halen",
+    company: "Halen Ceramics",
+    title: "Furniture Partner",
+    image: require("../../../public/images/sponsor/halen.jpg"),
+  },
+  {
+    id: "safewtech",
+    company: "Safewtech ",
+    title: "Gadget Partner ",
+    image: require("../../../public/images/sponsor/safewtech.jpg"),
+  },
+];
+
+const SponsorData73 = [
+  {
+    id: "jimjam",
+    company: "JimJam Pops by Britannia",
+    title: "Munching Partner",
+    image: require("../../../public/images/sponsor/jimjam.jpg"),
+  },
+  {
+    id: "prodot",
+    company: "Pro Dot Group",
+    title: "Accesories Partner",
+    image: require("../../../public/images/sponsor/prodot.png"),
+    link: "https://www.prodotgroup.com/",
+  },
+];
+
+const SponsorData74 = [
+  {
+    id: "safexpress",
+    company: "Safexpress",
+    title: "Official Supply Chain Partner",
+    image: require("../../../public/images/sponsor/safexpress.png"),
+    link: "https://www.safexpress.com/",
+  },
+  {
+    id: "vanesa",
+    company: "Vanesa Care",
+    title: "",
+    image: require("../../../public/images/sponsor/vanesa.jpg"),
+  },
+];
+
+const SponsorData75 = [
+  {
+    id: "kira",
+    company: "Kira Exotica",
+    title: "Grooming Partner",
+    image: require("../../../public/images/sponsor/kira.jpeg"),
+  },
+  {
+    id: "hitbullseye",
+    company: "Hitbullseye",
+    title: "Partner",
+    image: require("../../../public/images/sponsor/hitbullseye.jpeg"),
+    link: "https://www.hitbullseye.com/",
+  },
+];
+
+const SponsorData76 = [
+  {
+    id: "plum",
+    company: "Plum",
+    title: "Bath and Body Partner",
+    image: require("../../../public/images/sponsor/plum.png"),
+    link: "https://plumgoodness.com/",
+  },
+  {
+    id: "amar",
+    company: "Amar Ujala",
+    title: "Media Partner",
+    image: require("../../../public/images/sponsor/amar.png"),
+    link: "https://www.amarujala.com/",
+  },
+];
+
+const SponsorData9 = [
+  {
+    id: "19",
+    company: "Stock Gro",
+    title: "Trading Partner",
+    image: require("../../../public/images/sponsor/19.png"),
+    link: "https://www.stockgro.club/",
+  },
+  {
+    id: "20",
+    company: "The Fit Squad",
+    title: "Nutrition Partner",
+    image: require("../../../public/images/sponsor/20.png"),
+  },
+];
+
+const SponsorData8 = [
   {
     id: "15",
     company: "Indori Events",
@@ -132,33 +256,12 @@ const SponsorData7 = [
   },
 ];
 
-const SponsorData8 = [
+const SponsorData10 = [
   {
     id: "17",
     company: "Entellus Events & Photography",
     title: "Photography Partner",
     image: require("../../../public/images/sponsor/17.png"),
-  },
-  {
-    id: "18",
-    company: "Colorhome Smart Lighting",
-    title: "Ambience Partner",
-    image: require("../../../public/images/sponsor/18.jpg"),
-  },
-];
-
-const SponsorData9 = [
-  {
-    id: "19",
-    company: "Stock Gro",
-    title: "Trading Partner",
-    image: require("../../../public/images/sponsor/19.png"),
-  },
-  {
-    id: "20",
-    company: "The Fit Squad",
-    title: "Nutrition Partner",
-    image: require("../../../public/images/sponsor/20.png"),
   },
 ];
 
@@ -357,6 +460,51 @@ export default function SnapScroll() {
           })}
         </div>
         <div className="scroll-area !flex-wrap !md:py-20 !py-10">
+          {SponsorData72.map((ele, index) => {
+            return (
+              <div key={index}>
+                <Card ele={ele} sponsor={true} />
+              </div>
+            );
+          })}
+        </div>
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
+          {SponsorData73.map((ele, index) => {
+            return (
+              <div key={index}>
+                <Card ele={ele} sponsor={true} />
+              </div>
+            );
+          })}
+        </div>
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
+          {SponsorData74.map((ele, index) => {
+            return (
+              <div key={index}>
+                <Card ele={ele} sponsor={true} />
+              </div>
+            );
+          })}
+        </div>
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
+          {SponsorData75.map((ele, index) => {
+            return (
+              <div key={index}>
+                <Card ele={ele} sponsor={true} />
+              </div>
+            );
+          })}
+        </div>
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
+          {SponsorData76.map((ele, index) => {
+            return (
+              <div key={index}>
+                <Card ele={ele} sponsor={true} />
+              </div>
+            );
+          })}
+        </div>
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
           {SponsorData8.map((ele, index) => {
             return (
               <div key={index}>
@@ -374,26 +522,36 @@ export default function SnapScroll() {
             );
           })}
         </div>
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
+          {SponsorData10.map((ele, index) => {
+            return (
+              <div key={index}>
+                <Card ele={ele} sponsor={true} />
+              </div>
+            );
+          })}
+        </div>
         <div className="relative">
-        <h1 className="!flex-wrap !md:py-20  text-4xl font-bold !py-10 z-[1000000] absolute w-full h-full">Outreach Partners</h1>
-        {OutreachPartners.map((ele, index) => {
-          return (
-            <div
-              key={index}
-              className="scroll-area !flex-wrap !md:py-20 !py-10"
-            >
-              
-              {ele.map((ele, index) => {
-                return (
-                  <div key={index}>
-                    <Card ele={ele} sponsor={false} />
-                  </div>
-                );
-              })}
-            </div>
-          );
-        })}
-      </div>
+          <h1 className="!flex-wrap !md:py-20  text-4xl font-bold !py-10 z-[1000000] absolute w-full h-full">
+            Outreach Partners
+          </h1>
+          {OutreachPartners.map((ele, index) => {
+            return (
+              <div
+                key={index}
+                className="scroll-area !flex-wrap !md:py-20 !py-10"
+              >
+                {ele.map((ele, index) => {
+                  return (
+                    <div key={index}>
+                      <Card ele={ele} sponsor={false} />
+                    </div>
+                  );
+                })}
+              </div>
+            );
+          })}
+        </div>
       </div>
       <style jsx>
         {`

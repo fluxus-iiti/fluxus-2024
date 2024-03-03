@@ -1,7 +1,7 @@
 "use client";
-import React from 'react'
+import React from "react";
 import { motion } from "framer-motion";
-import { useState } from 'react';
+import { useState } from "react";
 import { don, dtw, dth } from "./Event_details";
 import "./variables.css";
 // const variants = {
@@ -11,48 +11,60 @@ import "./variables.css";
 // }
 
 const Events = () => {
-
   const [day, setDay] = useState("1");
 
   const variants = {
-    "1": { x: "33.33%" },
-    "2": { x: 0 },
-    "3": { x: "-33.33%" },
-  }
+    1: { x: "33.33%" },
+    2: { x: 0 },
+    3: { x: "-33.33%" },
+  };
 
   const var_show = {
-    "none": { height: "0vh", opacity: 0 },
-    "block": { height: "100%", opacity: 1 },
-  }
-
+    none: { height: "0vh", opacity: 0 },
+    block: { height: "100%", opacity: 1 },
+  };
 
   function Day_Button(props) {
     return (
-      <a onClick={() => setDay((props.days))} className="hover:cursor-pointer relative inline-block text-3xl group">
+      <a
+        onClick={() => setDay(props.days)}
+        className="hover:cursor-pointer relative inline-block text-3xl group"
+      >
         <span className="hover:cursor-pointer relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight transition-colors duration-300 ease-out border-2 border-gray-300 rounded-2xl group-hover:text-white">
           <span className="hover:cursor-pointer absolute inset-0 w-full h-full px-5 py-3 rounded-2xl backdrop-blur-xl bg-blue-500 bg-opacity-10"></span>
           <span className="hover:cursor-pointer absolute top-4 left-0 w-32 h-32 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
-          <span className="hover:cursor-pointer text-white font-BlackHanSans relative">{props.name}</span>
+          <span className="hover:cursor-pointer text-white font-BlackHanSans relative">
+            {props.name}
+          </span>
         </span>
         {/* <span className="hover:cursor-pointer absolute bottom-0 right-0 w-3/4 h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span> */}
       </a>
-    )
+    );
   }
 
   function Event_card(props) {
     return (
-      <div className='w-[80vw] py-8 lg:py-0 lg:h-36 rounded-3xl backdrop-blur-lg border-gray-400 border-2 bg-blue-500 bg-opacity-10 px-12 grid grid-cols-1 lg:grid-cols-3 gap-4 items-center'>
-        <div className='text-4xl capitalize lg:mt-0 text-white font-neuropol'>{props.title}</div>
-        <div className='grid grid-cols-2 col-span-2'>
-          <div className='text-3xl capitalize text-gray-300 justify-self-start lg:justify-self-center font-BlackHanSans'>{props.time}</div>
-          <div className='text-3xl capitalize text-gray-300 justify-self-center font-BlackHanSans'>{props.venue}</div>
+      <div className="w-[80vw] py-8 lg:py-0 lg:h-36 rounded-3xl backdrop-blur-lg border-gray-400 border-2 bg-blue-500 bg-opacity-10 px-12 grid grid-cols-1 lg:grid-cols-4 gap-4 items-center">
+        <div className="text-4xl capitalize lg:mt-0 text-white font-neuropol col-span-2">
+          {props.title}
+        </div>
+        <div className="grid grid-cols-2 col-span-2">
+          <div className="text-3xl capitalize text-gray-300 justify-self-start lg:justify-self-center font-BlackHanSans">
+            {props.time}
+          </div>
+          <div className="text-3xl capitalize text-gray-300 justify-self-center font-BlackHanSans">
+            {props.venue}
+          </div>
         </div>
       </div>
-    )
+    );
   }
 
   return (
-    <motion.div id="home" className="w-full overflow-hidden bg-no-repeat bg-cover border-0 border-red-500 z-[-1] ">
+    <motion.div
+      id="home"
+      className="w-full overflow-hidden bg-no-repeat bg-cover border-0 border-red-500 z-[-1] "
+    >
       <div className="bg"></div>
 
       <div className="star-field">
@@ -190,42 +202,75 @@ const Events = () => {
           }
         `}
       </style>
-      <div className='flex flex-col mt-12 mb-24 gap-y-8 items-center justify-center'>
+      <div className="flex flex-col mt-12 mb-24 gap-y-8 items-center justify-center">
         {/* Heading */}
-        <div className='text-6xl uppercase text-white font-azonix'>events</div>
+        <div className="text-6xl uppercase text-white font-azonix">events</div>
         {/* Day Selector */}
-        <div className='w-full flex justify-evenly items-center'>
+        <div className="w-full flex justify-evenly items-center">
           <Day_Button name="Day 1" days="1" />
           <Day_Button name="Day 2" days="2" />
           <Day_Button name="Day 3" days="3" />
         </div>
-        <motion.div variants={variants} className='flex mt-8' animate={day == "1" ? "1" : (day == "2" ? "2" : "3")}>
-          <motion.div className='w-[100vw] flex flex-col gap-y-12 items-center' variants={var_show} animate={day == "1" ? "block" : "none"} transition={{ duration:0 }}>
-            {don.map((e) => {
+        <motion.div
+          variants={variants}
+          className="flex mt-8"
+          animate={day == "1" ? "1" : day == "2" ? "2" : "3"}
+        >
+          <motion.div
+            className="w-[100vw] flex flex-col gap-y-12 items-center"
+            variants={var_show}
+            animate={day == "1" ? "block" : "none"}
+            transition={{ duration: 0 }}
+          >
+            {don.map((e, idx) => {
               return (
-                <Event_card title={e.title} time={e.time} venue={e.venue} />
+                <Event_card
+                  title={e.title}
+                  time={e.time}
+                  venue={e.venue}
+                  key={idx}
+                />
               );
             })}
           </motion.div>
-          <motion.div className='w-[100vw] flex flex-col gap-y-12 items-center' variants={var_show} animate={day == "2" ? "block" : "none"} transition={{ duration:0 }}>
-            {dtw.map((e) => {
+          <motion.div
+            className="w-[100vw] flex flex-col gap-y-12 items-center"
+            variants={var_show}
+            animate={day == "2" ? "block" : "none"}
+            transition={{ duration: 0 }}
+          >
+            {dtw.map((e, idx) => {
               return (
-                <Event_card title={e.title} time={e.time} venue={e.venue} />
+                <Event_card
+                  title={e.title}
+                  time={e.time}
+                  venue={e.venue}
+                  key={idx}
+                />
               );
             })}
           </motion.div>
-          <motion.div className='w-[100vw] flex flex-col gap-y-12 items-center' variants={var_show} animate={day == "3" ? "block" : "none"} transition={{ duration:0 }}>
-            {dth.map((e) => {
+          <motion.div
+            className="w-[100vw] flex flex-col gap-y-12 items-center"
+            variants={var_show}
+            animate={day == "3" ? "block" : "none"}
+            transition={{ duration: 0 }}
+          >
+            {dth.map((e, idx) => {
               return (
-                <Event_card title={e.title} time={e.time} venue={e.venue} />
+                <Event_card
+                  title={e.title}
+                  time={e.time}
+                  venue={e.venue}
+                  key={idx}
+                />
               );
             })}
           </motion.div>
         </motion.div>
       </div>
-
     </motion.div>
-  )
-}
+  );
+};
 
-export default Events
+export default Events;
