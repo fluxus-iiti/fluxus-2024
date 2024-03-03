@@ -48,7 +48,7 @@ export default function Card({ ele }) {
                     <Image className='mx-auto my-auto    ' width={300} height={300} src={ele.image} alt="sponsor_logo" />
                 </div>
                 <div className='lg:!hidden my-5 !text-[9px]'>{ele.title}</div>
-                <div className='hidden lg:block my-5  '>{ele.title}</div>
+                <div className='hidden lg:block my-5 '>{ele.title}</div>
 
                 <style jsx>
                     {`
