@@ -18,10 +18,10 @@ export default function RootLayout({
     <html lang="en">
       
       <body className={inter.className}>
-        <div className='z-[-1]'>
+        <div className='z-[-1] '>
           <Navbar />
         </div>
-        <div className=''>
+        <div className='!overflow-x-hidden'>
           {children}
         </div>
       </body>
