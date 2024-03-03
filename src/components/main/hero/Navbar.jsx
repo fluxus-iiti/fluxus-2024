@@ -20,7 +20,7 @@ export default function Navbar() {
       <div
         id="navbar"
         className={`bg-transparent ${
-          pathname == "/technicals" || pathname == "/sponsors" ? "absolute" : ""
+          pathname == "/technicals" ? "absolute" : ""
         } w-full backdrop-blur-md md:backdrop-blur-none !z-[10000000000000000]`}
       >
         <div
