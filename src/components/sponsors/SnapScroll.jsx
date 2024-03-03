@@ -374,12 +374,15 @@ export default function SnapScroll() {
             );
           })}
         </div>
+        <div className="relative">
+        <h1 className="!flex-wrap !md:py-20  text-4xl font-bold !py-10 z-[1000000] absolute w-full h-full">Outreach Partners</h1>
         {OutreachPartners.map((ele, index) => {
           return (
             <div
               key={index}
               className="scroll-area !flex-wrap !md:py-20 !py-10"
             >
+              
               {ele.map((ele, index) => {
                 return (
                   <div key={index}>
@@ -390,6 +393,7 @@ export default function SnapScroll() {
             </div>
           );
         })}
+      </div>
       </div>
       <style jsx>
         {`
