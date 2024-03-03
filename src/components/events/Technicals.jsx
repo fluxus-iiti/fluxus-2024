@@ -7,10 +7,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/scrollbar';
+import "swiper/css/effect-coverflow";
+import "swiper/css/scrollbar";
 
-import { Autoplay, FreeMode, Navigation, Pagination, EffectCoverflow, Scrollbar } from "swiper/modules";
+import {
+  Autoplay,
+  FreeMode,
+  Navigation,
+  Pagination,
+  EffectCoverflow,
+  Scrollbar,
+} from "swiper/modules";
 
 import HeadingImage from "../../../public/images/meteor.png";
 const slideWidth = 30;
@@ -69,7 +76,7 @@ const _items = [
       id: 9,
       title: "Robo Sumo",
       image: require("../../../public/images/Competitions/sumo-template.webp"),
-      link: "https://unstop.com/p/robosumo-robotics-challenge-fluxus-iit-indore-iit-indore-898137"
+      link: "https://unstop.com/p/robosumo-robotics-challenge-fluxus-iit-indore-iit-indore-898137",
     },
   },
   {
@@ -184,9 +191,17 @@ const _items = [
       link: "https://unstop.com/competitions/skysweep-carbon-cleanse-challenge-fluxus-iit-indore-iit-indore-892481",
     },
   },
+  {
+    player: {
+      id: 100,
+      title: "GalactiHack",
+      image: require("../../../public/images/Competitions/isro.png"),
+      link: "https://unstop.com/competitions/galactihack-ideathon-fluxus-2024-iit-indore-iit-indore-920392",
+    },
+  },
   // {
-    //   player: {
-      //     id: 11,
+  //   player: {
+  //     id: 11,
   //     title: "ReDesign",
   //     image: require("../../../public/images/planet1.png"),
   //   },
@@ -407,13 +422,14 @@ const Technicals = () => {
 
   return (
     <>
-    <div className="competition-section"
-    style={{
-      backgroundImage: `url(images/back.png)`,
-      backgroundRepeat: "repeat",
-    }}
-    >
-      {/* <motion.div
+      <div
+        className="competition-section"
+        style={{
+          backgroundImage: `url(images/back.png)`,
+          backgroundRepeat: "repeat",
+        }}
+      >
+        {/* <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -428,14 +444,14 @@ const Technicals = () => {
           hidden: { x: "-99vw" },
         }}
       > */}
-      <div id="heading" className="relative overflow-x-hidden z-[0]">
-        <Image
-          src={HeadingImage}
-          className="
+        <div id="heading" className="relative overflow-x-hidden z-[0]">
+          <Image
+            src={HeadingImage}
+            className="
                 !h-[20%]"
-          alt={""}
-        />
-        {/* <motion.div
+            alt={""}
+          />
+          {/* <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -450,110 +466,113 @@ const Technicals = () => {
               hidden: { opacity: 0 },
             }}
           > */}
-        <h1 className="text-white absolute pl-10 w-full h-full text-[25px] lg:!text-[50px] font-extrabold text-start flex items-center top-0">
-          Technicals
-        </h1>
+          <h1 className="text-white absolute pl-10 w-full h-full text-[25px] lg:!text-[50px] font-extrabold text-start flex items-center top-0">
+            Technicals
+          </h1>
+          {/* </motion.div> */}
+        </div>
         {/* </motion.div> */}
-      </div>
-      {/* </motion.div> */}
-      <div className="mx-auto justify-center text-center text-white text-2xl w-3/4 md:top-[-50px] relative">
-        You can check out all the events on our Unstop Page by clicking{" "}
-        <a href="https://unstop.com/college-fests/fluxus-iit-indore-indian-institute-of-technology-iit-indore-197772">
-          <span className="font-semibold">HERE</span>
-        </a>
-        .
-      </div>
-      <div className="md:translate-y-[-150px]">
-        <>
-        {/* **************************COROUSEL IN MOBILE VIEW STARTS*************************************** */}
-        {/* <SwiperComponent /> */}
-        <div className="overflow-hidden w-full mt-14 md:hidden">
-        <Swiper
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-        breakpoints={
-          {
-            slidesPerView: 'auto',
-            spaceBetween: 20,
-            380: {
-              slidesPerView:1.5,
-              spaceBetween: 20
-            }
-          }
-        }
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        // freeMode={true}
-        loop={true}
-        navigation={true}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: false,
-        }}
-        
-        // slidesPerView={'auto'}
-        // scrollbar={{
-        //   hide: true,
-        // }}
-        // pagination={{
-        //   clickable: true,
-        // }}
+        <div className="mx-auto justify-center text-center text-white text-2xl w-3/4 md:top-[-50px] relative">
+          You can check out all the events on our Unstop Page by clicking{" "}
+          <a href="https://unstop.com/college-fests/fluxus-iit-indore-indian-institute-of-technology-iit-indore-197772">
+            <span className="font-semibold">HERE</span>
+          </a>
+          .
+        </div>
+        <div className="md:translate-y-[-150px]">
+          <>
+            {/* **************************COROUSEL IN MOBILE VIEW STARTS*************************************** */}
+            {/* <SwiperComponent /> */}
+            <div className="overflow-hidden w-full mt-14 md:hidden">
+              <Swiper
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                breakpoints={{
+                  slidesPerView: "auto",
+                  spaceBetween: 20,
+                  380: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20,
+                  },
+                }}
+                effect={"coverflow"}
+                grabCursor={true}
+                centeredSlides={true}
+                // freeMode={true}
+                loop={true}
+                navigation={true}
+                coverflowEffect={{
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: false,
+                }}
+                // slidesPerView={'auto'}
+                // scrollbar={{
+                //   hide: true,
+                // }}
+                // pagination={{
+                //   clickable: true,
+                // }}
 
-
-        modules={[FreeMode, Autoplay, Navigation, Pagination, EffectCoverflow, Scrollbar]}
-        className=""
-      >
-        {_items.map((item, index) => {
-            return(
-                <SwiperSlide key={index}>
-                    <>
-                <div
-                  id="card"
-                  className="card h-fit w-fit rounded-b-[30px] !mx-5 !my-5"
-                >
-                  <div className="image">
-                    <Image
-                      src={item.player.image}
-                      alt={item.player.title}
-                      className="min-w-[200px]"
-                    ></Image>
-                  </div>
-                  <div className="content flex flex-col justify-center items-center my-4">
-                    <div className="title text-center">
-                      <span className="text-6xl font-bold">
-                        {item.player.title}
-                      </span>
-                    </div>
-                    <div className="link-box border-solid border-[1px] border-slate-300 w-fit text-center px-8 py-4 rounded-xl my-5 cursor-pointer hover:bg-slate-200 hover:text-gray-900">
-                      {item.player.link ? (
-                        <a href={item.player.link} target="_blank">
-                          <span className="text-2xl font-semibold">
-                            Know More
-                          </span>
-                        </a>
-                      ) : (
-                        <span className="text-2xl">Comming Soon</span>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </>
-                </SwiperSlide>
-            )
-        })}
-    </Swiper>
-  </div>
-        {/* *************************COROUSEL IN MOBILE VIEW END*********************************** */}
-        </>
-        {/* <div> */}
-        <div id="html" className="carousel__wrap ">
-          {/* <div className="carousel__inner">
+                modules={[
+                  FreeMode,
+                  Autoplay,
+                  Navigation,
+                  Pagination,
+                  EffectCoverflow,
+                  Scrollbar,
+                ]}
+                className=""
+              >
+                {_items.map((item, index) => {
+                  return (
+                    <SwiperSlide key={index}>
+                      <>
+                        <div
+                          id="card"
+                          className="card h-fit w-fit rounded-b-[30px] !mx-5 !my-5"
+                        >
+                          <div className="image">
+                            <Image
+                              src={item.player.image}
+                              alt={item.player.title}
+                              className="min-w-[200px]"
+                            ></Image>
+                          </div>
+                          <div className="content flex flex-col justify-center items-center my-4">
+                            <div className="title text-center">
+                              <span className="text-6xl font-bold">
+                                {item.player.title}
+                              </span>
+                            </div>
+                            <div className="link-box border-solid border-[1px] border-slate-300 w-fit text-center px-8 py-4 rounded-xl my-5 cursor-pointer hover:bg-slate-200 hover:text-gray-900">
+                              {item.player.link ? (
+                                <a href={item.player.link} target="_blank">
+                                  <span className="text-2xl font-semibold">
+                                    Know More
+                                  </span>
+                                </a>
+                              ) : (
+                                <span className="text-2xl">Comming Soon</span>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      </>
+                    </SwiperSlide>
+                  );
+                })}
+              </Swiper>
+            </div>
+            {/* *************************COROUSEL IN MOBILE VIEW END*********************************** */}
+          </>
+          {/* <div> */}
+          <div id="html" className="carousel__wrap ">
+            {/* <div className="carousel__inner">
             <button
               className="carousel__btn carousel__btn--prev !hidden lg:!flex"
               onClick={() => prevClick()}
@@ -591,73 +610,73 @@ const Technicals = () => {
             </div>
           </div> */}
 
-          {/* ********************************************************************* */}
-          <div className="hidden mb-20 gap-5 overflow-x-scroll overflow-y-visible h-full md:no-scrollbar md:grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-            {itemsModal?.map((item) => (
-              <>
-                <div
-                  id="card"
-                  className="card h-fit w-fit rounded-b-[30px] !mx-5 !my-5"
-                >
-                  <div className="image">
-                    <Image
-                      src={item.player.image}
-                      alt={item.player.title}
-                      className="min-w-[250px]"
-                    ></Image>
-                  </div>
-                  <div className="content flex flex-col justify-center items-center my-4">
-                    <div className="title text-center">
-                      <span className="text-6xl font-bold">
-                        {item.player.title}
-                      </span>
+            {/* ********************************************************************* */}
+            <div className="hidden mb-20 gap-5 overflow-x-scroll overflow-y-visible h-full md:no-scrollbar md:grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+              {itemsModal?.map((item) => (
+                <>
+                  <div
+                    id="card"
+                    className="card h-fit w-fit rounded-b-[30px] !mx-5 !my-5"
+                  >
+                    <div className="image">
+                      <Image
+                        src={item.player.image}
+                        alt={item.player.title}
+                        className="min-w-[250px]"
+                      ></Image>
                     </div>
-                    <div className="link-box border-solid border-[1px] border-slate-300 w-fit text-center px-8 py-4 rounded-xl my-5 cursor-pointer hover:bg-slate-200 hover:text-gray-900">
-                      {item.player.link ? (
-                        <a href={item.player.link} target="_blank">
-                          <span className="text-2xl font-semibold">
-                            Know More
-                          </span>
-                        </a>
-                      ) : (
-                        <span className="text-2xl">Comming Soon</span>
-                      )}
+                    <div className="content flex flex-col justify-center items-center my-4">
+                      <div className="title text-center">
+                        <span className="text-6xl font-bold">
+                          {item.player.title}
+                        </span>
+                      </div>
+                      <div className="link-box border-solid border-[1px] border-slate-300 w-fit text-center px-8 py-4 rounded-xl my-5 cursor-pointer hover:bg-slate-200 hover:text-gray-900">
+                        {item.player.link ? (
+                          <a href={item.player.link} target="_blank">
+                            <span className="text-2xl font-semibold">
+                              Know More
+                            </span>
+                          </a>
+                        ) : (
+                          <span className="text-2xl">Comming Soon</span>
+                        )}
+                      </div>
                     </div>
                   </div>
-                </div>
-              </>
-            ))}
+                </>
+              ))}
+            </div>
+
+            {/* ********************************************************************* */}
+
+            <style jsx>{`
+              ::-webkit-scrollbar {
+                width: 10px;
+                height: 7px;
+                scrollbar-width: thick;
+              }
+
+              /* Track */
+              ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px grey;
+                border-radius: 5px;
+              }
+
+              /* Handle */
+              ::-webkit-scrollbar-thumb {
+                background: #482cb9;
+                border-radius: 5px;
+              }
+
+              /* Handle on hover */
+              ::-webkit-scrollbar-thumb:hover {
+                background: #482cb9;
+              }
+            `}</style>
           </div>
-
-          {/* ********************************************************************* */}
-
-          <style jsx>{`
-            ::-webkit-scrollbar {
-              width: 10px;
-              height: 7px;
-              scrollbar-width: thick;
-            }
-            
-            /* Track */
-            ::-webkit-scrollbar-track {
-              box-shadow: inset 0 0 5px grey; 
-              border-radius: 5px;
-            }
-             
-            /* Handle */
-            ::-webkit-scrollbar-thumb {
-              background: #482CB9; 
-              border-radius: 5px;
-            }
-            
-            /* Handle on hover */
-            ::-webkit-scrollbar-thumb:hover {
-              background: #482CB9; 
-            }
-          `}</style>
         </div>
-      </div>
-      {/* <div className="mb-10 lg:mt-[-16vh] mt-48 md:mt-0">
+        {/* <div className="mb-10 lg:mt-[-16vh] mt-48 md:mt-0">
         <ModalItem />
       </div> */}
       </div>
@@ -666,4 +685,3 @@ const Technicals = () => {
 };
 
 export default Technicals;
-
