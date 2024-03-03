@@ -50,7 +50,7 @@ export default function OffCanvasNavbar() {
 
         <div className="flex justify-center items-center  ">
           <div
-            className="top-0  absolute  left-0 w-fit h-full m-5 font-weight-700 text-white text-2xl transition-all fade-in-out lg:hidden cursor-pointer"
+            className="top-0  absolute  left-0 w-fit h-full  font-weight-700 text-white text-2xl transition-all fade-in-out lg:hidden cursor-pointer"
             onClick={() => {
               document.getElementById("offcanvas").style.top = "-5000px";
 

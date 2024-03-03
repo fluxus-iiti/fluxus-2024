@@ -17,11 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <body className={inter.className}>
+      <body className="">
         <div className='z-[-1] '>
           <Navbar />
         </div>
-        <div className='!overflow-x-hidden'>
+        <div className=''>
           {children}
         </div>
       </body>

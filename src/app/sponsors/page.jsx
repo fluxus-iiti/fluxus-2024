@@ -4,15 +4,15 @@ import SnapScroll from "../../components/sponsors/SnapScroll";
 import main from "../../../public/images/sponsor/main.webp";
 export default function page() {
   return (
-    <div className="">
-      <div className="bg !overflow-x-hidden !bg-no-repeat !bg-cover">
-        <div className="star-field">
-          <div className="layer"></div>
-          <div className="layer"></div>
-          <div className="layer"></div>
+    <div className="!overflow-hidden">
+      <div className="bg !overflow-hidden !bg-no-repeat  !bg-cover">
+        <div className="star-field !overflow-hidden">
+          <div className="layer !overflow-hidden"></div>
+          <div className="layer !overflow-hidden"></div>
+          <div className="layer !overflow-hidden"></div>
         </div>
 
-        <div className="home-content  ">
+        <div className="home-content  !overflow-hidden">
           <h1 className=" font-bold text-6xl !pt-52 !pb-4 font-neuropol">
             Sponsors
           </h1>
