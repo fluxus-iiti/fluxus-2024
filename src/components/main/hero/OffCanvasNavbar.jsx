@@ -88,15 +88,6 @@ export default function OffCanvasNavbar() {
             </Link>
           </div>
           <div className="md:mx-5 my-5 font-bold mx-10  !text-4xl md:my-auto hover:border-b-2 transition-all fade-in-out hover:!text-gray-300">
-            <Link
-              target={"_blank"}
-              className="text-2xl"
-              href="https://www.townscript.com/e/fluxus"
-            >
-              Workshop
-            </Link>
-          </div>
-          <div className="md:mx-5 my-5 font-bold mx-10  !text-4xl md:my-auto hover:border-b-2 transition-all fade-in-out hover:!text-gray-300">
             <Link className="text-2xl" href="/accommodation">
               Accommodation
             </Link>
