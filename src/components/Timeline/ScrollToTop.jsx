@@ -1,47 +1,15 @@
 'use client'
-import Events from "@/components/Timeline/Events";
-import { useEffect } from "react";
-import ScrollToTop from "../../components/Timeline/ScrollToTop";
-
-export default function Timeline() {
-  useEffect(() => {
-   
-    var btn = document.getElementById('button');
-
-   
-    window.addEventListener('scroll', function () {
-      
-      if (window.scrollY > 300) {
-      
-        btn.classList.add('show');
-      } else {
-        
-        btn.classList.remove('show');
-      }
-    });
-
-    
-    btn.addEventListener('click', function (e) {
-    
-      e.preventDefault();
-      
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
-
-  }, [])
+import { IoIosArrowUp } from "react-icons/io";
+export default function ScrollToTop() {
   return (
-    <>
-    <ScrollToTop />
-    <div class="content">
-      <Events />
-      <style jsx>
-        {`
+    <div>
+        <a id="button" className="!border-0 flex
+        justify-center items-center mx-auto my-auto group"><IoIosArrowUp className="mx-auto my-auto w-20 h-20 text-black group-hover:text-white transition-all fade-in-out" /></a>
+        <style jsx>
+            {`
                 #button {
                     display: inline-block;
-                    background-color: #FF9800;
+                    background-color: #0db9c7;
                     width: 50px;
                     height: 50px;
                     text-align: center;
@@ -56,7 +24,7 @@ export default function Timeline() {
                     z-index: 1000;
                   }
                   #button::after {
-                    content: "\f077";
+                    content: "";
                     font-family: FontAwesome;
                     font-weight: normal;
                     font-style: normal;
@@ -104,8 +72,7 @@ export default function Timeline() {
                     color: #96a2a7;
                   }
             `}
-      </style>
+        </style>
     </div>
-    </>
-  );
+  )
 }
