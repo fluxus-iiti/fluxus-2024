@@ -370,6 +370,95 @@ const OutreachPartners = [
       image: require("../../../public/images/sponsor/op16.PNG"),
     },
   ],
+  [
+    {
+      id: "op17",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op17.jpg"),
+    },
+    {
+      id: "op18",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op18.jpg"),
+    },
+    {
+      id: "op19",
+      company: "",
+      title: "Outreach Partner",
+      image: require("../../../public/images/sponsor/op19.jpg"),
+    },
+  ],
+];
+
+const FoodPartners = [
+  [
+    {
+      id: "fp1",
+      company: "",
+      title: "Food Partner",
+      image: require("../../../public/images/sponsor/food/fp1.png"),
+    },
+    {
+      id: "fp2",
+      company: "",
+      title: "Food Partner",
+      image: require("../../../public/images/sponsor/food/fp2.png"),
+    },
+    {
+      id: "fp3",
+      company: "",
+      title: "Food Partner",
+      image: require("../../../public/images/sponsor/food/fp3.jpg"),
+    },
+    {
+      id: "fp4",
+      company: "",
+      title: "Food Partner",
+      image: require("../../../public/images/sponsor/food/fp4.png"),
+    },
+  ],
+  [
+    {
+      id: "fp5",
+      company: "",
+      title: "Food Partner",
+      image: require("../../../public/images/sponsor/food/fp5.png"),
+    },
+    {
+      id: "fp6",
+      company: "",
+      title: "Food Partner",
+      image: require("../../../public/images/sponsor/food/fp6.png"),
+    },
+    {
+      id: "fp7",
+      company: "",
+      title: "Food Partner",
+      image: require("../../../public/images/sponsor/food/fp7.jpg"),
+    },
+    {
+      id: "fp8",
+      company: "",
+      title: "Food Partner",
+      image: require("../../../public/images/sponsor/food/fp8.jpg"),
+    },
+  ],
+  [
+    {
+      id: "fp9",
+      company: "",
+      title: "Food Partner",
+      image: require("../../../public/images/sponsor/food/fp9.jpg"),
+    },
+    {
+      id: "fp10",
+      company: "",
+      title: "Food Partner",
+      image: require("../../../public/images/sponsor/food/fp10.jpg"),
+    },
+  ],
 ];
 
 export default function SnapScroll() {
@@ -536,6 +625,27 @@ export default function SnapScroll() {
             Outreach Partners
           </h1>
           {OutreachPartners.map((ele, index) => {
+            return (
+              <div
+                key={index}
+                className="scroll-area !flex-wrap !md:py-20 !py-10"
+              >
+                {ele.map((ele, index) => {
+                  return (
+                    <div key={index}>
+                      <Card ele={ele} sponsor={false} />
+                    </div>
+                  );
+                })}
+              </div>
+            );
+          })}
+        </div>
+        <div className="relative">
+          <h1 className="!flex-wrap !md:py-20  text-4xl font-bold !py-10 z-[1000000] absolute w-full h-full">
+            Food Partners
+          </h1>
+          {FoodPartners.map((ele, index) => {
             return (
               <div
                 key={index}
