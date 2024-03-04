@@ -397,25 +397,25 @@ const FoodPartners = [
     {
       id: "fp1",
       company: "",
-      title: "Food Partner",
+      title: "Food Fest Partner",
       image: require("../../../public/images/sponsor/food/fp1.png"),
     },
     {
       id: "fp2",
       company: "",
-      title: "Food Partner",
+      title: "Food Fest Partner",
       image: require("../../../public/images/sponsor/food/fp2.png"),
     },
     {
       id: "fp3",
       company: "",
-      title: "Food Partner",
+      title: "Food Fest Partner",
       image: require("../../../public/images/sponsor/food/fp3.jpg"),
     },
     {
       id: "fp4",
       company: "",
-      title: "Food Partner",
+      title: "Food Fest Partner",
       image: require("../../../public/images/sponsor/food/fp4.png"),
     },
   ],
@@ -423,25 +423,25 @@ const FoodPartners = [
     {
       id: "fp5",
       company: "",
-      title: "Food Partner",
+      title: "Food Fest Partner",
       image: require("../../../public/images/sponsor/food/fp5.png"),
     },
     {
       id: "fp6",
       company: "",
-      title: "Food Partner",
+      title: "Food Fest Partner",
       image: require("../../../public/images/sponsor/food/fp6.png"),
     },
     {
       id: "fp7",
       company: "",
-      title: "Food Partner",
+      title: "Food Fest Partner",
       image: require("../../../public/images/sponsor/food/fp7.jpg"),
     },
     {
       id: "fp8",
       company: "",
-      title: "Food Partner",
+      title: "Food Fest Partner",
       image: require("../../../public/images/sponsor/food/fp8.jpg"),
     },
   ],
@@ -449,13 +449,13 @@ const FoodPartners = [
     {
       id: "fp9",
       company: "",
-      title: "Food Partner",
+      title: "Food Fest Partner",
       image: require("../../../public/images/sponsor/food/fp9.jpg"),
     },
     {
       id: "fp10",
       company: "",
-      title: "Food Partner",
+      title: "Food Fest Partner",
       image: require("../../../public/images/sponsor/food/fp10.jpg"),
     },
   ],
@@ -643,7 +643,7 @@ export default function SnapScroll() {
         </div>
         <div className="relative">
           <h1 className="!flex-wrap !md:py-20  text-4xl font-bold !py-10 z-[1000000] absolute w-full h-full">
-            Food Partners
+            Food Fest Partners
           </h1>
           {FoodPartners.map((ele, index) => {
             return (
