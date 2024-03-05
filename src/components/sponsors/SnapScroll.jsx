@@ -185,20 +185,14 @@ const SponsorData74 = [
     link: "https://www.safexpress.com/",
   },
   {
-    id: "vanesa",
-    company: "Vanesa Care",
-    title: "",
-    image: require("../../../public/images/sponsor/vanesa.jpg"),
-  },
-];
-
-const SponsorData75 = [
-  {
     id: "kira",
     company: "Kira Exotica",
     title: "Grooming Partner",
     image: require("../../../public/images/sponsor/kira.jpeg"),
   },
+];
+
+const SponsorData75 = [
   {
     id: "hitbullseye",
     company: "Hitbullseye",
@@ -206,9 +200,6 @@ const SponsorData75 = [
     image: require("../../../public/images/sponsor/hitbullseye.jpeg"),
     link: "https://www.hitbullseye.com/",
   },
-];
-
-const SponsorData76 = [
   {
     id: "plum",
     company: "Plum",
@@ -216,6 +207,9 @@ const SponsorData76 = [
     image: require("../../../public/images/sponsor/plum.png"),
     link: "https://plumgoodness.com/",
   },
+];
+
+const SponsorData76 = [
   {
     id: "amar",
     company: "Amar Ujala",
@@ -223,9 +217,6 @@ const SponsorData76 = [
     image: require("../../../public/images/sponsor/amar.png"),
     link: "https://www.amarujala.com/",
   },
-];
-
-const SponsorData9 = [
   {
     id: "19",
     company: "Stock Gro",
@@ -233,30 +224,30 @@ const SponsorData9 = [
     image: require("../../../public/images/sponsor/19.png"),
     link: "https://www.stockgro.club/",
   },
+];
+
+const SponsorData9 = [
   {
     id: "20",
     company: "The Fit Squad",
     title: "Nutrition Partner",
     image: require("../../../public/images/sponsor/20.png"),
   },
-];
-
-const SponsorData8 = [
   {
     id: "15",
     company: "Indori Events",
     title: "Event Partner",
     image: require("../../../public/images/sponsor/15.png"),
   },
+];
+
+const SponsorData8 = [
   {
     id: "16",
     company: "GDIOT",
     title: "Technical Partner",
     image: require("../../../public/images/sponsor/16.png"),
   },
-];
-
-const SponsorData10 = [
   {
     id: "17",
     company: "Entellus Events & Photography",
@@ -604,15 +595,6 @@ export default function SnapScroll() {
         </div>
         <div className="scroll-area !flex-wrap !md:py-20 !py-10">
           {SponsorData9.map((ele, index) => {
-            return (
-              <div key={index}>
-                <Card ele={ele} sponsor={true} />
-              </div>
-            );
-          })}
-        </div>
-        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
-          {SponsorData10.map((ele, index) => {
             return (
               <div key={index}>
                 <Card ele={ele} sponsor={true} />
