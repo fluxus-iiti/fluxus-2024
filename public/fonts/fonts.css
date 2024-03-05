@@ -14,3 +14,8 @@
   src: local("neuropol"), local("neuropol"),
     url("neuropol.otf") format("openType");
 }
+
+@font-face {
+  font-family: "barette";
+  src: local("barette"), local("barette"), url("barette.ttf") format("ttf");
+}

@@ -16,10 +16,13 @@ const config: Config = {
         'bg-events': "url('/images/back.png')",
       },
       fontFamily: {
+        lobster: ['Lobster', 'cursive'],
+        madimi: ['Madimi One'],
         azonix: ['azonix'],
         fontspring: ['fontspring'],
         neuropol: ['neuropol'],
         BlackHanSans: ['BlackHanSans', 'sans-serif']
+
        },
     },
   },

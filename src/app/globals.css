@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mate&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Metrophobic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -54,7 +56,7 @@ html {
 @media (max-width: 1440px) {
   body {
     overflow-x: hidden;
-  }  
+  }
 }
 
 a {
