@@ -13,8 +13,7 @@ const faqData = [
   },
   {
     question: "Does the accommodation fee include the food facility as well?",
-    answer:
-      "Yes, the accommodation fee includes mess food.",
+    answer: "Yes, the accommodation fee includes mess food.",
   },
   {
     question: "Who all are eligible for accommodation during Fluxus?",
@@ -33,8 +32,7 @@ const faqData = [
   },
   {
     question: "What is the refund policy??",
-    answer:
-      "Once the Payment is done, there is no cancellation policy.",
+    answer: "Once the Payment is done, there is no cancellation policy.",
   },
 ];
 export default function FAQ() {
