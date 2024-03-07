@@ -452,6 +452,20 @@ const FoodPartners = [
   ],
 ];
 
+const SponsorData10 = [
+  {
+    id: "du",
+    company: "du",
+    title: "Media Partner",
+    image: require("../../../public/images/sponsor/du.jpg"),
+  },
+  {
+    id: "denver",
+    company: "Denver",
+    title: "Fragnance Partner",
+    image: require("../../../public/images/sponsor/denver.jpg"),
+  },
+];
 export default function SnapScroll() {
   return (
     <div className="pb-8 ">
@@ -640,6 +654,15 @@ export default function SnapScroll() {
                     </div>
                   );
                 })}
+              </div>
+            );
+          })}
+        </div>
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
+          {SponsorData10.map((ele, index) => {
+            return (
+              <div key={index}>
+                <Card ele={ele} sponsor={true} />
               </div>
             );
           })}
