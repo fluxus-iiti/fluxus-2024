@@ -466,6 +466,15 @@ const SponsorData10 = [
     image: require("../../../public/images/sponsor/denver.jpg"),
   },
 ];
+
+const SponsorData11 = [
+  {
+    id: "zpr",
+    company: "Zex PR Wire",
+    title: "Official PR Partner",
+    image: require("../../../public/images/sponsor/zpr.png"),
+  },
+];
 export default function SnapScroll() {
   return (
     <div className="pb-8 ">
@@ -616,6 +625,24 @@ export default function SnapScroll() {
             );
           })}
         </div>
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
+          {SponsorData10.map((ele, index) => {
+            return (
+              <div key={index}>
+                <Card ele={ele} sponsor={true} />
+              </div>
+            );
+          })}
+        </div>
+        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
+          {SponsorData11.map((ele, index) => {
+            return (
+              <div key={index}>
+                <Card ele={ele} sponsor={true} />
+              </div>
+            );
+          })}
+        </div>
         <div className="relative">
           <h1 className="!flex-wrap !md:py-20  text-4xl font-bold !py-10 z-[1000000] absolute w-full h-full">
             Outreach Partners
@@ -654,15 +681,6 @@ export default function SnapScroll() {
                     </div>
                   );
                 })}
-              </div>
-            );
-          })}
-        </div>
-        <div className="scroll-area !flex-wrap !md:py-20 !py-10">
-          {SponsorData10.map((ele, index) => {
-            return (
-              <div key={index}>
-                <Card ele={ele} sponsor={true} />
               </div>
             );
           })}
