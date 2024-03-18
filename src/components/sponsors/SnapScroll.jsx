@@ -241,6 +241,36 @@ const SponsorData9 = [
   },
 ];
 
+const SponsorData10 = [
+  {
+    id: "du",
+    company: "du",
+    title: "Media Partner",
+    image: require("../../../public/images/sponsor/du.jpg"),
+  },
+  {
+    id: "denver",
+    company: "Denver",
+    title: "Fragnance Partner",
+    image: require("../../../public/images/sponsor/denver.jpg"),
+  },
+];
+
+const SponsorData11 = [
+  {
+    id: "canara",
+    company: "Canara Bank",
+    title: "Banking Partner",
+    image: require("../../../public/images/sponsor/canara.png"),
+  },
+  {
+    id: "zpr",
+    company: "Zex PR Wire",
+    title: "Official PR Partner",
+    image: require("../../../public/images/sponsor/zpr.png"),
+  },
+];
+
 const SponsorData8 = [
   {
     id: "16",
@@ -452,29 +482,6 @@ const FoodPartners = [
   ],
 ];
 
-const SponsorData10 = [
-  {
-    id: "du",
-    company: "du",
-    title: "Media Partner",
-    image: require("../../../public/images/sponsor/du.jpg"),
-  },
-  {
-    id: "denver",
-    company: "Denver",
-    title: "Fragnance Partner",
-    image: require("../../../public/images/sponsor/denver.jpg"),
-  },
-];
-
-const SponsorData11 = [
-  {
-    id: "zpr",
-    company: "Zex PR Wire",
-    title: "Official PR Partner",
-    image: require("../../../public/images/sponsor/zpr.png"),
-  },
-];
 export default function SnapScroll() {
   return (
     <div className="pb-8 ">
