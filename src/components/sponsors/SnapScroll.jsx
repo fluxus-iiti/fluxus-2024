@@ -138,35 +138,44 @@ const SponsorData7 = [
     link: "https://www.jiosaavn.com/",
   },
   {
+    id: "canara",
+    company: "Canara Bank",
+    title: "Banking Partner",
+    image: require("../../../public/images/sponsor/canara.png"),
+  },
+];
+
+const SponsorData72 = [
+  {
     id: "14",
     company: "RedFM",
     title: "Radio Partner",
     image: require("../../../public/images/sponsor/14.png"),
   },
-];
-
-const SponsorData72 = [
   {
     id: "halen",
     company: "Halen Ceramics",
     title: "Furniture Partner",
     image: require("../../../public/images/sponsor/halen.jpg"),
   },
+];
+
+const SponsorData73 = [
   {
     id: "safewtech",
     company: "Safewtech ",
     title: "Gadget Partner ",
     image: require("../../../public/images/sponsor/safewtech.jpg"),
   },
-];
-
-const SponsorData73 = [
   {
     id: "jimjam",
     company: "JimJam Pops by Britannia",
     title: "Munching Partner",
     image: require("../../../public/images/sponsor/jimjam.jpg"),
   },
+];
+
+const SponsorData74 = [
   {
     id: "prodot",
     company: "Pro Dot Group",
@@ -174,9 +183,6 @@ const SponsorData73 = [
     image: require("../../../public/images/sponsor/prodot.png"),
     link: "https://www.prodotgroup.com/",
   },
-];
-
-const SponsorData74 = [
   {
     id: "safexpress",
     company: "Safexpress",
@@ -184,15 +190,15 @@ const SponsorData74 = [
     image: require("../../../public/images/sponsor/safexpress.png"),
     link: "https://www.safexpress.com/",
   },
+];
+
+const SponsorData75 = [
   {
     id: "kira",
     company: "Kira Exotica",
     title: "Grooming Partner",
     image: require("../../../public/images/sponsor/kira.jpeg"),
   },
-];
-
-const SponsorData75 = [
   {
     id: "hitbullseye",
     company: "Hitbullseye",
@@ -200,6 +206,9 @@ const SponsorData75 = [
     image: require("../../../public/images/sponsor/hitbullseye.jpeg"),
     link: "https://www.hitbullseye.com/",
   },
+];
+
+const SponsorData76 = [
   {
     id: "plum",
     company: "Plum",
@@ -207,9 +216,6 @@ const SponsorData75 = [
     image: require("../../../public/images/sponsor/plum.png"),
     link: "https://plumgoodness.com/",
   },
-];
-
-const SponsorData76 = [
   {
     id: "amar",
     company: "Amar Ujala",
@@ -217,6 +223,9 @@ const SponsorData76 = [
     image: require("../../../public/images/sponsor/amar.png"),
     link: "https://www.amarujala.com/",
   },
+];
+
+const SponsorData9 = [
   {
     id: "19",
     company: "Stock Gro",
@@ -224,44 +233,35 @@ const SponsorData76 = [
     image: require("../../../public/images/sponsor/19.png"),
     link: "https://www.stockgro.club/",
   },
-];
-
-const SponsorData9 = [
   {
     id: "20",
     company: "The Fit Squad",
     title: "Nutrition Partner",
     image: require("../../../public/images/sponsor/20.png"),
   },
+];
+
+const SponsorData10 = [
   {
     id: "15",
     company: "Indori Events",
     title: "Event Partner",
     image: require("../../../public/images/sponsor/15.png"),
   },
-];
-
-const SponsorData10 = [
   {
     id: "du",
     company: "du",
     title: "Media Partner",
     image: require("../../../public/images/sponsor/du.jpg"),
   },
+];
+
+const SponsorData11 = [
   {
     id: "denver",
     company: "Denver",
     title: "Fragnance Partner",
     image: require("../../../public/images/sponsor/denver.jpg"),
-  },
-];
-
-const SponsorData11 = [
-  {
-    id: "canara",
-    company: "Canara Bank",
-    title: "Banking Partner",
-    image: require("../../../public/images/sponsor/canara.png"),
   },
   {
     id: "zpr",
